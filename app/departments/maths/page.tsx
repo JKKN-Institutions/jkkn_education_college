@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { CheckCircle, BookOpen, Users, Clock, DollarSign, Monitor, Beaker, GraduationCap, Briefcase, School, ChevronDown, ChevronUp, Phone, FileText, ClipboardCheck, UserCheck, CreditCard, Rocket } from 'lucide-react';
+import { CheckCircle, BookOpen, Users, Clock, DollarSign, Monitor, Beaker, GraduationCap, Briefcase, School, ChevronDown, ChevronUp, Phone } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 

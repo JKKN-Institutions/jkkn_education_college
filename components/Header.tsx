@@ -10,7 +10,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
-  const isActiveRoute = (itemHref: string, itemName: string) => {
+  const isActiveRoute = (itemHref: string) => {
     if (pathname === itemHref) return true;
     if (itemHref !== '/' && pathname.startsWith(itemHref)) return true;
     return false;
@@ -106,7 +106,7 @@ const Header = () => {
                 {item.hasDropdown ? (
                   <button
                     className={`flex items-center text-sm font-semibold transition-colors duration-200 px-3 py-2 ${
-                      isActiveRoute(item.href, item.name)
+                      isActiveRoute(item.href)
                         ? 'text-gray-800 border-b-2 border-[#1e7f4e]'
                         : 'text-gray-800 hover:text-gray-600'
                     }`}
@@ -128,7 +128,7 @@ const Header = () => {
                   <Link
                     href={item.href}
                     className={`flex items-center text-sm font-semibold transition-colors duration-200 px-3 py-2 ${
-                      isActiveRoute(item.href, item.name)
+                      isActiveRoute(item.href)
                         ? 'text-gray-800 border-b-2 border-[#1e7f4e]'
                         : 'text-gray-800 hover:text-gray-600'
                     }`}
@@ -232,7 +232,7 @@ const Header = () => {
                 <div key={item.name}>
                   <div
                     className={`flex items-center justify-between px-3 py-3 min-h-[48px] text-base font-semibold cursor-pointer rounded-lg ${
-                      isActiveRoute(item.href, item.name)
+                      isActiveRoute(item.href)
                         ? 'text-gray-800 bg-gray-50 border-l-4 border-[#1e7f4e]'
                         : 'text-gray-800 hover:bg-gray-50 hover:text-gray-600 active:bg-gray-100'
                     }`}
