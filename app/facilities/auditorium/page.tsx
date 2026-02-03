@@ -16,17 +16,17 @@ export default function Auditorium() {
       <Header />
 
       {/* Auditorium Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
         <div className="mx-auto max-w-7xl">
           {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8" style={{ color: '#1e7f4e' }}>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 lg:mb-12" style={{ color: '#1e7f4e' }}>
             AUDITORIUM
           </h1>
 
           {/* Auditorium Images */}
-          <div className="flex justify-center mb-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full md:w-1/2">
-              <div className="relative w-full h-[250px] md:h-[280px]">
+          <div className="flex justify-center mb-6 sm:mb-8 lg:mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 w-full md:w-1/2">
+              <div className="relative w-full h-48 sm:h-56 lg:h-64">
                 <Image
                   src="/images/auditorium-1.jpg"
                   alt="Auditorium view 1"
@@ -35,7 +35,7 @@ export default function Auditorium() {
                   priority
                 />
               </div>
-              <div className="relative w-full h-[250px] md:h-[280px]">
+              <div className="relative w-full h-48 sm:h-56 lg:h-64">
                 <Image
                   src="/images/auditorium-2.jpg"
                   alt="Auditorium view 2"
@@ -48,19 +48,19 @@ export default function Auditorium() {
           </div>
 
           {/* Content Section */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {/* Paragraph 1 */}
-            <p className="text-base md:text-lg leading-relaxed text-justify" style={{ color: '#4a5568' }}>
+            <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify" style={{ color: '#4a5568' }}>
               Looking for an impressive and versatile venue for your event? The JKKN auditorium is a spacious facility with impeccable acoustics and the latest audio-visual technology, ideal for hosting concerts, lectures, and theatrical performances.
             </p>
 
             {/* Paragraph 2 */}
-            <p className="text-base md:text-lg leading-relaxed text-justify" style={{ color: '#4a5568' }}>
+            <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify" style={{ color: '#4a5568' }}>
               Our well-designed seating arrangement provides an uninterrupted view of the stage for large numbers of guests, while the warm and welcoming atmosphere of our elegantly decorated space is enhanced by carefully selected lighting.
             </p>
 
             {/* Paragraph 3 */}
-            <p className="text-base md:text-lg leading-relaxed text-justify mb-4" style={{ color: '#4a5568' }}>
+            <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify mb-4" style={{ color: '#4a5568' }}>
               The auditorium is also an essential resource for the institution, as it can be used for various purposes such as graduation ceremonies, workshops, and seminars. Rest assured that our professional staff maintains the auditorium in top condition at all times. Book the JKKN auditorium now and make your event unforgettable!
             </p>
 
@@ -69,7 +69,7 @@ export default function Auditorium() {
               {auditoriumFeatures.map((feature, index) => (
                 <li
                   key={index}
-                  className="text-base md:text-lg leading-relaxed"
+                  className="text-sm sm:text-base lg:text-lg leading-relaxed"
                   style={{
                     color: '#4a5568',
                     listStyleType: 'square',

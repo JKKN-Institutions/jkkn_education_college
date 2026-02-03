@@ -8,16 +8,16 @@ export default function OurTrust() {
       <Header />
 
       {/* Our Trust Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
         <div className="mx-auto max-w-7xl">
           {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12" style={{ color: '#1e7f4e' }}>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12" style={{ color: '#1e7f4e' }}>
             OUR TRUST
           </h1>
 
           {/* Photo with Ornate Frame */}
-          <div className="flex justify-center mb-12">
-            <div className="relative w-[300px] h-[300px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px]">
+          <div className="flex justify-center mb-8 sm:mb-12">
+            <div className="relative w-[220px] h-[220px] sm:w-[300px] sm:h-[300px] md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px]">
               <Image
                 src="/images/Our_Trust.webp"
                 alt="Founder SHRI.J.K.K.NATARAJAH"
@@ -29,18 +29,18 @@ export default function OurTrust() {
           </div>
 
           {/* Founder Name */}
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-6" style={{ color: '#1e7f4e' }}>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-3 sm:mb-6 px-2" style={{ color: '#1e7f4e' }}>
             SHRI.J.K.K.NATARAJAH
           </h2>
 
           {/* Founder Title */}
-          <h3 className="text-xl md:text-2xl font-bold text-center mb-12" style={{ color: '#1e7f4e' }}>
+          <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-center mb-8 sm:mb-12 px-2" style={{ color: '#1e7f4e' }}>
             FOUNDER OF J.K.K.RANGAMMAL CHARITABLE TRUST
           </h3>
 
           {/* Description Content */}
-          <div className="max-w-6xl mx-auto space-y-6">
-            <p className="text-base md:text-lg leading-relaxed text-justify" style={{ color: '#5a6c7d' }}>
+          <div className="max-w-6xl mx-auto space-y-4 sm:space-y-6">
+            <p className="text-sm sm:text-base md:text-lg leading-relaxed text-justify" style={{ color: '#5a6c7d' }}>
               In the sixties, female children in Kumarapalayam had to walk 2.5 km for their schooling to the nearby town of Bhavani. Some parents hesitated to send their children, and some ceased their children's schooling altogether. This resulted in them staying at home or working in handlooms and dyeing industries. Realizing the need for women's education, a visionary philanthropist of the zone, Shri J.K.K. Natarajah, initiated a girls' school in the town in 1965, four years before the inception of the trust.
             </p>
 

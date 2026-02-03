@@ -8,17 +8,17 @@ export default function SeminarHall() {
       <Header />
 
       {/* Seminar Hall Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
         <div className="mx-auto max-w-7xl">
           {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8" style={{ color: '#1e7f4e' }}>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 lg:mb-12" style={{ color: '#1e7f4e' }}>
             SEMINAR HALL
           </h1>
 
           {/* Images Grid */}
-          <div className="flex justify-center mb-8">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full md:w-1/2">
-              <div className="relative w-full h-[250px] md:h-[300px]">
+          <div className="flex justify-center mb-6 sm:mb-8 lg:mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 w-full md:w-1/2">
+              <div className="relative w-full h-48 sm:h-56 lg:h-64">
                 <Image
                   src="/images/seminar-hall-1.jpg"
                   alt="Seminar hall event"
@@ -27,7 +27,7 @@ export default function SeminarHall() {
                   priority
                 />
               </div>
-              <div className="relative w-full h-[250px] md:h-[300px]">
+              <div className="relative w-full h-48 sm:h-56 lg:h-64">
                 <Image
                   src="/images/seminar-hall-2.jpg"
                   alt="Seminar hall event"
@@ -40,11 +40,11 @@ export default function SeminarHall() {
           </div>
 
           {/* Content Section */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             {/* Bulleted List */}
             <ul className="space-y-4 ml-6">
               <li
-                className="text-base md:text-lg leading-relaxed text-justify"
+                className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify"
                 style={{
                   color: '#4a5568',
                   listStyleType: 'disc',
@@ -54,7 +54,7 @@ export default function SeminarHall() {
                 Our seminar hall is spacious and comfortable, perfect for hosting events and seminars of all kinds.
               </li>
               <li
-                className="text-base md:text-lg leading-relaxed text-justify"
+                className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify"
                 style={{
                   color: '#4a5568',
                   listStyleType: 'disc',
@@ -64,7 +64,7 @@ export default function SeminarHall() {
                 Equipped with modern amenities, such as a fully air-conditioned environment, stage, projector, sound system, and lighting equipment, our hall ensures that every attendee can learn in comfort and convenience.
               </li>
               <li
-                className="text-base md:text-lg leading-relaxed text-justify"
+                className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify"
                 style={{
                   color: '#4a5568',
                   listStyleType: 'disc',
@@ -74,7 +74,7 @@ export default function SeminarHall() {
                 With high-speed Wi-Fi and ample parking facilities, our venue is designed to make event planning a breeze.
               </li>
               <li
-                className="text-base md:text-lg leading-relaxed text-justify"
+                className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify"
                 style={{
                   color: '#4a5568',
                   listStyleType: 'disc',
@@ -84,7 +84,7 @@ export default function SeminarHall() {
                 Our team of skilled technicians and support staff are available to help with event setup and ensure that everything runs smoothly and efficiently.
               </li>
               <li
-                className="text-base md:text-lg leading-relaxed text-justify"
+                className="text-sm sm:text-base lg:text-lg leading-relaxed text-justify"
                 style={{
                   color: '#4a5568',
                   listStyleType: 'disc',

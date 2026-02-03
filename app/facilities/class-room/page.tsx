@@ -17,16 +17,16 @@ export default function ClassRoom() {
       <Header />
 
       {/* Class Room Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
         <div className="mx-auto max-w-7xl">
           {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8" style={{ color: '#1e7f4e' }}>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 lg:mb-12" style={{ color: '#1e7f4e' }}>
             Digital class room
           </h1>
 
           {/* Classroom Image */}
-          <div className="mb-8">
-            <div className="relative w-full max-w-[350px] h-[250px] md:h-[280px]">
+          <div className="mb-6 sm:mb-8 lg:mb-12">
+            <div className="relative w-full max-w-[350px] h-48 sm:h-56 lg:h-64">
               <Image
                 src="/images/Class-room.jpg"
                 alt="Digital classroom with students"
@@ -42,7 +42,7 @@ export default function ClassRoom() {
             {classroomFeatures.map((feature, index) => (
               <li
                 key={index}
-                className="text-base md:text-lg leading-relaxed"
+                className="text-sm sm:text-base lg:text-lg leading-relaxed"
                 style={{
                   color: '#4a5568',
                   listStyleType: 'square',

@@ -8,26 +8,26 @@ export default function Contact() {
       <Header />
 
       {/* Contact Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
+      <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
         <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Left Column - Contact Us */}
             <div>
-              <h1 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1e7f4e' }}>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4" style={{ color: '#1e7f4e' }}>
                 CONTACT US
               </h1>
 
-              <p className="text-base md:text-lg mb-8" style={{ color: '#4a5568' }}>
+              <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8" style={{ color: '#4a5568' }}>
                 Welcome to our Website. We are glad to have you around.
               </p>
 
               {/* Contact Cards */}
-              <div className="space-y-4">
+              <div className="space-y-3 sm:space-y-4">
                 {/* Phone Card */}
-                <div className="flex items-start p-6 rounded-lg" style={{ backgroundColor: '#d4edda' }}>
-                  <div className="mr-4">
+                <div className="flex items-start p-4 sm:p-6 rounded-lg" style={{ backgroundColor: '#d4edda' }}>
+                  <div className="mr-3 sm:mr-4 flex-shrink-0">
                     <svg
-                      className="w-8 h-8"
+                      className="w-6 h-6 sm:w-8 sm:h-8"
                       style={{ color: '#1e7f4e' }}
                       fill="currentColor"
                       viewBox="0 0 24 24"
@@ -36,20 +36,20 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2" style={{ color: '#2d3748' }}>
+                    <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2" style={{ color: '#2d3748' }}>
                       Phone
                     </h3>
-                    <p className="text-base md:text-lg" style={{ color: '#4a5568' }}>
+                    <a href="tel:+919345855001" className="text-sm sm:text-base md:text-lg hover:underline" style={{ color: '#4a5568' }}>
                       +(91) 93458 55001
-                    </p>
+                    </a>
                   </div>
                 </div>
 
                 {/* Email Card */}
-                <div className="flex items-start p-6 rounded-lg" style={{ backgroundColor: '#d4edda' }}>
-                  <div className="mr-4">
+                <div className="flex items-start p-4 sm:p-6 rounded-lg" style={{ backgroundColor: '#d4edda' }}>
+                  <div className="mr-3 sm:mr-4 flex-shrink-0">
                     <svg
-                      className="w-8 h-8"
+                      className="w-6 h-6 sm:w-8 sm:h-8"
                       style={{ color: '#1e7f4e' }}
                       fill="currentColor"
                       viewBox="0 0 24 24"
@@ -58,20 +58,20 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2" style={{ color: '#2d3748' }}>
+                    <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2" style={{ color: '#2d3748' }}>
                       Email
                     </h3>
-                    <p className="text-base md:text-lg" style={{ color: '#1e7f4e' }}>
+                    <a href="mailto:education@jkkn.ac.in" className="text-sm sm:text-base md:text-lg hover:underline break-all" style={{ color: '#1e7f4e' }}>
                       education@jkkn.ac.in
-                    </p>
+                    </a>
                   </div>
                 </div>
 
                 {/* Address Card */}
-                <div className="flex items-start p-6 rounded-lg" style={{ backgroundColor: '#d4edda' }}>
-                  <div className="mr-4">
+                <div className="flex items-start p-4 sm:p-6 rounded-lg" style={{ backgroundColor: '#d4edda' }}>
+                  <div className="mr-3 sm:mr-4 flex-shrink-0">
                     <svg
-                      className="w-8 h-8"
+                      className="w-6 h-6 sm:w-8 sm:h-8"
                       style={{ color: '#1e7f4e' }}
                       fill="currentColor"
                       viewBox="0 0 24 24"
@@ -80,10 +80,10 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold mb-2" style={{ color: '#2d3748' }}>
+                    <h3 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2" style={{ color: '#2d3748' }}>
                       Address
                     </h3>
-                    <p className="text-base md:text-lg leading-relaxed" style={{ color: '#4a5568' }}>
+                    <p className="text-sm sm:text-base md:text-lg leading-relaxed" style={{ color: '#4a5568' }}>
                       JKKN College of Education, Natarajapuram, NH-544 (Salem To Coimbatore National Highway), Kumarapalayam (TK), Namakkal (DT). Tamil Nadu. 638183.
                     </p>
                   </div>
@@ -92,18 +92,18 @@ export default function Contact() {
             </div>
 
             {/* Right Column - Online Admission Form */}
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-4" style={{ color: '#1e7f4e' }}>
+            <div className="lg:pl-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4" style={{ color: '#1e7f4e' }}>
                 ONLINE ADMISSION FORM
               </h2>
 
-              <p className="text-base md:text-lg mb-8" style={{ color: '#4a5568' }}>
+              <p className="text-sm sm:text-base md:text-lg mb-6 sm:mb-8" style={{ color: '#4a5568' }}>
                 Required fields are marked.
               </p>
 
               <Link
                 href="#"
-                className="inline-block px-8 py-3 text-white font-semibold rounded-md transition-colors duration-200"
+                className="inline-block px-6 sm:px-8 py-2.5 sm:py-3 text-white font-semibold rounded-md transition-colors duration-200 text-sm sm:text-base hover:opacity-90 active:opacity-80"
                 style={{ backgroundColor: '#1e7f4e' }}
               >
                 Click Here

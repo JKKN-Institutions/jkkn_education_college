@@ -8,55 +8,55 @@ export default function Home() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#0d5a7d] via-[#1a7fa0] to-[#2ba3c7] py-16 px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-[#0d5a7d] via-[#1a7fa0] to-[#2ba3c7] py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
-            <div className="text-white">
-              <div className="inline-block bg-white/20 backdrop-blur-sm px-6 py-2 rounded-full mb-8">
-                <span className="text-white font-semibold text-sm">NCTE Approved | NAAC Accredited</span>
+            <div className="text-white text-center lg:text-left">
+              <div className="inline-block bg-white/20 backdrop-blur-sm px-4 sm:px-6 py-2 rounded-full mb-4 sm:mb-6 lg:mb-8">
+                <span className="text-white font-semibold text-xs sm:text-sm">NCTE Approved | NAAC Accredited</span>
               </div>
 
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 sm:mb-6 leading-tight">
                 Transform Your Passion for Teaching into a{' '}
                 <span className="text-[#ff6b35]">Rewarding Career</span>
               </h1>
 
-              <p className="text-lg md:text-xl mb-8 text-white/90 leading-relaxed">
+              <p className="text-base sm:text-lg md:text-xl mb-6 sm:mb-8 text-white/90 leading-relaxed">
                 Join our 2-Year B.Ed Programme and become a certified Learning Facilitator equipped with modern pedagogical skills, innovative teaching methodologies, and a commitment to shaping future generations.
               </p>
 
               {/* Stats Grid */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-[#ff6b35] mb-1">98%</div>
-                  <div className="text-sm text-white/80">Placement Rate</div>
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8">
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#ff6b35] mb-1">98%</div>
+                  <div className="text-xs sm:text-sm text-white/80">Placement Rate</div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-[#ff6b35] mb-1">25+</div>
-                  <div className="text-sm text-white/80">Years of Excellence</div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#ff6b35] mb-1">25+</div>
+                  <div className="text-xs sm:text-sm text-white/80">Years of Excellence</div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-[#ff6b35] mb-1">5000+</div>
-                  <div className="text-sm text-white/80">Alumni Network</div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#ff6b35] mb-1">5000+</div>
+                  <div className="text-xs sm:text-sm text-white/80">Alumni Network</div>
                 </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-[#ff6b35] mb-1">50+</div>
-                  <div className="text-sm text-white/80">Expert Learning Facilitators</div>
+                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#ff6b35] mb-1">50+</div>
+                  <div className="text-xs sm:text-sm text-white/80 leading-tight">Expert Learning Facilitators</div>
                 </div>
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                 <Link
                   href="/apply"
-                  className="inline-block bg-[#ff6b35] hover:bg-[#ff5722] text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200 text-center"
+                  className="inline-block bg-[#ff6b35] hover:bg-[#ff5722] active:bg-[#e65100] text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 text-center text-sm sm:text-base"
                 >
                   Apply Now for 2025-26
                 </Link>
                 <Link
                   href="/programme"
-                  className="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-[#0d5a7d] text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-center"
+                  className="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-[#0d5a7d] text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-all duration-200 text-center text-sm sm:text-base"
                 >
                   Explore Programme
                 </Link>
@@ -64,11 +64,11 @@ export default function Home() {
             </div>
 
             {/* Right Content - Video/Image Placeholder */}
-            <div className="relative">
-              <div className="bg-[#0d4a5f] rounded-2xl p-8 h-[400px] flex items-center justify-center">
+            <div className="relative mt-8 lg:mt-0">
+              <div className="bg-[#0d4a5f] rounded-2xl p-6 sm:p-8 min-h-[250px] sm:min-h-[300px] lg:min-h-[400px] flex items-center justify-center">
                 <div className="text-center">
-                  <h3 className="text-3xl font-bold text-white mb-6">Future Teachers Learning</h3>
-                  <button className="bg-[#ff6b35] hover:bg-[#ff5722] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 flex items-center gap-2 mx-auto">
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 sm:mb-6">Future Teachers Learning</h3>
+                  <button className="bg-[#ff6b35] hover:bg-[#ff5722] active:bg-[#e65100] text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-colors duration-200 flex items-center gap-2 mx-auto text-sm sm:text-base">
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/>
                     </svg>
@@ -82,60 +82,60 @@ export default function Home() {
       </section>
 
       {/* Info Cards Section */}
-      <section className="relative -mt-16 px-4 sm:px-6 lg:px-8 mb-16">
+      <section className="relative py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="bg-white rounded-3xl shadow-xl p-8">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="bg-white rounded-2xl sm:rounded-3xl shadow-xl p-4 sm:p-6 lg:p-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
               {/* Programme Duration */}
-              <div className="flex items-start gap-4">
-                <div className="bg-blue-100 p-3 rounded-lg">
-                  <svg className="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="bg-blue-100 p-2.5 sm:p-3 rounded-lg flex-shrink-0">
+                  <svg className="w-6 h-6 sm:w-8 sm:h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd"/>
                   </svg>
                 </div>
-                <div>
-                  <div className="text-sm text-gray-500 mb-1">PROGRAMME DURATION</div>
-                  <div className="font-bold text-lg text-[#0d5a7d]">2 Years (4 Semesters)</div>
+                <div className="min-w-0">
+                  <div className="text-xs sm:text-sm text-gray-500 mb-0.5 sm:mb-1">PROGRAMME DURATION</div>
+                  <div className="font-bold text-sm sm:text-base lg:text-lg text-[#0d5a7d]">2 Years (4 Semesters)</div>
                 </div>
               </div>
 
               {/* Departments */}
-              <div className="flex items-start gap-4">
-                <div className="bg-orange-100 p-3 rounded-lg">
-                  <svg className="w-8 h-8 text-[#ff6b35]" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="bg-orange-100 p-2.5 sm:p-3 rounded-lg flex-shrink-0">
+                  <svg className="w-6 h-6 sm:w-8 sm:h-8 text-[#ff6b35]" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/>
                   </svg>
                 </div>
-                <div>
-                  <div className="text-sm text-gray-500 mb-1">DEPARTMENTS</div>
-                  <div className="font-bold text-lg text-[#0d5a7d]">11 Specializations</div>
+                <div className="min-w-0">
+                  <div className="text-xs sm:text-sm text-gray-500 mb-0.5 sm:mb-1">DEPARTMENTS</div>
+                  <div className="font-bold text-sm sm:text-base lg:text-lg text-[#0d5a7d]">11 Specializations</div>
                 </div>
               </div>
 
               {/* Affiliation */}
-              <div className="flex items-start gap-4">
-                <div className="bg-purple-100 p-3 rounded-lg">
-                  <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="bg-purple-100 p-2.5 sm:p-3 rounded-lg flex-shrink-0">
+                  <svg className="w-6 h-6 sm:w-8 sm:h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a1 1 0 110 2h-3a1 1 0 01-1-1v-2a1 1 0 00-1-1H9a1 1 0 00-1 1v2a1 1 0 01-1 1H4a1 1 0 110-2V4zm3 1h2v2H7V5zm2 4H7v2h2V9zm2-4h2v2h-2V5zm2 4h-2v2h2V9z" clipRule="evenodd"/>
                   </svg>
                 </div>
-                <div>
-                  <div className="text-sm text-gray-500 mb-1">AFFILIATION</div>
-                  <div className="font-bold text-lg text-[#0d5a7d]">State University</div>
+                <div className="min-w-0">
+                  <div className="text-xs sm:text-sm text-gray-500 mb-0.5 sm:mb-1">AFFILIATION</div>
+                  <div className="font-bold text-sm sm:text-base lg:text-lg text-[#0d5a7d]">State University</div>
                 </div>
               </div>
 
               {/* Career Scope */}
-              <div className="flex items-start gap-4">
-                <div className="bg-red-100 p-3 rounded-lg">
-                  <svg className="w-8 h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+              <div className="flex items-start gap-3 sm:gap-4">
+                <div className="bg-red-100 p-2.5 sm:p-3 rounded-lg flex-shrink-0">
+                  <svg className="w-6 h-6 sm:w-8 sm:h-8 text-red-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd"/>
                     <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"/>
                   </svg>
                 </div>
-                <div>
-                  <div className="text-sm text-gray-500 mb-1">CAREER SCOPE</div>
-                  <div className="font-bold text-lg text-[#0d5a7d]">Govt. & Private Schools</div>
+                <div className="min-w-0">
+                  <div className="text-xs sm:text-sm text-gray-500 mb-0.5 sm:mb-1">CAREER SCOPE</div>
+                  <div className="font-bold text-sm sm:text-base lg:text-lg text-[#0d5a7d]">Govt. & Private Schools</div>
                 </div>
               </div>
             </div>
@@ -144,29 +144,29 @@ export default function Home() {
       </section>
 
       {/* About Programme Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-[#ff6b35] text-white px-6 py-2 rounded-full font-semibold text-sm mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <span className="inline-block bg-[#ff6b35] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
               ABOUT THE PROGRAMME
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-3 sm:mb-4 px-2">
               Bachelor of Education (B.Ed) Programme
             </h2>
-            <p className="text-lg text-gray-600 max-w-4xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-4xl mx-auto px-2">
               A comprehensive teacher education programme designed to develop competent, committed, and professionally qualified Learning Facilitators for secondary and senior secondary schools.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12 mb-12">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 mb-8 sm:mb-12">
             {/* Left Content */}
             <div>
-              <h3 className="text-2xl font-bold text-[#0d5a7d] mb-4">What is B.Ed?</h3>
-              <p className="text-gray-700 mb-6 leading-relaxed">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0d5a7d] mb-3 sm:mb-4">What is B.Ed?</h3>
+              <p className="text-sm sm:text-base text-gray-700 mb-4 sm:mb-6 leading-relaxed">
                 Bachelor of Education (B.Ed) is a two-year professional degree programme approved by the National Council for Teacher Education (NCTE). This programme prepares graduates to become certified school teachers capable of teaching at the secondary (Classes 6-10) and senior secondary (Classes 11-12) levels in both government and private schools across India.
               </p>
 
-              <h3 className="text-2xl font-bold text-[#0d5a7d] mb-4">Programme Objectives</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0d5a7d] mb-3 sm:mb-4">Programme Objectives</h3>
               <ul className="space-y-3">
                 {[
                   'Develop understanding of child psychology and learning theories',
@@ -188,8 +188,8 @@ export default function Home() {
 
             {/* Right Content */}
             <div>
-              <h3 className="text-2xl font-bold text-[#0d5a7d] mb-6">Programme Highlights</h3>
-              <div className="grid sm:grid-cols-2 gap-4 mb-8">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0d5a7d] mb-4 sm:mb-6">Programme Highlights</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 sm:mb-8">
                 {[
                   'NCTE Approved Curriculum',
                   'State-of-the-Art Learning Studios',
@@ -208,8 +208,8 @@ export default function Home() {
               </div>
 
               {/* Modern Learning Studio Box */}
-              <div className="bg-gradient-to-br from-[#ff6b35] to-[#ff8c61] rounded-2xl p-8 h-64 flex items-center justify-center">
-                <h3 className="text-4xl font-bold text-white text-center">Modern Learning Studio</h3>
+              <div className="bg-gradient-to-br from-[#ff6b35] to-[#ff8c61] rounded-xl sm:rounded-2xl p-6 sm:p-8 h-48 sm:h-56 lg:h-64 flex items-center justify-center">
+                <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center">Modern Learning Studio</h3>
               </div>
             </div>
           </div>
@@ -217,28 +217,28 @@ export default function Home() {
       </section>
 
       {/* Departments Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-[#ff6b35] text-white px-6 py-2 rounded-full font-semibold text-sm mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <span className="inline-block bg-[#ff6b35] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
               ACADEMIC EXCELLENCE
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-3 sm:mb-4">
               Our Departments
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
               Choose from 11 specialized B.Ed programmes designed to match your academic background and career aspirations
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
             {/* B.Ed Tamil */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
-              <div className="bg-[#0d5a7d] w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-2xl font-bold">த</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#0d5a7d] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-white text-xl sm:text-2xl font-bold">த</span>
               </div>
-              <h3 className="text-xl font-bold text-[#0d5a7d] mb-3">B.Ed (Tamil)</h3>
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0d5a7d] mb-2 sm:mb-3">B.Ed (Tamil)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                 Master the art of teaching Tamil language and literature with modern pedagogical approaches while preserving rich cultural heritage.
               </p>
               <ul className="space-y-2 mb-4">
@@ -257,12 +257,12 @@ export default function Home() {
             </div>
 
             {/* B.Ed English */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
-              <div className="bg-[#ff6b35] w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-2xl font-bold">En</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#ff6b35] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-white text-xl sm:text-2xl font-bold">En</span>
               </div>
-              <h3 className="text-xl font-bold text-[#0d5a7d] mb-3">B.Ed (English)</h3>
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0d5a7d] mb-2 sm:mb-3">B.Ed (English)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                 Develop expertise in teaching English language, literature, and communication skills using innovative teaching strategies.
               </p>
               <ul className="space-y-2 mb-4">
@@ -281,12 +281,12 @@ export default function Home() {
             </div>
 
             {/* B.Ed Mathematics */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
-              <div className="bg-[#0ea5e9] w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-2xl font-bold">Σ</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#0ea5e9] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-white text-xl sm:text-2xl font-bold">Σ</span>
               </div>
-              <h3 className="text-xl font-bold text-[#0d5a7d] mb-3">B.Ed (Mathematics)</h3>
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0d5a7d] mb-2 sm:mb-3">B.Ed (Mathematics)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                 Learn to make mathematics engaging and accessible through practical applications, problem-solving techniques, and conceptual teaching.
               </p>
               <ul className="space-y-2 mb-4">
@@ -305,12 +305,12 @@ export default function Home() {
             </div>
 
             {/* B.Ed Physics */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
-              <div className="bg-[#0d5a7d] w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-2xl font-bold">⚛</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#0d5a7d] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-white text-xl sm:text-2xl font-bold">⚛</span>
               </div>
-              <h3 className="text-xl font-bold text-[#0d5a7d] mb-3">B.Ed (Physics)</h3>
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0d5a7d] mb-2 sm:mb-3">B.Ed (Physics)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                 Gain skills to teach physics concepts through experiments, demonstrations, and inquiry-based learning methodologies.
               </p>
               <ul className="space-y-2 mb-4">
@@ -329,12 +329,12 @@ export default function Home() {
             </div>
 
             {/* B.Ed Chemistry */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
-              <div className="bg-[#ff6b35] w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-2xl font-bold">🧪</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#ff6b35] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-white text-xl sm:text-2xl font-bold">🧪</span>
               </div>
-              <h3 className="text-xl font-bold text-[#0d5a7d] mb-3">B.Ed (Chemistry)</h3>
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0d5a7d] mb-2 sm:mb-3">B.Ed (Chemistry)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                 Master chemistry teaching through hands-on laboratory experiences, safety protocols, and real-world applications.
               </p>
               <ul className="space-y-2 mb-4">
@@ -353,12 +353,12 @@ export default function Home() {
             </div>
 
             {/* B.Ed Botany */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
-              <div className="bg-[#0ea5e9] w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-2xl font-bold">🌿</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#0ea5e9] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-white text-xl sm:text-2xl font-bold">🌿</span>
               </div>
-              <h3 className="text-xl font-bold text-[#0d5a7d] mb-3">B.Ed (Botany)</h3>
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0d5a7d] mb-2 sm:mb-3">B.Ed (Botany)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                 Develop expertise in teaching plant sciences through field studies, herbarium techniques, and environmental education.
               </p>
               <ul className="space-y-2 mb-4">
@@ -377,12 +377,12 @@ export default function Home() {
             </div>
 
             {/* B.Ed Zoology */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
-              <div className="bg-[#0d5a7d] w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-2xl font-bold">🔬</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#0d5a7d] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-white text-xl sm:text-2xl font-bold">🔬</span>
               </div>
-              <h3 className="text-xl font-bold text-[#0d5a7d] mb-3">B.Ed (Zoology)</h3>
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0d5a7d] mb-2 sm:mb-3">B.Ed (Zoology)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                 Learn to teach animal sciences effectively through specimen studies, dissection techniques, and biodiversity conservation.
               </p>
               <ul className="space-y-2 mb-4">
@@ -401,12 +401,12 @@ export default function Home() {
             </div>
 
             {/* B.Ed Computer Science */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
-              <div className="bg-[#ff6b35] w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-2xl font-bold">💻</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#ff6b35] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-white text-xl sm:text-2xl font-bold">💻</span>
               </div>
-              <h3 className="text-xl font-bold text-[#0d5a7d] mb-3">B.Ed (Computer Science)</h3>
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0d5a7d] mb-2 sm:mb-3">B.Ed (Computer Science)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                 Prepare to teach computing fundamentals, programming concepts, and digital literacy in the modern digital age.
               </p>
               <ul className="space-y-2 mb-4">
@@ -425,12 +425,12 @@ export default function Home() {
             </div>
 
             {/* B.Ed Commerce */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
-              <div className="bg-[#0ea5e9] w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-2xl font-bold">₹</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#0ea5e9] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-white text-xl sm:text-2xl font-bold">₹</span>
               </div>
-              <h3 className="text-xl font-bold text-[#0d5a7d] mb-3">B.Ed (Commerce)</h3>
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0d5a7d] mb-2 sm:mb-3">B.Ed (Commerce)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                 Acquire skills to teach commerce, accountancy, and business studies with practical case studies and real-world applications.
               </p>
               <ul className="space-y-2 mb-4">
@@ -449,12 +449,12 @@ export default function Home() {
             </div>
 
             {/* B.Ed History */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
-              <div className="bg-[#0d5a7d] w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-2xl font-bold">📜</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#0d5a7d] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-white text-xl sm:text-2xl font-bold">📜</span>
               </div>
-              <h3 className="text-xl font-bold text-[#0d5a7d] mb-3">B.Ed (History)</h3>
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0d5a7d] mb-2 sm:mb-3">B.Ed (History)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                 Develop engaging methods to teach historical events, civilizations, and critical thinking through storytelling and analysis.
               </p>
               <ul className="space-y-2 mb-4">
@@ -473,12 +473,12 @@ export default function Home() {
             </div>
 
             {/* B.Ed Economics */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
-              <div className="bg-[#ff6b35] w-16 h-16 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white text-2xl font-bold">📊</span>
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#ff6b35] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <span className="text-white text-xl sm:text-2xl font-bold">📊</span>
               </div>
-              <h3 className="text-xl font-bold text-[#0d5a7d] mb-3">B.Ed (Economics)</h3>
-              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              <h3 className="text-lg sm:text-xl font-bold text-[#0d5a7d] mb-2 sm:mb-3">B.Ed (Economics)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
                 Learn to teach economic concepts, theories, and current affairs through data analysis and practical applications.
               </p>
               <ul className="space-y-2 mb-4">
@@ -498,11 +498,11 @@ export default function Home() {
           </div>
 
           {/* Get Counselling Box */}
-          <div className="border-2 border-dashed border-blue-300 rounded-2xl p-8 text-center">
-            <p className="text-lg text-gray-700 mb-4">
+          <div className="border-2 border-dashed border-blue-300 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8 text-center">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-700 mb-3 sm:mb-4">
               <span className="font-semibold text-[#0d5a7d]">Not sure which department suits you?</span> Our academic counselors can help you choose the right specialization based on your graduation background.
             </p>
-            <button className="bg-[#ff6b35] hover:bg-[#ff5722] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200">
+            <button className="bg-[#ff6b35] hover:bg-[#ff5722] active:bg-[#e65100] text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-colors duration-200 text-sm sm:text-base">
               Get Counselling
             </button>
           </div>
@@ -510,30 +510,30 @@ export default function Home() {
       </section>
 
       {/* Admission Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-[#ff6b35] text-white px-6 py-2 rounded-full font-semibold text-sm mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <span className="inline-block bg-[#ff6b35] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
               ADMISSION DETAILS
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-3 sm:mb-4 px-2">
               Eligibility Criteria & Admission Process
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
               Clear pathways to begin your journey as an educator
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
             {/* Eligibility Criteria */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="bg-orange-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-[#ff6b35]" fill="currentColor" viewBox="0 0 20 20">
+            <div className="bg-white rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
+              <div className="bg-orange-100 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
+                <svg className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-[#ff6b35]" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"/>
                   <path fillRule="evenodd" d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clipRule="evenodd"/>
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-[#0d5a7d] mb-4">Eligibility Criteria</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0d5a7d] mb-3 sm:mb-4">Eligibility Criteria</h3>
               <div className="space-y-4 text-gray-700">
                 <div>
                   <p className="font-semibold mb-1">Educational Qualification:</p>
@@ -555,13 +555,13 @@ export default function Home() {
             </div>
 
             {/* Required Documents */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="bg-purple-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+            <div className="bg-white rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
+              <div className="bg-purple-100 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
+                <svg className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd"/>
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-[#0d5a7d] mb-4">Required Documents</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0d5a7d] mb-3 sm:mb-4">Required Documents</h3>
               <ul className="space-y-3 text-gray-700">
                 {[
                   '10th & 12th Mark Sheets and Certificates',
@@ -582,13 +582,13 @@ export default function Home() {
             </div>
 
             {/* Admission Process */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <svg className="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+            <div className="bg-white rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
+              <div className="bg-blue-100 w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 rounded-lg flex items-center justify-center mb-4 sm:mb-6">
+                <svg className="w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
                   <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z"/>
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold text-[#0d5a7d] mb-4">Admission Process</h3>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0d5a7d] mb-3 sm:mb-4">Admission Process</h3>
               <div className="space-y-4">
                 {[
                   'Fill online application form with correct details',
@@ -609,12 +609,12 @@ export default function Home() {
           </div>
 
           {/* CTA Section */}
-          <div className="bg-gradient-to-r from-[#0d5a7d] to-[#2ba3c7] rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center justify-between">
-            <div className="text-white mb-6 md:mb-0">
-              <h3 className="text-2xl md:text-3xl font-bold mb-2">Ready to Begin Your Teaching Career?</h3>
-              <p className="text-white/90">Applications for the 2025-26 academic session are now open. Limited seats available—apply early to secure your admission.</p>
+          <div className="bg-gradient-to-r from-[#0d5a7d] to-[#2ba3c7] rounded-xl sm:rounded-2xl p-4 sm:p-6 md:p-8 lg:p-12 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
+            <div className="text-white text-center md:text-left">
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">Ready to Begin Your Teaching Career?</h3>
+              <p className="text-white/90 text-sm sm:text-base">Applications for the 2025-26 academic session are now open. Limited seats available—apply early to secure your admission.</p>
             </div>
-            <button className="bg-white hover:bg-gray-100 text-[#0d5a7d] font-semibold px-8 py-4 rounded-lg transition-colors duration-200 whitespace-nowrap">
+            <button className="bg-white hover:bg-gray-100 active:bg-gray-200 text-[#0d5a7d] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 whitespace-nowrap text-sm sm:text-base flex-shrink-0">
               Start Application
             </button>
           </div>
@@ -622,28 +622,28 @@ export default function Home() {
       </section>
 
       {/* Facilities Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-[#ff6b35] text-white px-6 py-2 rounded-full font-semibold text-sm mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <span className="inline-block bg-[#ff6b35] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
               WORLD-CLASS FACILITIES
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-3 sm:mb-4 px-2">
               Infrastructure & Learning Resources
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
               Modern facilities designed to provide an immersive learning experience
             </p>
           </div>
 
           {/* Main Facilities Grid */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-8 sm:mb-12">
             {/* Smart Learning Studio */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
-              <div className="bg-gradient-to-br from-[#0ea5e9] to-[#38bdf8] h-48 flex items-center justify-center">
-                <h3 className="text-3xl font-bold text-white">Smart Learning Studio</h3>
+            <div className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-lg border border-gray-200">
+              <div className="bg-gradient-to-br from-[#0ea5e9] to-[#38bdf8] h-36 sm:h-44 lg:h-48 flex items-center justify-center">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center px-2">Smart Learning Studio</h3>
               </div>
-              <div className="p-6">
+              <div className="p-4 sm:p-6">
                 <h4 className="text-xl font-bold text-[#0d5a7d] mb-3">Smart Learning Studios</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Air-conditioned Learning Studios equipped with interactive smart boards, projectors, and audio-visual aids for effective teaching demonstrations and micro-teaching sessions.
@@ -652,11 +652,11 @@ export default function Home() {
             </div>
 
             {/* Digital Library */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
-              <div className="bg-gradient-to-br from-[#ff6b35] to-[#ff8c61] h-48 flex items-center justify-center">
-                <h3 className="text-3xl font-bold text-white">Digital Library</h3>
+            <div className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-lg border border-gray-200">
+              <div className="bg-gradient-to-br from-[#ff6b35] to-[#ff8c61] h-36 sm:h-44 lg:h-48 flex items-center justify-center">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center px-2">Digital Library</h3>
               </div>
-              <div className="p-6">
+              <div className="p-4 sm:p-6">
                 <h4 className="text-xl font-bold text-[#0d5a7d] mb-3">Digital Library</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Extensive collection of 15,000+ books, e-journals, INFLIBNET access, and dedicated reading spaces for research and academic pursuits.
@@ -665,11 +665,11 @@ export default function Home() {
             </div>
 
             {/* ICT Laboratory */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
-              <div className="bg-gradient-to-br from-[#0d5a7d] to-[#1a7fa0] h-48 flex items-center justify-center">
-                <h3 className="text-3xl font-bold text-white">ICT Laboratory</h3>
+            <div className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-lg border border-gray-200">
+              <div className="bg-gradient-to-br from-[#0d5a7d] to-[#1a7fa0] h-36 sm:h-44 lg:h-48 flex items-center justify-center">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center px-2">ICT Laboratory</h3>
               </div>
-              <div className="p-6">
+              <div className="p-4 sm:p-6">
                 <h4 className="text-xl font-bold text-[#0d5a7d] mb-3">ICT Laboratory</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   State-of-the-art computer lab with 60+ systems, high-speed internet, and educational software for developing digital teaching competencies.
@@ -678,11 +678,11 @@ export default function Home() {
             </div>
 
             {/* Psychology Lab */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
-              <div className="bg-gradient-to-br from-[#0ea5e9] to-[#38bdf8] h-48 flex items-center justify-center">
-                <h3 className="text-3xl font-bold text-white">Psychology Lab</h3>
+            <div className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-lg border border-gray-200">
+              <div className="bg-gradient-to-br from-[#0ea5e9] to-[#38bdf8] h-36 sm:h-44 lg:h-48 flex items-center justify-center">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center px-2">Psychology Lab</h3>
               </div>
-              <div className="p-6">
+              <div className="p-4 sm:p-6">
                 <h4 className="text-xl font-bold text-[#0d5a7d] mb-3">Psychology Laboratory</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Fully equipped lab with psychological testing tools, counseling facilities, and resources for understanding learner behavior and development.
@@ -691,11 +691,11 @@ export default function Home() {
             </div>
 
             {/* Science Lab */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
-              <div className="bg-gradient-to-br from-[#ff6b35] to-[#ff8c61] h-48 flex items-center justify-center">
-                <h3 className="text-3xl font-bold text-white">Science Lab</h3>
+            <div className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-lg border border-gray-200">
+              <div className="bg-gradient-to-br from-[#ff6b35] to-[#ff8c61] h-36 sm:h-44 lg:h-48 flex items-center justify-center">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center px-2">Science Lab</h3>
               </div>
-              <div className="p-6">
+              <div className="p-4 sm:p-6">
                 <h4 className="text-xl font-bold text-[#0d5a7d] mb-3">Science Resource Centre</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Well-equipped science labs for physics, chemistry, and biology teaching methodology with teaching aids and demonstration equipment.
@@ -704,11 +704,11 @@ export default function Home() {
             </div>
 
             {/* Seminar Hall */}
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg border border-gray-200">
-              <div className="bg-gradient-to-br from-[#0d5a7d] to-[#1a7fa0] h-48 flex items-center justify-center">
-                <h3 className="text-3xl font-bold text-white">Seminar Hall</h3>
+            <div className="bg-white rounded-lg sm:rounded-xl overflow-hidden shadow-lg border border-gray-200">
+              <div className="bg-gradient-to-br from-[#0d5a7d] to-[#1a7fa0] h-36 sm:h-44 lg:h-48 flex items-center justify-center">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white text-center px-2">Seminar Hall</h3>
               </div>
-              <div className="p-6">
+              <div className="p-4 sm:p-6">
                 <h4 className="text-xl font-bold text-[#0d5a7d] mb-3">Seminar Hall</h4>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   300-seater air-conditioned auditorium for seminars, workshops, conferences, and cultural events with modern AV facilities.
@@ -718,9 +718,9 @@ export default function Home() {
           </div>
 
           {/* Additional Facilities */}
-          <div className="bg-gray-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-[#0d5a7d] text-center mb-8">Additional Facilities</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+          <div className="bg-gray-50 rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8">
+            <h3 className="text-xl sm:text-2xl font-bold text-[#0d5a7d] text-center mb-4 sm:mb-6 lg:mb-8">Additional Facilities</h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-8 gap-2 sm:gap-3 lg:gap-4">
               {[
                 { icon: '🎨', label: 'Art & Craft Room' },
                 { icon: '🏃', label: 'Sports Ground' },
@@ -731,9 +731,9 @@ export default function Home() {
                 { icon: '📶', label: 'Wi-Fi Campus' },
                 { icon: '🔒', label: '24/7 Security' }
               ].map((facility, idx) => (
-                <div key={idx} className="bg-white rounded-lg p-4 text-center shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
-                  <div className="text-3xl mb-2">{facility.icon}</div>
-                  <div className="text-xs font-medium text-gray-700">{facility.label}</div>
+                <div key={idx} className="bg-white rounded-lg p-3 sm:p-4 text-center shadow-sm border border-gray-200 hover:shadow-md transition-shadow duration-200">
+                  <div className="text-2xl sm:text-3xl mb-1 sm:mb-2">{facility.icon}</div>
+                  <div className="text-[10px] sm:text-xs font-medium text-gray-700 leading-tight">{facility.label}</div>
                 </div>
               ))}
             </div>
@@ -742,21 +742,21 @@ export default function Home() {
       </section>
 
       {/* Placements Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-[#ff6b35] text-white px-6 py-2 rounded-full font-semibold text-sm mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <span className="inline-block bg-[#ff6b35] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
               CAREER EXCELLENCE
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-3 sm:mb-4 px-2">
               Placements & Career Opportunities
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
               Comprehensive placement support to launch your teaching career
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-12">
+          <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12">
             {/* Left Content */}
             <div>
               <h3 className="text-2xl font-bold text-[#0d5a7d] mb-6">Career Prospects After B.Ed</h3>
@@ -803,23 +803,23 @@ export default function Home() {
             {/* Right Content */}
             <div>
               {/* Placement Rate Box */}
-              <div className="bg-gradient-to-br from-[#0d5a7d] to-[#2ba3c7] rounded-2xl p-12 mb-8 text-center">
-                <h3 className="text-5xl md:text-6xl font-bold text-white mb-4">98% Placement Rate</h3>
+              <div className="bg-gradient-to-br from-[#0d5a7d] to-[#2ba3c7] rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-12 mb-4 sm:mb-6 lg:mb-8 text-center">
+                <h3 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white">98% Placement Rate</h3>
               </div>
 
               {/* Stats Grid */}
-              <div className="grid grid-cols-3 gap-4">
-                <div className="bg-white rounded-lg p-6 text-center shadow-sm border border-gray-200">
-                  <div className="text-3xl font-bold text-[#ff6b35] mb-2">₹3-8 LPA</div>
-                  <div className="text-sm text-gray-600">Salary Range</div>
+              <div className="grid grid-cols-3 gap-2 sm:gap-3 lg:gap-4">
+                <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 text-center shadow-sm border border-gray-200">
+                  <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#ff6b35] mb-1 sm:mb-2">₹3-8 LPA</div>
+                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Salary Range</div>
                 </div>
-                <div className="bg-white rounded-lg p-6 text-center shadow-sm border border-gray-200">
-                  <div className="text-3xl font-bold text-[#ff6b35] mb-2">100+</div>
-                  <div className="text-sm text-gray-600">Recruiting Schools</div>
+                <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 text-center shadow-sm border border-gray-200">
+                  <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#ff6b35] mb-1 sm:mb-2">100+</div>
+                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Recruiting Schools</div>
                 </div>
-                <div className="bg-white rounded-lg p-6 text-center shadow-sm border border-gray-200">
-                  <div className="text-3xl font-bold text-[#ff6b35] mb-2">15+</div>
-                  <div className="text-sm text-gray-600">Campus Drives/Year</div>
+                <div className="bg-white rounded-lg p-3 sm:p-4 lg:p-6 text-center shadow-sm border border-gray-200">
+                  <div className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#ff6b35] mb-1 sm:mb-2">15+</div>
+                  <div className="text-[10px] sm:text-xs lg:text-sm text-gray-600">Campus Drives/Year</div>
                 </div>
               </div>
             </div>
@@ -828,9 +828,9 @@ export default function Home() {
       </section>
 
       {/* Additional Career Options */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {/* Higher Education */}
             <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
               <div className="text-2xl mb-3">🎓</div>
@@ -871,15 +871,15 @@ export default function Home() {
       </section>
 
       {/* Recruiting Partners */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d5a7d] text-center mb-12">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0d5a7d] text-center mb-6 sm:mb-8 lg:mb-12">
             Our Recruiting Partners
           </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 lg:gap-6">
             {['KVS', 'NVS', 'DAV', 'DPS', 'CBSE Schools', 'State Govt'].map((partner, idx) => (
-              <div key={idx} className="bg-white rounded-lg p-8 shadow-sm border border-gray-200 flex items-center justify-center">
-                <h3 className="text-xl md:text-2xl font-bold text-gray-800 text-center">{partner}</h3>
+              <div key={idx} className="bg-white rounded-lg p-4 sm:p-6 lg:p-8 shadow-sm border border-gray-200 flex items-center justify-center">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-gray-800 text-center">{partner}</h3>
               </div>
             ))}
           </div>
@@ -887,43 +887,43 @@ export default function Home() {
       </section>
 
       {/* Government Teaching Examinations */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0d5a7d] text-center mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0d5a7d] text-center mb-3 sm:mb-4">
             Government Teaching Examinations
           </h2>
-          <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          <p className="text-center text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 lg:mb-12 max-w-3xl mx-auto px-2">
             B.Ed graduates are eligible to appear for various government teaching examinations:
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {/* CTET */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border-t-4 border-[#ff6b35]">
-              <h3 className="text-2xl font-bold text-[#0d5a7d] mb-3 text-center">CTET</h3>
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-lg border-t-4 border-[#ff6b35]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0d5a7d] mb-2 sm:mb-3 text-center">CTET</h3>
               <p className="text-sm text-gray-600 text-center">
                 Central Teacher Eligibility Test conducted by CBSE for teaching in central government schools.
               </p>
             </div>
 
             {/* TET */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border-t-4 border-[#ff6b35]">
-              <h3 className="text-2xl font-bold text-[#0d5a7d] mb-3 text-center">TET</h3>
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-lg border-t-4 border-[#ff6b35]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0d5a7d] mb-2 sm:mb-3 text-center">TET</h3>
               <p className="text-sm text-gray-600 text-center">
                 State-level Teacher Eligibility Tests for teaching positions in state government schools.
               </p>
             </div>
 
             {/* KVS/NVS */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border-t-4 border-[#ff6b35]">
-              <h3 className="text-2xl font-bold text-[#0d5a7d] mb-3 text-center">KVS/NVS</h3>
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-lg border-t-4 border-[#ff6b35]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0d5a7d] mb-2 sm:mb-3 text-center">KVS/NVS</h3>
               <p className="text-sm text-gray-600 text-center">
                 Recruitment examinations for Kendriya Vidyalayas and Navodaya Vidyalayas.
               </p>
             </div>
 
             {/* DSSSB */}
-            <div className="bg-white rounded-xl p-6 shadow-lg border-t-4 border-[#ff6b35]">
-              <h3 className="text-2xl font-bold text-[#0d5a7d] mb-3 text-center">DSSSB</h3>
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-lg border-t-4 border-[#ff6b35]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#0d5a7d] mb-2 sm:mb-3 text-center">DSSSB</h3>
               <p className="text-sm text-gray-600 text-center">
                 Delhi Subordinate Services Selection Board for teaching posts in Delhi schools.
               </p>
@@ -933,30 +933,30 @@ export default function Home() {
       </section>
 
       {/* Alumni Testimonials */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="mx-auto max-w-7xl">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-[#ff6b35] text-white px-6 py-2 rounded-full font-semibold text-sm mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <span className="inline-block bg-[#ff6b35] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
               SUCCESS STORIES
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-3 sm:mb-4">
               What Our Alumni Say
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
               Hear from our graduates who are now successful Learning Facilitators
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 lg:gap-8">
             {/* Testimonial 1 */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
               <div className="text-4xl text-[#ff6b35] mb-4">&ldquo;</div>
               <p className="text-gray-700 italic mb-6 leading-relaxed">
                 The B.Ed programme transformed my understanding of education. The practical training and supportive Learning Facilitators prepared me well for my career. I&apos;m now teaching at a CBSE school and loving every moment!
               </p>
               <div className="flex items-center gap-4">
                 <div className="bg-[#ff6b35] w-14 h-14 rounded-full flex items-center justify-center">
-                  <span className="text-white text-2xl font-bold">A</span>
+                  <span className="text-white text-xl sm:text-2xl font-bold">A</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0d5a7d]">Priya Sharma</h4>
@@ -967,14 +967,14 @@ export default function Home() {
             </div>
 
             {/* Testimonial 2 */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
               <div className="text-4xl text-[#ff6b35] mb-4">&ldquo;</div>
               <p className="text-gray-700 italic mb-6 leading-relaxed">
                 The internship experience was invaluable. Real classroom exposure during the 16-week internship gave me confidence. The placement cell helped me secure a position even before graduation.
               </p>
               <div className="flex items-center gap-4">
                 <div className="bg-[#0d5a7d] w-14 h-14 rounded-full flex items-center justify-center">
-                  <span className="text-white text-2xl font-bold">R</span>
+                  <span className="text-white text-xl sm:text-2xl font-bold">R</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0d5a7d]">Rajesh Kumar</h4>
@@ -985,14 +985,14 @@ export default function Home() {
             </div>
 
             {/* Testimonial 3 */}
-            <div className="bg-white rounded-xl p-8 shadow-lg">
+            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 shadow-lg">
               <div className="text-4xl text-[#ff6b35] mb-4">&ldquo;</div>
               <p className="text-gray-700 italic mb-6 leading-relaxed">
                 Excellent infrastructure and dedicated Learning Facilitators make this college stand out. The focus on inclusive education and technology integration has been incredibly beneficial for my career growth.
               </p>
               <div className="flex items-center gap-4">
                 <div className="bg-[#0ea5e9] w-14 h-14 rounded-full flex items-center justify-center">
-                  <span className="text-white text-2xl font-bold">S</span>
+                  <span className="text-white text-xl sm:text-2xl font-bold">S</span>
                 </div>
                 <div>
                   <h4 className="font-bold text-[#0d5a7d]">Sunita Devi</h4>
@@ -1006,23 +1006,23 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl">
-          <div className="text-center mb-12">
-            <span className="inline-block bg-[#ff6b35] text-white px-6 py-2 rounded-full font-semibold text-sm mb-4">
+          <div className="text-center mb-8 sm:mb-12">
+            <span className="inline-block bg-[#ff6b35] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
               HAVE QUESTIONS?
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-4">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-3 sm:mb-4">
               Frequently Asked Questions
             </h2>
-            <p className="text-lg text-gray-600">
+            <p className="text-sm sm:text-base lg:text-lg text-gray-600 px-2">
               Find answers to common queries about B.Ed admission, eligibility, and career prospects
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             {/* FAQ Item 1 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 group">
+            <details className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 group">
               <summary className="flex items-center justify-between cursor-pointer list-none">
                 <span className="font-semibold text-[#0d5a7d]">What is the duration of the B.Ed programme?</span>
                 <span className="text-[#ff6b35] text-xl group-open:rotate-45 transition-transform">+</span>
@@ -1033,7 +1033,7 @@ export default function Home() {
             </details>
 
             {/* FAQ Item 2 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 group">
+            <details className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 group">
               <summary className="flex items-center justify-between cursor-pointer list-none">
                 <span className="font-semibold text-[#0d5a7d]">What is the eligibility criteria for B.Ed admission?</span>
                 <span className="text-[#ff6b35] text-xl group-open:rotate-45 transition-transform">+</span>
@@ -1044,7 +1044,7 @@ export default function Home() {
             </details>
 
             {/* FAQ Item 3 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 group">
+            <details className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 group">
               <summary className="flex items-center justify-between cursor-pointer list-none">
                 <span className="font-semibold text-[#0d5a7d]">Is B.Ed valid for government teaching jobs?</span>
                 <span className="text-[#ff6b35] text-xl group-open:rotate-45 transition-transform">+</span>
@@ -1055,7 +1055,7 @@ export default function Home() {
             </details>
 
             {/* FAQ Item 4 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 group">
+            <details className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 group">
               <summary className="flex items-center justify-between cursor-pointer list-none">
                 <span className="font-semibold text-[#0d5a7d]">Can B.Com/BBA graduates pursue B.Ed?</span>
                 <span className="text-[#ff6b35] text-xl group-open:rotate-45 transition-transform">+</span>
@@ -1066,7 +1066,7 @@ export default function Home() {
             </details>
 
             {/* FAQ Item 5 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 group">
+            <details className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 group">
               <summary className="flex items-center justify-between cursor-pointer list-none">
                 <span className="font-semibold text-[#0d5a7d]">What is the fee structure for B.Ed programme?</span>
                 <span className="text-[#ff6b35] text-xl group-open:rotate-45 transition-transform">+</span>
@@ -1077,7 +1077,7 @@ export default function Home() {
             </details>
 
             {/* FAQ Item 6 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 group">
+            <details className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 group">
               <summary className="flex items-center justify-between cursor-pointer list-none">
                 <span className="font-semibold text-[#0d5a7d]">What is the school internship in B.Ed?</span>
                 <span className="text-[#ff6b35] text-xl group-open:rotate-45 transition-transform">+</span>
@@ -1088,7 +1088,7 @@ export default function Home() {
             </details>
 
             {/* FAQ Item 7 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 group">
+            <details className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 group">
               <summary className="flex items-center justify-between cursor-pointer list-none">
                 <span className="font-semibold text-[#0d5a7d]">Can I teach in CBSE/ICSE schools after B.Ed?</span>
                 <span className="text-[#ff6b35] text-xl group-open:rotate-45 transition-transform">+</span>
@@ -1099,7 +1099,7 @@ export default function Home() {
             </details>
 
             {/* FAQ Item 8 */}
-            <details className="bg-white rounded-lg p-6 shadow-sm border border-gray-200 group">
+            <details className="bg-white rounded-lg p-4 sm:p-6 shadow-sm border border-gray-200 group">
               <summary className="flex items-center justify-between cursor-pointer list-none">
                 <span className="font-semibold text-[#0d5a7d]">What are the career options after B.Ed?</span>
                 <span className="text-[#ff6b35] text-xl group-open:rotate-45 transition-transform">+</span>
@@ -1113,64 +1113,64 @@ export default function Home() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="mx-auto max-w-7xl">
-          <div className="grid lg:grid-cols-2 gap-12 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
             {/* Left Content */}
             <div>
-              <span className="inline-block bg-[#ff6b35] text-white px-6 py-2 rounded-full font-semibold text-sm mb-6">
+              <span className="inline-block bg-[#ff6b35] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-4 sm:mb-6">
                 ADMISSIONS 2025-26
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-6">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#0d5a7d] mb-4 sm:mb-6">
                 Begin Your Journey as a Future Educator
               </h2>
-              <p className="text-lg text-gray-600 mb-8">
+              <p className="text-sm sm:text-base lg:text-lg text-gray-600 mb-6 sm:mb-8">
                 Take the first step towards a fulfilling career in education. Our admission process is simple, transparent, and supportive.
               </p>
 
               {/* Timeline */}
-              <div className="space-y-6 mb-8">
-                <div className="flex items-start gap-4">
-                  <span className="text-[#ff6b35] font-bold min-w-[140px]">Jan - Mar 2025</span>
-                  <span className="text-gray-700">Application Window Open</span>
+              <div className="space-y-3 sm:space-y-4 lg:space-y-6 mb-6 sm:mb-8">
+                <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
+                  <span className="text-[#ff6b35] font-bold text-sm sm:text-base sm:min-w-[140px]">Jan - Mar 2025</span>
+                  <span className="text-gray-700 text-sm sm:text-base">Application Window Open</span>
                 </div>
-                <div className="flex items-start gap-4">
-                  <span className="text-[#ff6b35] font-bold min-w-[140px]">Apr 2025</span>
-                  <span className="text-gray-700">Entrance Examination</span>
+                <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
+                  <span className="text-[#ff6b35] font-bold text-sm sm:text-base sm:min-w-[140px]">Apr 2025</span>
+                  <span className="text-gray-700 text-sm sm:text-base">Entrance Examination</span>
                 </div>
-                <div className="flex items-start gap-4">
-                  <span className="text-[#ff6b35] font-bold min-w-[140px]">May - Jun 2025</span>
-                  <span className="text-gray-700">Counselling & Admission</span>
+                <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
+                  <span className="text-[#ff6b35] font-bold text-sm sm:text-base sm:min-w-[140px]">May - Jun 2025</span>
+                  <span className="text-gray-700 text-sm sm:text-base">Counselling & Admission</span>
                 </div>
-                <div className="flex items-start gap-4">
-                  <span className="text-[#ff6b35] font-bold min-w-[140px]">Jul 2025</span>
-                  <span className="text-gray-700">Classes Commence</span>
+                <div className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
+                  <span className="text-[#ff6b35] font-bold text-sm sm:text-base sm:min-w-[140px]">Jul 2025</span>
+                  <span className="text-gray-700 text-sm sm:text-base">Classes Commence</span>
                 </div>
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-6 sm:mb-8">
                 <Link
                   href="/apply"
-                  className="inline-block bg-[#ff6b35] hover:bg-[#ff5722] text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200 text-center"
+                  className="inline-block bg-[#ff6b35] hover:bg-[#ff5722] active:bg-[#e65100] text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 text-center text-sm sm:text-base"
                 >
                   Apply Online Now
                 </Link>
                 <Link
                   href="/prospectus"
-                  className="inline-block bg-transparent border-2 border-[#0d5a7d] hover:bg-[#0d5a7d] hover:text-white text-[#0d5a7d] font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-center"
+                  className="inline-block bg-transparent border-2 border-[#0d5a7d] hover:bg-[#0d5a7d] hover:text-white text-[#0d5a7d] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-all duration-200 text-center text-sm sm:text-base"
                 >
                   Download Prospectus
                 </Link>
               </div>
 
               {/* Contact Info */}
-              <div className="bg-white rounded-lg p-6 border border-gray-200">
-                <p className="text-sm text-gray-600 mb-3">
+              <div className="bg-white rounded-lg p-4 sm:p-6 border border-gray-200">
+                <p className="text-xs sm:text-sm text-gray-600 mb-2 sm:mb-3">
                   <span className="font-semibold text-gray-800">Need Help?</span> Contact our Admission Cell:
                 </p>
                 <div className="flex flex-col gap-2">
-                  <div className="flex items-center gap-2 text-sm">
+                  <div className="flex items-center gap-2 text-xs sm:text-sm">
                     <svg className="w-5 h-5 text-[#ff6b35]" fill="currentColor" viewBox="0 0 20 20">
                       <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
                     </svg>
@@ -1192,8 +1192,8 @@ export default function Home() {
             </div>
 
             {/* Right Content - Orange Box */}
-            <div className="bg-gradient-to-br from-[#ff6b35] to-[#ff8c61] rounded-2xl p-12 h-full flex items-center justify-center min-h-[500px]">
-              <h3 className="text-4xl md:text-5xl font-bold text-white text-center">
+            <div className="bg-gradient-to-br from-[#ff6b35] to-[#ff8c61] rounded-xl sm:rounded-2xl p-6 sm:p-8 lg:p-12 flex items-center justify-center min-h-[200px] sm:min-h-[300px] lg:min-h-[500px]">
+              <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center">
                 Start Your Teaching Career
               </h3>
             </div>

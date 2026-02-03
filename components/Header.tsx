@@ -47,6 +47,9 @@ const Header = () => {
       { name: 'B.Ed Botany', href: '/departments/botany' },
       { name: 'B.Ed History', href: '/departments/history' },
       { name: 'B.Ed Economics', href: '/departments/economics' },
+      { name: 'B.Ed Political Science', href: '/departments/political-science' },
+      { name: 'B.Ed Social Science', href: '/departments/social-science' },
+      { name: 'B.Ed Microbiology', href: '/departments/microbiology' },
     ],
     FACILITIES: [
       { name: 'Library', href: '/facilities/library' },
@@ -64,7 +67,7 @@ const Header = () => {
     OTHERS: [
       { name: 'BIOMATRIC LIST', href: '/others/biomatric-list' },
       { name: 'Balance Sheet', href: '/others/balance-sheet' },
-      { name: 'financial details', href: '/others/financial-details' },
+      { name: 'Financial details', href: '/others/financial-details' },
       { name: 'Digital Campus', href: '/others/digital-campus' },
       { name: 'Faculty Details', href: '/others/faculty-details' },
       { name: 'Careers', href: '/others/careers' },
@@ -78,7 +81,7 @@ const Header = () => {
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center">
+          <div className="flex items-center flex-shrink-0">
             <Link href="/" className="flex items-center">
               <Image
                 src="/images/logo.png"
@@ -86,13 +89,13 @@ const Header = () => {
                 width={250}
                 height={60}
                 priority
-                className="h-14 w-auto"
+                className="h-10 sm:h-12 lg:h-14 w-auto max-w-[180px] sm:max-w-[220px] lg:max-w-[250px]"
               />
             </Link>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:items-center lg:space-x-8">
+          <div className="hidden lg:flex lg:items-center lg:space-x-4 xl:space-x-6 2xl:space-x-8">
             {navItems.map((item) => (
               <div
                 key={item.name}
@@ -223,15 +226,15 @@ const Header = () => {
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
-          <div className="lg:hidden pb-4">
-            <div className="space-y-1 pt-2">
+          <div className="lg:hidden pb-4 mobile-menu-scroll">
+            <div className="space-y-1 pt-2 pb-safe">
               {navItems.map((item) => (
                 <div key={item.name}>
                   <div
-                    className={`flex items-center justify-between px-3 py-2 text-base font-semibold cursor-pointer ${
+                    className={`flex items-center justify-between px-3 py-3 min-h-[48px] text-base font-semibold cursor-pointer rounded-lg ${
                       isActiveRoute(item.href, item.name)
-                        ? 'text-gray-800 border-b-2 border-[#1e7f4e]'
-                        : 'text-gray-800 hover:bg-gray-50 hover:text-gray-600'
+                        ? 'text-gray-800 bg-gray-50 border-l-4 border-[#1e7f4e]'
+                        : 'text-gray-800 hover:bg-gray-50 hover:text-gray-600 active:bg-gray-100'
                     }`}
                     onClick={() => {
                       if (item.hasDropdown) {
@@ -271,15 +274,15 @@ const Header = () => {
 
                   {/* Mobile Dropdown Menu */}
                   {item.hasDropdown && activeDropdown === item.name && dropdownMenus[item.name] && (
-                    <div className="ml-4 mt-1 space-y-1">
+                    <div className="ml-4 mt-1 space-y-1 border-l-2 border-gray-200 pl-2">
                       {dropdownMenus[item.name].map((subItem) => (
                         <Link
                           key={subItem.name}
                           href={subItem.href}
-                          className={`block px-3 py-2 text-sm rounded-md ${
+                          className={`block px-3 py-2.5 min-h-[44px] text-sm rounded-md flex items-center ${
                             pathname === subItem.href
                               ? 'bg-[#1e7f4e] text-white'
-                              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-800'
+                              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-800 active:bg-gray-100'
                           }`}
                           onClick={() => setMobileMenuOpen(false)}
                         >
@@ -292,7 +295,7 @@ const Header = () => {
               ))}
               {/* Search in mobile menu */}
               <button
-                className="flex w-full items-center px-3 py-2 text-base font-semibold text-gray-800 hover:bg-gray-50 hover:text-gray-600 rounded-md"
+                className="flex w-full items-center px-3 py-3 min-h-[48px] text-base font-semibold text-gray-800 hover:bg-gray-50 hover:text-gray-600 active:bg-gray-100 rounded-lg"
                 aria-label="Search"
               >
                 <svg

@@ -39,22 +39,22 @@ export default function Hostel() {
       <Header />
 
       {/* Hostel Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
         <div className="mx-auto max-w-7xl">
           {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8" style={{ color: '#1e7f4e' }}>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8 lg:mb-12" style={{ color: '#1e7f4e' }}>
             HOSTEL
           </h1>
 
           {/* Hostel Content Box */}
-          <div className="border-2 border-black p-6 md:p-8 bg-white">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+          <div className="border-2 border-black p-4 sm:p-6 lg:p-8 bg-white">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 lg:gap-12">
               {/* Left Side - Tabs */}
               <div className="lg:col-span-3">
                 <div className="flex flex-row lg:flex-col gap-4">
                   <button
                     onClick={() => setActiveTab('boys')}
-                    className={`px-6 py-3 text-left font-semibold text-base md:text-lg border-2 border-black transition-colors ${
+                    className={`px-6 sm:px-8 py-3 sm:py-4 text-left font-semibold text-sm sm:text-base lg:text-lg border-2 border-black transition-colors ${
                       activeTab === 'boys' ? 'bg-white' : 'bg-transparent'
                     }`}
                     style={{ color: '#000000' }}
@@ -63,7 +63,7 @@ export default function Hostel() {
                   </button>
                   <button
                     onClick={() => setActiveTab('girls')}
-                    className={`px-6 py-3 text-left font-semibold text-base md:text-lg border-2 border-black transition-colors ${
+                    className={`px-6 sm:px-8 py-3 sm:py-4 text-left font-semibold text-sm sm:text-base lg:text-lg border-2 border-black transition-colors ${
                       activeTab === 'girls' ? 'bg-white' : 'bg-transparent'
                     }`}
                     style={{ color: '#000000' }}
@@ -76,8 +76,8 @@ export default function Hostel() {
               {/* Right Side - Content */}
               <div className="lg:col-span-9">
                 {/* Hostel Image */}
-                <div className="mb-6">
-                  <div className="relative w-full max-w-[350px] h-[220px] md:h-[250px]">
+                <div className="mb-6 sm:mb-8 lg:mb-12">
+                  <div className="relative w-full max-w-[350px] h-48 sm:h-56 lg:h-64">
                     <Image
                       src={activeTab === 'boys' ? '/images/boys-hostel.jpg' : '/images/girls-hostel.jpg'}
                       alt={activeTab === 'boys' ? 'Boys Hostel Building' : 'Girls Hostel Building'}
@@ -93,7 +93,7 @@ export default function Hostel() {
                   {(activeTab === 'boys' ? boysHostelFeatures : girlsHostelFeatures).map((feature, index) => (
                     <li
                       key={index}
-                      className="text-base md:text-lg leading-relaxed"
+                      className="text-sm sm:text-base lg:text-lg leading-relaxed"
                       style={{
                         color: '#4a5568',
                         listStyleType: 'square',

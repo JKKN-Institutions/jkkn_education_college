@@ -7,27 +7,27 @@ export default function VisionMission() {
       <Header />
 
       {/* Vision and Mission Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
+      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f5f0e8' }}>
         <div className="mx-auto max-w-7xl">
           {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-16" style={{ color: '#1e7f4e' }}>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-12 lg:mb-16" style={{ color: '#1e7f4e' }}>
             OUR VISION AND MISSION
           </h1>
 
           {/* Vision Section */}
-          <div className="mb-20">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: '#2c3e50' }}>
+          <div className="mb-12 sm:mb-16 lg:mb-20">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              <div className="order-2 lg:order-1">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4" style={{ color: '#2c3e50' }}>
                   Vision
-                  <div className="w-16 h-1 mt-2" style={{ backgroundColor: '#1e7f4e' }}></div>
+                  <div className="w-12 sm:w-16 h-1 mt-2" style={{ backgroundColor: '#1e7f4e' }}></div>
                 </h2>
-                <p className="text-lg leading-relaxed" style={{ color: '#5a6c7d' }}>
+                <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#5a6c7d' }}>
                   To be a Leading Global Innovative Solutions provider for the ever changing needs of the society.
                 </p>
               </div>
-              <div className="flex justify-center lg:justify-end">
-                <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+                <svg className="w-32 h-32 sm:w-40 sm:h-40 lg:w-[200px] lg:h-[200px]" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                   {/* Eye Icon */}
                   <ellipse cx="100" cy="100" rx="90" ry="60" fill="#1e7f4e" fillOpacity="0.1" stroke="#1e7f4e" strokeWidth="4"/>
                   <circle cx="100" cy="100" r="40" fill="#1e7f4e" fillOpacity="0.2" stroke="#1e7f4e" strokeWidth="4"/>
@@ -40,18 +40,18 @@ export default function VisionMission() {
 
           {/* Mission Section */}
           <div>
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-4" style={{ color: '#2c3e50' }}>
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              <div className="order-2 lg:order-1">
+                <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4" style={{ color: '#2c3e50' }}>
                   Mission
-                  <div className="w-20 h-1 mt-2" style={{ backgroundColor: '#1e7f4e' }}></div>
+                  <div className="w-14 sm:w-20 h-1 mt-2" style={{ backgroundColor: '#1e7f4e' }}></div>
                 </h2>
-                <p className="text-lg leading-relaxed" style={{ color: '#5a6c7d' }}>
+                <p className="text-base sm:text-lg leading-relaxed" style={{ color: '#5a6c7d' }}>
                   Enabling a Platform for all to seize exponential opportunities through bioconvergence, thereby facilitating them to become Dynamic Leaders who shape the future.
                 </p>
               </div>
-              <div className="flex justify-center lg:justify-end">
-                <svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <div className="flex justify-center lg:justify-end order-1 lg:order-2">
+                <svg className="w-32 h-32 sm:w-40 sm:h-40 lg:w-[200px] lg:h-[200px]" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                   {/* Target Icon */}
                   <circle cx="100" cy="100" r="80" fill="#1e7f4e" fillOpacity="0.1" stroke="#1e7f4e" strokeWidth="4"/>
                   <circle cx="100" cy="100" r="55" fill="#1e7f4e" fillOpacity="0.15" stroke="#1e7f4e" strokeWidth="4"/>

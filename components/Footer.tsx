@@ -3,25 +3,26 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="bg-[#1e7f4e] text-white">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
           {/* Left Column - College Info & Map */}
           <div>
-            <h3 className="text-xl font-bold mb-6 pb-3 border-b-2 border-white">
+            <h3 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 pb-2 sm:pb-3 border-b-2 border-white">
               JKKN COLLEGE OF EDUCATION
             </h3>
 
             {/* Google Map Embed */}
-            <div className="mb-6 rounded-lg overflow-hidden">
+            <div className="mb-6 rounded-lg overflow-hidden aspect-video sm:aspect-auto">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2835861474756!2d77.0172!3d11.0145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857f0e1e1e1e1%3A0x1e1e1e1e1e1e1e1e!2sJKKN%20College%20Of%20Allied%20Health%20Science!5e0!3m2!1sen!2sin!4v1234567890"
                 width="100%"
-                height="250"
-                style={{ border: 0 }}
+                height="200"
+                style={{ border: 0, minHeight: '150px' }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 title="JKKN College Location"
+                className="w-full h-[150px] sm:h-[200px] lg:h-[250px]"
               />
             </div>
 
@@ -33,52 +34,52 @@ const Footer = () => {
 
           {/* Middle Column - Our Institutions */}
           <div>
-            <h3 className="text-xl font-bold mb-6 pb-3 border-b-2 border-white">
+            <h3 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 pb-2 sm:pb-3 border-b-2 border-white">
               OUR INSTITUTIONS
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-2 sm:space-y-3">
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200">
+                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN Dental College and Hospital
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200">
+                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College Of Allied Health Science
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200">
+                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College of Pharmacy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200">
+                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   Srisakthimayeil Institute of Nursing and Research
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200">
+                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College of Education
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200">
+                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College of Arts and Science (Autonomous)
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200">
+                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College of Engineering and Technology
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200">
+                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN Matriculation Higher Secondary School
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200">
+                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   Nattraja Vidhyalya
                 </Link>
               </li>
@@ -87,34 +88,38 @@ const Footer = () => {
 
           {/* Right Column - Contact Us & Follow Us */}
           <div>
-            <h3 className="text-xl font-bold mb-6 pb-3 border-b-2 border-white">
+            <h3 className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 pb-2 sm:pb-3 border-b-2 border-white">
               CONTACT US
             </h3>
 
-            <div className="space-y-4 mb-8">
+            <div className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
               <div>
-                <p className="font-semibold">Call: +919345855001</p>
+                <a href="tel:+919345855001" className="font-semibold text-sm sm:text-base hover:underline">
+                  Call: +919345855001
+                </a>
               </div>
               <div>
-                <p className="font-semibold">Email: education@jkkn.ac.in</p>
+                <a href="mailto:education@jkkn.ac.in" className="font-semibold text-sm sm:text-base hover:underline break-all">
+                  Email: education@jkkn.ac.in
+                </a>
               </div>
               <div>
-                <p className="font-semibold mb-2">Address:</p>
-                <p className="text-sm leading-relaxed">
+                <p className="font-semibold mb-1 sm:mb-2 text-sm sm:text-base">Address:</p>
+                <p className="text-xs sm:text-sm leading-relaxed">
                   JKKN College of Education, NH-544 (Salem to Coimbatore Highway), Kumarapalayam, Namakkal (DT), Tamil Nadu. 638183.
                 </p>
               </div>
             </div>
 
-            <h3 className="text-xl font-bold mb-4 pb-3 border-b-2 border-white">
+            <h3 className="text-lg sm:text-xl font-bold mb-3 sm:mb-4 pb-2 sm:pb-3 border-b-2 border-white">
               FOLLOW US
             </h3>
 
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-3 sm:gap-4">
               {/* Facebook */}
               <Link
                 href="#"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded flex items-center justify-center transition-all duration-200"
+                className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="Facebook"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -125,7 +130,7 @@ const Footer = () => {
               {/* Twitter */}
               <Link
                 href="#"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded flex items-center justify-center transition-all duration-200"
+                className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="Twitter"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -136,7 +141,7 @@ const Footer = () => {
               {/* Instagram */}
               <Link
                 href="#"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded flex items-center justify-center transition-all duration-200"
+                className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="Instagram"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -147,7 +152,7 @@ const Footer = () => {
               {/* LinkedIn */}
               <Link
                 href="#"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded flex items-center justify-center transition-all duration-200"
+                className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="LinkedIn"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -158,7 +163,7 @@ const Footer = () => {
               {/* YouTube */}
               <Link
                 href="#"
-                className="w-10 h-10 bg-white/10 hover:bg-white/20 rounded flex items-center justify-center transition-all duration-200"
+                className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="YouTube"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -170,8 +175,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Copyright Section */}
-        <div className="mt-12 pt-8 border-t border-white/30">
-          <p className="text-center text-sm">
+        <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-white/30">
+          <p className="text-center text-xs sm:text-sm px-4">
             © 2025 JKKN College of Education. All rights reserved.
           </p>
         </div>

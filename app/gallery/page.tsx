@@ -41,19 +41,19 @@ export default function Gallery() {
       <Header />
 
       {/* Gallery Section */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8">
+      <section className="py-8 sm:py-12 px-4 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           {/* Page Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8" style={{ color: '#1e7f4e' }}>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 sm:mb-8" style={{ color: '#1e7f4e' }}>
             GALLERY
           </h1>
 
           {/* Gallery Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 md:gap-6">
             {galleryImages.map((image) => (
               <div
                 key={image.id}
-                className="relative w-full h-[250px] md:h-[280px] lg:h-[300px] overflow-hidden rounded-none"
+                className="relative w-full h-[200px] sm:h-[250px] md:h-[280px] lg:h-[300px] overflow-hidden rounded-lg"
               >
                 <Image
                   src={image.src}
