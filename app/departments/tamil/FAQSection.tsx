@@ -44,11 +44,11 @@ export default function FAQSection() {
     <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f8f9fa' }}>
       <div className="mx-auto max-w-4xl">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4" style={{ color: '#003d5c' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4" style={{ color: '#006837' }}>
             Frequently Asked Questions
           </h2>
-          <div className="h-1 w-16 sm:w-20 mx-auto mb-4 sm:mb-6 lg:mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-          <p className="text-sm sm:text-base lg:text-lg px-2" style={{ color: '#5a6c7d' }}>
+          <div className="h-1 w-16 sm:w-20 mx-auto mb-4 sm:mb-6 lg:mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+          <p className="text-sm sm:text-base lg:text-lg px-2" style={{ color: '#006837' }}>
             Get answers to common queries about B.Ed Tamil program
           </p>
         </div>
@@ -64,14 +64,14 @@ export default function FAQSection() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between text-left transition-colors hover:bg-gray-50 min-h-[56px]"
               >
-                <span className="text-sm sm:text-base lg:text-lg font-semibold pr-4 sm:pr-8" style={{ color: '#003d5c' }}>
+                <span className="text-sm sm:text-base lg:text-lg font-semibold pr-4 sm:pr-8" style={{ color: '#006837' }}>
                   {faq.question}
                 </span>
                 <svg
                   className={`w-5 h-5 sm:w-6 sm:h-6 flex-shrink-0 transition-transform ${
                     openIndex === index ? 'transform rotate-180' : ''
                   }`}
-                  style={{ color: '#003d5c' }}
+                  style={{ color: '#006837' }}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -81,7 +81,7 @@ export default function FAQSection() {
               </button>
               {openIndex === index && (
                 <div className="px-4 sm:px-6 pb-4 sm:pb-5">
-                  <p className="leading-relaxed text-sm sm:text-base" style={{ color: '#4a5568' }}>
+                  <p className="leading-relaxed text-sm sm:text-base" style={{ color: '#002309' }}>
                     {faq.answer}
                   </p>
                 </div>

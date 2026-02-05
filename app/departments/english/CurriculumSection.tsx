@@ -176,11 +176,11 @@ export default function CurriculumSection() {
     <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#003d5c' }}>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#006837' }}>
             Curriculum Structure
           </h2>
-          <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-          <p className="text-lg" style={{ color: '#5a6c7d' }}>
+          <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+          <p className="text-lg" style={{ color: '#006837' }}>
             Comprehensive syllabus aligned with NCTE norms and NEP 2020 guidelines
           </p>
         </div>
@@ -197,8 +197,8 @@ export default function CurriculumSection() {
                   : 'hover:scale-105'
               }`}
               style={{
-                backgroundColor: activeSemester === semester.id ? '#003d5c' : '#f8f9fa',
-                color: activeSemester === semester.id ? '#ffffff' : '#003d5c'
+                backgroundColor: activeSemester === semester.id ? '#006837' : '#f8f9fa',
+                color: activeSemester === semester.id ? '#ffffff' : '#006837'
               }}
             >
               {semester.name}
@@ -221,7 +221,7 @@ export default function CurriculumSection() {
                   <div className="flex-shrink-0">
                     <div
                       className="w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                      style={{ backgroundColor: '#003d5c' }}
+                      style={{ backgroundColor: '#006837' }}
                     >
                       {course.code.split(' ')[1]}
                     </div>
@@ -229,22 +229,22 @@ export default function CurriculumSection() {
 
                   {/* Course Details */}
                   <div className="flex-grow">
-                    <h3 className="text-2xl font-bold mb-3" style={{ color: '#003d5c' }}>
+                    <h3 className="text-2xl font-bold mb-3" style={{ color: '#006837' }}>
                       {course.title}
                     </h3>
-                    <p className="text-base leading-relaxed mb-4" style={{ color: '#4a5568' }}>
+                    <p className="text-base leading-relaxed mb-4" style={{ color: '#002309' }}>
                       {course.description}
                     </p>
                     <div className="flex flex-wrap gap-4">
                       <span
                         className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-semibold"
-                        style={{ backgroundColor: '#e0f2fe', color: '#0369a1' }}
+                        style={{ backgroundColor: '#FBFBEE', color: '#7cb983' }}
                       >
                         Credits: {course.credits}
                       </span>
                       <span
                         className="inline-flex items-center px-4 py-2 rounded-lg text-sm font-semibold"
-                        style={{ backgroundColor: '#fef3c7', color: '#92400e' }}
+                        style={{ backgroundColor: '#FBFBEE', color: '#002309' }}
                       >
                         {course.type}
                       </span>

@@ -172,11 +172,11 @@ export default function CurriculumSection() {
     <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#003d5c' }}>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#006837' }}>
             Curriculum Structure
           </h2>
-          <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-          <p className="text-lg" style={{ color: '#5a6c7d' }}>
+          <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+          <p className="text-lg" style={{ color: '#006837' }}>
             Comprehensive syllabus aligned with NCTE norms and NEP 2020 guidelines
           </p>
         </div>
@@ -187,8 +187,8 @@ export default function CurriculumSection() {
             onClick={() => setActiveSemester(1)}
             className="px-8 py-3 rounded-lg font-semibold transition-all"
             style={{
-              backgroundColor: activeSemester === 1 ? '#003d5c' : '#f8f9fa',
-              color: activeSemester === 1 ? '#ffffff' : '#003d5c'
+              backgroundColor: activeSemester === 1 ? '#006837' : '#f8f9fa',
+              color: activeSemester === 1 ? '#ffffff' : '#006837'
             }}
           >
             Semester I
@@ -197,8 +197,8 @@ export default function CurriculumSection() {
             onClick={() => setActiveSemester(2)}
             className="px-8 py-3 rounded-lg font-semibold transition-all hover:bg-gray-100"
             style={{
-              backgroundColor: activeSemester === 2 ? '#003d5c' : '#f8f9fa',
-              color: activeSemester === 2 ? '#ffffff' : '#003d5c'
+              backgroundColor: activeSemester === 2 ? '#006837' : '#f8f9fa',
+              color: activeSemester === 2 ? '#ffffff' : '#006837'
             }}
           >
             Semester II
@@ -207,8 +207,8 @@ export default function CurriculumSection() {
             onClick={() => setActiveSemester(3)}
             className="px-8 py-3 rounded-lg font-semibold transition-all hover:bg-gray-100"
             style={{
-              backgroundColor: activeSemester === 3 ? '#003d5c' : '#f8f9fa',
-              color: activeSemester === 3 ? '#ffffff' : '#003d5c'
+              backgroundColor: activeSemester === 3 ? '#006837' : '#f8f9fa',
+              color: activeSemester === 3 ? '#ffffff' : '#006837'
             }}
           >
             Semester III
@@ -217,8 +217,8 @@ export default function CurriculumSection() {
             onClick={() => setActiveSemester(4)}
             className="px-8 py-3 rounded-lg font-semibold transition-all hover:bg-gray-100"
             style={{
-              backgroundColor: activeSemester === 4 ? '#003d5c' : '#f8f9fa',
-              color: activeSemester === 4 ? '#ffffff' : '#003d5c'
+              backgroundColor: activeSemester === 4 ? '#006837' : '#f8f9fa',
+              color: activeSemester === 4 ? '#ffffff' : '#006837'
             }}
           >
             Semester IV
@@ -234,20 +234,20 @@ export default function CurriculumSection() {
               style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
             >
               <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold"
-                   style={{ backgroundColor: '#003d5c' }}>
+                   style={{ backgroundColor: '#006837' }}>
                 <div className="text-center">
                   <div className="text-xs">{course.code}</div>
                   <div className="text-xl">{course.number}</div>
                 </div>
               </div>
               <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2" style={{ color: '#003d5c' }}>
+                <h3 className="text-2xl font-bold mb-2" style={{ color: '#006837' }}>
                   {course.title}
                 </h3>
-                <p className="mb-3 leading-relaxed" style={{ color: '#5a6c7d' }}>
+                <p className="mb-3 leading-relaxed" style={{ color: '#006837' }}>
                   {course.description}
                 </p>
-                <div className="flex flex-wrap gap-4 text-sm" style={{ color: '#5a6c7d' }}>
+                <div className="flex flex-wrap gap-4 text-sm" style={{ color: '#006837' }}>
                   <span>Credits: {course.credits}</span>
                   <span>{course.type}</span>
                 </div>

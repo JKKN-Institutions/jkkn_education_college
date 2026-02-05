@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1e7f4e] text-white">
+    <footer className="bg-[#006837] text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
           {/* Left Column - College Info & Map */}
@@ -14,7 +14,7 @@ const Footer = () => {
             {/* Google Map Embed */}
             <div className="mb-6 rounded-lg overflow-hidden aspect-video sm:aspect-auto">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2835861474756!2d77.0172!3d11.0145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba857f0e1e1e1e1%3A0x1e1e1e1e1e1e1e1e!2sJKKN%20College%20Of%20Allied%20Health%20Science!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.495264960904!2d77.72893427452533!3d11.444134546524035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba9681da53f49cb%3A0xa6ea1576fd356dc2!2sJKKN%20College%20of%20Education!5e0!3m2!1sen!2sin!4v1770284382576!5m2!1sen!2sin"
                 width="100%"
                 height="200"
                 style={{ border: 0, minHeight: '150px' }}
@@ -39,47 +39,47 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 sm:space-y-3">
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://dental.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN Dental College and Hospital
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://ahs.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College Of Allied Health Science
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://pharmacy.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College of Pharmacy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://nursing.sresakthimayeil.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   Srisakthimayeil Institute of Nursing and Research
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://edu.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College of Education
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://cas.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College of Arts and Science (Autonomous)
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://engg.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN College of Engineering and Technology
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://school.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   JKKN Matriculation Higher Secondary School
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
+                <Link href="https://nv.jkkn.ac.in/" className="hover:underline transition-all duration-200 text-sm sm:text-base py-1 inline-block">
                   Nattraja Vidhyalya
                 </Link>
               </li>
@@ -118,7 +118,7 @@ const Footer = () => {
             <div className="flex flex-wrap gap-3 sm:gap-4">
               {/* Facebook */}
               <Link
-                href="#"
+                href="https://www.facebook.com/jkknedu/"
                 className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="Facebook"
               >
@@ -129,7 +129,7 @@ const Footer = () => {
 
               {/* Twitter */}
               <Link
-                href="#"
+                href="https://x.com/jkknedu/"
                 className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="Twitter"
               >
@@ -140,7 +140,7 @@ const Footer = () => {
 
               {/* Instagram */}
               <Link
-                href="#"
+                href="https://www.instagram.com/jkknedu/"
                 className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="Instagram"
               >
@@ -151,7 +151,7 @@ const Footer = () => {
 
               {/* LinkedIn */}
               <Link
-                href="#"
+                href="https://www.linkedin.com/school/jkkneducation/"
                 className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="LinkedIn"
               >
@@ -162,7 +162,7 @@ const Footer = () => {
 
               {/* YouTube */}
               <Link
-                href="#"
+                href="https://www.youtube.com/jkkninstitutions"
                 className="w-10 h-10 sm:w-11 sm:h-11 bg-white/10 hover:bg-white/20 active:bg-white/30 rounded-lg flex items-center justify-center transition-all duration-200"
                 aria-label="YouTube"
               >

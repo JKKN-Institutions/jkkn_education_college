@@ -180,11 +180,11 @@ export default function CurriculumSection() {
     <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
       <div className="mx-auto max-w-7xl">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4" style={{ color: '#003d5c' }}>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4" style={{ color: '#006837' }}>
             Curriculum Structure
           </h2>
-          <div className="h-1 w-16 sm:w-20 mx-auto mb-4 sm:mb-6 lg:mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-          <p className="text-sm sm:text-base lg:text-lg px-2" style={{ color: '#5a6c7d' }}>
+          <div className="h-1 w-16 sm:w-20 mx-auto mb-4 sm:mb-6 lg:mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+          <p className="text-sm sm:text-base lg:text-lg px-2" style={{ color: '#006837' }}>
             Comprehensive syllabus aligned with NCTE norms and NEP 2020 guidelines
           </p>
         </div>
@@ -198,8 +198,8 @@ export default function CurriculumSection() {
             }`}
             style={{
               backgroundColor: activeSemester === 1 ? '#ffffff' : '#f8f9fa',
-              color: '#003d5c',
-              border: activeSemester === 1 ? '2px solid #ff6633' : '2px solid transparent'
+              color: '#006837',
+              border: activeSemester === 1 ? '2px solid #7cb983' : '2px solid transparent'
             }}
           >
             Semester I
@@ -211,8 +211,8 @@ export default function CurriculumSection() {
             }`}
             style={{
               backgroundColor: activeSemester === 2 ? '#ffffff' : '#f8f9fa',
-              color: '#003d5c',
-              border: activeSemester === 2 ? '2px solid #ff6633' : '2px solid transparent'
+              color: '#006837',
+              border: activeSemester === 2 ? '2px solid #7cb983' : '2px solid transparent'
             }}
           >
             Semester II
@@ -224,8 +224,8 @@ export default function CurriculumSection() {
             }`}
             style={{
               backgroundColor: activeSemester === 3 ? '#ffffff' : '#f8f9fa',
-              color: '#003d5c',
-              border: activeSemester === 3 ? '2px solid #ff6633' : '2px solid transparent'
+              color: '#006837',
+              border: activeSemester === 3 ? '2px solid #7cb983' : '2px solid transparent'
             }}
           >
             Semester III
@@ -237,8 +237,8 @@ export default function CurriculumSection() {
             }`}
             style={{
               backgroundColor: activeSemester === 4 ? '#ffffff' : '#f8f9fa',
-              color: '#003d5c',
-              border: activeSemester === 4 ? '2px solid #ff6633' : '2px solid transparent'
+              color: '#006837',
+              border: activeSemester === 4 ? '2px solid #7cb983' : '2px solid transparent'
             }}
           >
             Semester IV
@@ -256,20 +256,20 @@ export default function CurriculumSection() {
               <div className="flex-shrink-0 flex sm:block justify-center">
                 <div
                   className="w-16 h-16 sm:w-18 sm:h-18 lg:w-20 lg:h-20 rounded-lg flex flex-col items-center justify-center text-white font-bold"
-                  style={{ backgroundColor: '#0284c7' }}
+                  style={{ backgroundColor: '#7cb983' }}
                 >
                   <div className="text-[10px] sm:text-xs">{course.code}</div>
                   <div className="text-lg sm:text-xl lg:text-2xl">{course.number}</div>
                 </div>
               </div>
               <div className="flex-grow text-center sm:text-left">
-                <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2" style={{ color: '#003d5c' }}>
+                <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-1 sm:mb-2" style={{ color: '#006837' }}>
                   {course.title}
                 </h3>
-                <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base" style={{ color: '#4a5568' }}>
+                <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base" style={{ color: '#002309' }}>
                   {course.description}
                 </p>
-                <div className="flex flex-wrap justify-center sm:justify-start gap-2 sm:gap-4 text-xs sm:text-sm" style={{ color: '#5a6c7d' }}>
+                <div className="flex flex-wrap justify-center sm:justify-start gap-2 sm:gap-4 text-xs sm:text-sm" style={{ color: '#006837' }}>
                   <span>Credits: {course.credits}</span>
                   <span>{course.type}</span>
                 </div>

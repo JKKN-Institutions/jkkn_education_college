@@ -56,11 +56,11 @@ export default function AdmissionFAQ() {
     <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f8f9fa' }}>
       <div className="mx-auto max-w-5xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#003d5c' }}>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#006837' }}>
             Frequently Asked Questions
           </h2>
-          <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-          <p className="text-lg" style={{ color: '#5a6c7d' }}>
+          <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+          <p className="text-lg" style={{ color: '#006837' }}>
             Find answers to common queries about B.Ed English program
           </p>
         </div>
@@ -72,12 +72,12 @@ export default function AdmissionFAQ() {
                 onClick={() => toggleFAQ(index)}
                 className="w-full flex items-center justify-between p-6 text-left transition-colors hover:bg-gray-50"
               >
-                <span className="text-lg font-semibold pr-8" style={{ color: '#003d5c' }}>
+                <span className="text-lg font-semibold pr-8" style={{ color: '#006837' }}>
                   {faq.question}
                 </span>
                 <svg
                   className={`w-6 h-6 flex-shrink-0 transition-transform ${openIndex === index ? 'rotate-180' : ''}`}
-                  style={{ color: '#003d5c' }}
+                  style={{ color: '#006837' }}
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -87,7 +87,7 @@ export default function AdmissionFAQ() {
               </button>
               {openIndex === index && (
                 <div className="px-6 pb-6">
-                  <p className="leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="leading-relaxed" style={{ color: '#002309' }}>
                     {faq.answer}
                   </p>
                 </div>

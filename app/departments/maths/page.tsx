@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link';
 import { CheckCircle, BookOpen, Users, Clock, DollarSign, Monitor, Beaker, GraduationCap, Briefcase, School, ChevronDown, ChevronUp, Phone } from 'lucide-react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -18,10 +19,10 @@ export default function MathematicsPage() {
       <Header />
       <div className="min-h-screen bg-white">
         {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#004e71] via-[#006b8f] to-[#00334a] text-white py-10 sm:py-16 lg:py-20 px-4 overflow-hidden">
+      <section className="relative bg-[linear-gradient(135deg,rgba(0,35,9,0.85)_0%,rgba(0,104,55,0.85)_100%)] lg:bg-[linear-gradient(135deg,rgba(0,35,9,0.85)_0%,rgba(0,104,55,0.85)_100%),url(/images/B.Ed-Maths-Hero-Banner-Image.png)] bg-cover bg-center text-white py-10 sm:py-16 lg:py-20 px-4 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 right-20 w-64 h-64 bg-white rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-96 h-96 bg-blue-400 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 left-20 w-96 h-96 bg-[#7cb983] rounded-full blur-3xl"></div>
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
@@ -29,67 +30,64 @@ export default function MathematicsPage() {
             {/* Left Content */}
             <div>
               {/* Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-[#ff6b35] mb-6">
-                <CheckCircle className="w-5 h-5 text-[#ff6b35]" />
-                <span className="text-[#ff6b35] font-medium">NCTE Approved | TNTEU Affiliated</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border-2 border-[#7cb983] mb-6">
+                <CheckCircle className="w-5 h-5 text-[#7cb983]" />
+                <span className="text-[#7cb983] font-medium">NCTE Approved | TNTEU Affiliated</span>
               </div>
 
               {/* Main Heading */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                B.Ed <span className="text-[#ff6b35]">Mathematics</span>
+                B.Ed <span className="text-[#7cb983]">Mathematics</span>
               </h1>
 
-              <h2 className="text-lg sm:text-xl lg:text-2xl text-blue-100 mb-6">
+              <h2 className="text-lg sm:text-xl lg:text-2xl text-white mb-6">
                 Bachelor of Education in Mathematics
               </h2>
 
-              <p className="text-sm sm:text-base lg:text-lg text-blue-50 leading-relaxed mb-6 sm:mb-8">
+              <p className="text-sm sm:text-base lg:text-lg text-white leading-relaxed mb-6 sm:mb-8">
                 Shape the future by becoming an inspiring Mathematics educator. Our comprehensive 2-year program equips you with innovative pedagogical techniques, problem-solving strategies, and practical teaching experience to transform how students learn Mathematics.
               </p>
 
               {/* Stats Grid */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6 sm:mb-8">
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
-                  <div className="text-4xl font-bold text-[#ff6b35] mb-1">2</div>
-                  <div className="text-sm text-blue-100">YEARS</div>
+                  <div className="text-4xl font-bold text-[#7cb983] mb-1">2</div>
+                  <div className="text-sm text-white">YEARS</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
-                  <div className="text-4xl font-bold text-[#ff6b35] mb-1">50</div>
-                  <div className="text-sm text-blue-100">SEATS</div>
+                  <div className="text-4xl font-bold text-[#7cb983] mb-1">50</div>
+                  <div className="text-sm text-white">SEATS</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
-                  <div className="text-4xl font-bold text-[#ff6b35] mb-1">98%</div>
-                  <div className="text-sm text-blue-100">PLACEMENT</div>
+                  <div className="text-4xl font-bold text-[#7cb983] mb-1">98%</div>
+                  <div className="text-sm text-white">PLACEMENT</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
-                  <div className="text-4xl font-bold text-[#ff6b35] mb-1">4</div>
-                  <div className="text-sm text-blue-100">SEMESTERS</div>
+                  <div className="text-4xl font-bold text-[#7cb983] mb-1">4</div>
+                  <div className="text-sm text-white">SEMESTERS</div>
                 </div>
               </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
-                <button className="flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#ff6b35] hover:bg-[#ff5722] text-white font-semibold rounded-lg transition-colors">
+                <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold rounded-lg transition-colors">
                   <Users className="w-5 h-5" />
                   Apply Now
-                </button>
-                <button className="flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white hover:bg-white hover:text-[#004e71] font-semibold rounded-lg transition-colors">
+                </Link>
+                <button className="flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold rounded-lg transition-colors">
                   <BookOpen className="w-5 h-5" />
                   View Curriculum
                 </button>
               </div>
             </div>
 
-            {/* Right Content - Info Card */}
-            <div className="bg-gradient-to-br from-[#003d5c] to-[#00283d] rounded-lg sm:rounded-xl lg:rounded-2xl p-4 sm:p-6 lg:p-8 xl:p-12 shadow-2xl">
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 text-center">
-                Mathematics Education
-              </h3>
-              <div className="space-y-4 text-blue-50">
-                <p className="text-lg leading-relaxed">
-                  <span className="font-bold text-white">Progressive Education</span> — Nurturing future Mathematics educators since 1954
-                </p>
-              </div>
+            {/* Right Content - Hero Banner Image */}
+            <div className="relative mt-8 lg:mt-0">
+              <img
+                src="/images/B.Ed-Maths-Hero-Banner-Image.png"
+                alt="B.Ed Mathematics Department"
+                className="w-full h-auto rounded-xl sm:rounded-2xl"
+              />
             </div>
           </div>
         </div>
@@ -99,9 +97,9 @@ export default function MathematicsPage() {
       <section className="py-10 sm:py-12 lg:py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8 lg:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#004e71] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-4">
               Course Overview
-              <div className="w-20 h-1 bg-gradient-to-r from-[#ff6b35] to-[#ff8c42] mx-auto mt-3"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#7cb983] to-[#6ba872] mx-auto mt-3"></div>
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-6">
               A comprehensive teacher education program designed to shape passionate Mathematics educators
@@ -112,7 +110,7 @@ export default function MathematicsPage() {
             {/* Main Content */}
             <div className="lg:col-span-2 space-y-6 text-gray-700 leading-relaxed">
               <p className="text-lg">
-                <span className="text-6xl font-bold text-[#ff6b35] float-left mr-4 leading-none">T</span>
+                <span className="text-6xl font-bold text-[#7cb983] float-left mr-4 leading-none">T</span>
                 he Bachelor of Education (B.Ed) in Mathematics at JKKN College of Education is a meticulously designed 2-year professional degree program that prepares graduates to become competent and inspiring Learning Facilitators for secondary and higher secondary schools. This NCTE-approved program combines rigorous theoretical foundations with extensive practical training, ensuring our Learners are well-equipped to meet the evolving demands of Mathematics education in the 21st century.
               </p>
 
@@ -127,24 +125,24 @@ export default function MathematicsPage() {
 
             {/* Info Sidebar */}
             <div className="space-y-6">
-              <div className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-[#ff6b35]">
+              <div className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-[#7cb983]">
                 <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">PROGRAM DURATION</div>
-                <div className="text-2xl font-bold text-[#004e71]">2 Years <span className="text-lg font-normal text-gray-600">(4 Semesters)</span></div>
+                <div className="text-2xl font-bold text-[#006837]">2 Years <span className="text-lg font-normal text-gray-600">(4 Semesters)</span></div>
               </div>
 
-              <div className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-[#ff6b35]">
+              <div className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-[#7cb983]">
                 <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">MODE OF STUDY</div>
-                <div className="text-2xl font-bold text-[#004e71]">Full-Time <span className="text-lg font-normal text-gray-600">On-Campus</span></div>
+                <div className="text-2xl font-bold text-[#006837]">Full-Time <span className="text-lg font-normal text-gray-600">On-Campus</span></div>
               </div>
 
-              <div className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-[#ff6b35]">
+              <div className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-[#7cb983]">
                 <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">TOTAL INTAKE</div>
-                <div className="text-2xl font-bold text-[#004e71]">50 Seats <span className="text-lg font-normal text-gray-600">per Academic Year</span></div>
+                <div className="text-2xl font-bold text-[#006837]">50 Seats <span className="text-lg font-normal text-gray-600">per Academic Year</span></div>
               </div>
 
-              <div className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-[#ff6b35]">
+              <div className="bg-white rounded-lg p-6 shadow-sm border-l-4 border-[#7cb983]">
                 <div className="text-sm text-gray-500 uppercase tracking-wide mb-2">AFFILIATION</div>
-                <div className="text-2xl font-bold text-[#004e71]">TNTEU <span className="text-lg font-normal text-gray-600">Chennai</span></div>
+                <div className="text-2xl font-bold text-[#006837]">TNTEU <span className="text-lg font-normal text-gray-600">Chennai</span></div>
               </div>
             </div>
           </div>
@@ -155,9 +153,9 @@ export default function MathematicsPage() {
       <section className="py-10 sm:py-12 lg:py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8 lg:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#004e71] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-4">
               Program Highlights
-              <div className="w-20 h-1 bg-gradient-to-r from-[#ff6b35] to-[#ff8c42] mx-auto mt-3"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#7cb983] to-[#6ba872] mx-auto mt-3"></div>
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-6">
               Discover what makes our B.Ed Mathematics program exceptional
@@ -167,10 +165,10 @@ export default function MathematicsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Highlight 1 */}
             <div className="bg-gray-50 rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#17a2b8] shadow-md">
-                <GraduationCap className="w-10 h-10 text-[#004e71]" />
+              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#7cb983] shadow-md">
+                <GraduationCap className="w-10 h-10 text-[#006837]" />
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-4">NCTE Approved</h3>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-4">NCTE Approved</h3>
               <p className="text-gray-600 leading-relaxed">
                 Recognized by the National Council for Teacher Education, ensuring quality standards and national acceptance of your degree for teaching positions across India.
               </p>
@@ -178,10 +176,10 @@ export default function MathematicsPage() {
 
             {/* Highlight 2 */}
             <div className="bg-gray-50 rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#17a2b8] shadow-md">
-                <Clock className="w-10 h-10 text-[#004e71]" />
+              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#7cb983] shadow-md">
+                <Clock className="w-10 h-10 text-[#006837]" />
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-4">Extensive Practical Training</h3>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-4">Extensive Practical Training</h3>
               <p className="text-gray-600 leading-relaxed">
                 16-week school internship program with partner institutions providing real-world Mathematics teaching experience, classroom management skills, and mentorship.
               </p>
@@ -189,10 +187,10 @@ export default function MathematicsPage() {
 
             {/* Highlight 3 */}
             <div className="bg-gray-50 rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#17a2b8] shadow-md">
-                <Users className="w-10 h-10 text-[#004e71]" />
+              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#7cb983] shadow-md">
+                <Users className="w-10 h-10 text-[#006837]" />
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-4">Expert Learning Facilitators</h3>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-4">Expert Learning Facilitators</h3>
               <p className="text-gray-600 leading-relaxed">
                 Learn from experienced educators with extensive backgrounds in Mathematics, educational research, and innovative pedagogy methods.
               </p>
@@ -200,10 +198,10 @@ export default function MathematicsPage() {
 
             {/* Highlight 4 */}
             <div className="bg-gray-50 rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#17a2b8] shadow-md">
-                <Beaker className="w-10 h-10 text-[#004e71]" />
+              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#7cb983] shadow-md">
+                <Beaker className="w-10 h-10 text-[#006837]" />
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-4">Modern Mathematics Lab</h3>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-4">Modern Mathematics Lab</h3>
               <p className="text-gray-600 leading-relaxed">
                 Well-equipped Mathematics laboratory with manipulatives, geometric models, graphing tools, and digital resources for enhanced learning experiences.
               </p>
@@ -211,10 +209,10 @@ export default function MathematicsPage() {
 
             {/* Highlight 5 */}
             <div className="bg-gray-50 rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#17a2b8] shadow-md">
-                <Monitor className="w-10 h-10 text-[#004e71]" />
+              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#7cb983] shadow-md">
+                <Monitor className="w-10 h-10 text-[#006837]" />
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-4">ICT Integration</h3>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-4">ICT Integration</h3>
               <p className="text-gray-600 leading-relaxed">
                 Training in educational technology tools including GeoGebra, MATLAB, Smart Boards, and online teaching platforms for 21st-century classrooms.
               </p>
@@ -222,10 +220,10 @@ export default function MathematicsPage() {
 
             {/* Highlight 6 */}
             <div className="bg-gray-50 rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 text-center hover:shadow-lg transition-shadow">
-              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#17a2b8] shadow-md">
-                <DollarSign className="w-10 h-10 text-[#004e71]" />
+              <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6 border-4 border-[#7cb983] shadow-md">
+                <DollarSign className="w-10 h-10 text-[#006837]" />
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-4">Scholarship Support</h3>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-4">Scholarship Support</h3>
               <p className="text-gray-600 leading-relaxed">
                 Various government and institutional scholarships available for eligible candidates to ensure accessible and affordable quality education.
               </p>
@@ -238,9 +236,9 @@ export default function MathematicsPage() {
       <section className="py-10 sm:py-12 lg:py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8 lg:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#004e71] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-4">
               Eligibility Criteria & Documents
-              <div className="w-20 h-1 bg-gradient-to-r from-[#ff6b35] to-[#ff8c42] mx-auto mt-3"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#7cb983] to-[#6ba872] mx-auto mt-3"></div>
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-6">
               Requirements for admission to B.Ed Mathematics program
@@ -251,37 +249,37 @@ export default function MathematicsPage() {
             {/* Academic Requirements */}
             <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-6">
-                <CheckCircle className="w-8 h-8 text-[#ff6b35]" />
-                <h3 className="text-2xl font-bold text-[#004e71]">Academic Requirements</h3>
+                <CheckCircle className="w-8 h-8 text-[#7cb983]" />
+                <h3 className="text-2xl font-bold text-[#006837]">Academic Requirements</h3>
               </div>
 
               <div className="space-y-4">
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Bachelor's degree (BSc/BA/BCom or equivalent) from a recognized university</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Mathematics as a main subject or subsidiary subject at degree level</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Candidates with Mathematics studied up to Class 12 may also be considered</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Final year degree candidates may apply (provisional admission)</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Age limit as per Tamil Nadu government norms</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Valid TNTEU B.Ed entrance examination score (if applicable)</p>
                 </div>
               </div>
@@ -290,41 +288,41 @@ export default function MathematicsPage() {
             {/* Required Documents */}
             <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8 shadow-sm">
               <div className="flex items-center gap-3 mb-6">
-                <BookOpen className="w-8 h-8 text-[#ff6b35]" />
-                <h3 className="text-2xl font-bold text-[#004e71]">Required Documents</h3>
+                <BookOpen className="w-8 h-8 text-[#7cb983]" />
+                <h3 className="text-2xl font-bold text-[#006837]">Required Documents</h3>
               </div>
 
               <div className="space-y-4">
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">10th and 12th mark sheets and certificates (originals and copies)</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Degree certificate and consolidated mark sheet</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Transfer certificate from last institution attended</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Community certificate (for reserved category candidates)</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Income certificate (for scholarship purposes)</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Aadhar card and 6 passport-size photographs</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">Migration certificate (if applicable)</p>
                 </div>
                 <div className="flex gap-3">
-                  <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                  <CheckCircle className="w-6 h-6 text-[#006837] flex-shrink-0 mt-1" />
                   <p className="text-gray-700">TET/TNTEU entrance score card (if applicable)</p>
                 </div>
               </div>
@@ -337,9 +335,9 @@ export default function MathematicsPage() {
       <section className="py-10 sm:py-12 lg:py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8 lg:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#004e71] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-4">
               Curriculum Structure
-              <div className="w-20 h-1 bg-gradient-to-r from-[#ff6b35] to-[#ff8c42] mx-auto mt-3"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#7cb983] to-[#6ba872] mx-auto mt-3"></div>
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-6">
               Comprehensive syllabus aligned with NCTE norms and NEP 2020 guidelines
@@ -352,7 +350,7 @@ export default function MathematicsPage() {
               onClick={() => setActiveTab('semester1')}
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'semester1'
-                  ? 'bg-white text-[#004e71] shadow-lg border-2 border-[#ff6b35]'
+                  ? 'bg-white text-[#006837] shadow-lg border-2 border-[#7cb983]'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
@@ -362,7 +360,7 @@ export default function MathematicsPage() {
               onClick={() => setActiveTab('semester2')}
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'semester2'
-                  ? 'bg-white text-[#004e71] shadow-lg border-2 border-[#ff6b35]'
+                  ? 'bg-white text-[#006837] shadow-lg border-2 border-[#7cb983]'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
@@ -372,7 +370,7 @@ export default function MathematicsPage() {
               onClick={() => setActiveTab('semester3')}
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'semester3'
-                  ? 'bg-white text-[#004e71] shadow-lg border-2 border-[#ff6b35]'
+                  ? 'bg-white text-[#006837] shadow-lg border-2 border-[#7cb983]'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
@@ -382,7 +380,7 @@ export default function MathematicsPage() {
               onClick={() => setActiveTab('semester4')}
               className={`px-8 py-3 rounded-lg font-semibold transition-all ${
                 activeTab === 'semester4'
-                  ? 'bg-white text-[#004e71] shadow-lg border-2 border-[#ff6b35]'
+                  ? 'bg-white text-[#006837] shadow-lg border-2 border-[#7cb983]'
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
             >
@@ -559,9 +557,9 @@ export default function MathematicsPage() {
       <section className="py-10 sm:py-12 lg:py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8 lg:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#004e71] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-4">
               Why Choose Mathematics Teaching?
-              <div className="w-20 h-1 bg-gradient-to-r from-[#ff6b35] to-[#ff8c42] mx-auto mt-3"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#7cb983] to-[#6ba872] mx-auto mt-3"></div>
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-6">
               Discover the rewarding career of being a Mathematics educator
@@ -604,14 +602,14 @@ export default function MathematicsPage() {
       </section>
 
       {/* Career Prospects Section */}
-      <section className="py-10 sm:py-12 lg:py-16 px-4 bg-gradient-to-br from-[#004e71] via-[#006b8f] to-[#00334a] text-white">
+      <section className="py-10 sm:py-12 lg:py-16 px-4 bg-gradient-to-br from-[#006837] via-[#004d28] to-[#002309] text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8 lg:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
               Career Prospects
-              <div className="w-20 h-1 bg-gradient-to-r from-[#ff6b35] to-[#ff8c42] mx-auto mt-3"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#7cb983] to-[#6ba872] mx-auto mt-3"></div>
             </h2>
-            <p className="text-sm sm:text-base lg:text-lg text-blue-100 mt-6">
+            <p className="text-sm sm:text-base lg:text-lg text-white mt-6">
               Explore the diverse career opportunities awaiting B.Ed Mathematics graduates
             </p>
           </div>
@@ -655,9 +653,9 @@ export default function MathematicsPage() {
       <section className="py-10 sm:py-12 lg:py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8 lg:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#004e71] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-4">
               Campus Facilities
-              <div className="w-20 h-1 bg-gradient-to-r from-[#ff6b35] to-[#ff8c42] mx-auto mt-3"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#7cb983] to-[#6ba872] mx-auto mt-3"></div>
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-6">
               World-class infrastructure supporting your learning journey
@@ -668,22 +666,22 @@ export default function MathematicsPage() {
             <FacilityCard
               title="Mathematics Lab"
               subtitle="Mathematics Lab"
-              bgColor="from-[#004e71] to-[#003d5c]"
+              bgColor="from-[#006837] to-[#002309]"
             />
             <FacilityCard
               title="Digital Library"
               subtitle="Digital Library"
-              bgColor="from-[#17a2b8] to-[#138496]"
+              bgColor="from-[#7cb983] to-[#6ba872]"
             />
             <FacilityCard
               title="Smart Classrooms"
               subtitle="Smart Learning Studios"
-              bgColor="from-[#ff6b35] to-[#ff5722]"
+              bgColor="from-[#7cb983] to-[#7cb983]"
             />
             <FacilityCard
               title="Micro Teaching"
               subtitle="Micro-Teaching Lab"
-              bgColor="from-[#004e71] to-[#003d5c]"
+              bgColor="from-[#006837] to-[#002309]"
             />
           </div>
 
@@ -691,22 +689,22 @@ export default function MathematicsPage() {
             <FacilityCard
               title="Computer Lab"
               subtitle="Computer Lab"
-              bgColor="from-[#17a2b8] to-[#138496]"
+              bgColor="from-[#7cb983] to-[#6ba872]"
             />
             <FacilityCard
               title="Seminar Hall"
               subtitle="Seminar Hall"
-              bgColor="from-[#ff6b35] to-[#ff5722]"
+              bgColor="from-[#7cb983] to-[#7cb983]"
             />
             <FacilityCard
               title="Resource Center"
               subtitle="Resource Center"
-              bgColor="from-[#004e71] to-[#003d5c]"
+              bgColor="from-[#006837] to-[#002309]"
             />
             <FacilityCard
               title="Hostel"
               subtitle="Hostel Facility"
-              bgColor="from-[#17a2b8] to-[#138496]"
+              bgColor="from-[#7cb983] to-[#6ba872]"
             />
           </div>
         </div>
@@ -716,9 +714,9 @@ export default function MathematicsPage() {
       <section className="py-10 sm:py-12 lg:py-16 px-4 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8 lg:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#004e71] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-4">
               Admission Process
-              <div className="w-20 h-1 bg-gradient-to-r from-[#ff6b35] to-[#ff8c42] mx-auto mt-3"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#7cb983] to-[#6ba872] mx-auto mt-3"></div>
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-6">
               Simple steps to begin your journey as a Mathematics educator
@@ -728,20 +726,20 @@ export default function MathematicsPage() {
           <div className="max-w-5xl mx-auto">
             <div className="relative">
               {/* Timeline Line */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#17a2b8] to-[#004e71]"></div>
+              <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#7cb983] to-[#006837]"></div>
 
               {/* Step 1 */}
               <div className="relative mb-16">
                 <div className="flex items-center justify-between gap-8">
                   <div className="w-5/12 text-right">
                     <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-md">
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-3">Check Eligibility</h3>
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-3">Check Eligibility</h3>
                       <p className="text-gray-600">
                         Verify that you meet the academic requirements: Bachelor's degree with Mathematics and minimum 50% marks (45% for reserved categories).
                       </p>
                     </div>
                   </div>
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#ff6b35] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#7cb983] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                     1
                   </div>
                   <div className="w-5/12"></div>
@@ -752,12 +750,12 @@ export default function MathematicsPage() {
               <div className="relative mb-16">
                 <div className="flex items-center justify-between gap-8">
                   <div className="w-5/12"></div>
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#ff6b35] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#7cb983] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                     2
                   </div>
                   <div className="w-5/12 text-left">
                     <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-md">
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-3">Online Application</h3>
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-3">Online Application</h3>
                       <p className="text-gray-600">
                         Fill out the online application form on our website with accurate personal and academic details. Pay the application fee online.
                       </p>
@@ -771,13 +769,13 @@ export default function MathematicsPage() {
                 <div className="flex items-center justify-between gap-8">
                   <div className="w-5/12 text-right">
                     <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-md">
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-3">Document Submission</h3>
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-3">Document Submission</h3>
                       <p className="text-gray-600">
                         Upload scanned copies of required documents including mark sheets, certificates, and photographs during the application process.
                       </p>
                     </div>
                   </div>
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#ff6b35] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#7cb983] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                     3
                   </div>
                   <div className="w-5/12"></div>
@@ -788,12 +786,12 @@ export default function MathematicsPage() {
               <div className="relative mb-16">
                 <div className="flex items-center justify-between gap-8">
                   <div className="w-5/12"></div>
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#ff6b35] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#7cb983] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                     4
                   </div>
                   <div className="w-5/12 text-left">
                     <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-md">
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-3">Counseling & Selection</h3>
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-3">Counseling & Selection</h3>
                       <p className="text-gray-600">
                         Attend the counseling session (online/offline) where selection is based on academic merit and TNTEU entrance score (if applicable).
                       </p>
@@ -807,13 +805,13 @@ export default function MathematicsPage() {
                 <div className="flex items-center justify-between gap-8">
                   <div className="w-5/12 text-right">
                     <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-md">
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-3">Fee Payment</h3>
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-3">Fee Payment</h3>
                       <p className="text-gray-600">
                         Upon selection, complete the fee payment process. Avail government scholarships if eligible. Various payment options available.
                       </p>
                     </div>
                   </div>
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#ff6b35] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#7cb983] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                     5
                   </div>
                   <div className="w-5/12"></div>
@@ -824,12 +822,12 @@ export default function MathematicsPage() {
               <div className="relative">
                 <div className="flex items-center justify-between gap-8">
                   <div className="w-5/12"></div>
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#ff6b35] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-12 h-12 bg-[#7cb983] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg z-10">
                     6
                   </div>
                   <div className="w-5/12 text-left">
                     <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 shadow-md">
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-3">Begin Your Journey</h3>
+                      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-3">Begin Your Journey</h3>
                       <p className="text-gray-600">
                         Complete document verification, attend orientation program, and start your transformative journey as a future Mathematics educator!
                       </p>
@@ -846,9 +844,9 @@ export default function MathematicsPage() {
       <section className="py-10 sm:py-12 lg:py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-6 sm:mb-8 lg:mb-12">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#004e71] mb-4">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-4">
               Frequently Asked Questions
-              <div className="w-20 h-1 bg-gradient-to-r from-[#ff6b35] to-[#ff8c42] mx-auto mt-3"></div>
+              <div className="w-20 h-1 bg-gradient-to-r from-[#7cb983] to-[#6ba872] mx-auto mt-3"></div>
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 mt-6">
               Find answers to common queries about B.Ed Mathematics program
@@ -909,7 +907,7 @@ export default function MathematicsPage() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="py-10 sm:py-16 lg:py-20 px-4 bg-gradient-to-r from-[#ff6b35] to-[#ff5722]">
+      <section className="py-10 sm:py-16 lg:py-20 px-4 bg-gradient-to-r from-[#7cb983] to-[#7cb983]">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             Ready to Shape Future Mathematicians?
@@ -918,11 +916,11 @@ export default function MathematicsPage() {
             Join JKKN College of Education and embark on a rewarding career as a Mathematics educator. Applications are now open for the 2025-26 academic year.
           </p>
           <div className="flex flex-wrap gap-6 justify-center">
-            <button className="flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#ff6b35] hover:bg-gray-100 font-bold rounded-lg shadow-lg transition-all transform hover:scale-105">
+            <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 bg-white text-[#7cb983] hover:bg-gray-100 font-bold rounded-lg shadow-lg transition-all transform hover:scale-105">
               <Users className="w-6 h-6" />
               Apply Online Now
-            </button>
-            <button className="flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white hover:bg-white hover:text-[#ff6b35] font-bold rounded-lg shadow-lg transition-all transform hover:scale-105">
+            </Link>
+            <button className="flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold rounded-lg shadow-lg transition-all transform hover:scale-105">
               <Phone className="w-6 h-6" />
               Contact Admissions
             </button>
@@ -946,12 +944,12 @@ function CourseCard({ code, title, description, credits, type }: {
   return (
     <div className="bg-gray-50 rounded-lg p-6 hover:shadow-md transition-shadow">
       <div className="flex items-start gap-4">
-        <div className="bg-[#004e71] text-white px-4 py-3 rounded-lg flex-shrink-0">
+        <div className="bg-[#006837] text-white px-4 py-3 rounded-lg flex-shrink-0">
           <div className="text-xs font-semibold">{code.split(' ')[0]}</div>
           <div className="text-lg font-bold">{code.split(' ')[1]}</div>
         </div>
         <div className="flex-1">
-          <h4 className="text-xl font-bold text-[#004e71] mb-2">{title}</h4>
+          <h4 className="text-xl font-bold text-[#006837] mb-2">{title}</h4>
           <p className="text-gray-600 mb-3">{description}</p>
           <div className="flex gap-4 text-sm text-gray-500">
             <span>Credits: {credits}</span>
@@ -971,10 +969,10 @@ function ReasonCard({ number, title, description }: {
 }) {
   return (
     <div className="bg-white rounded-xl p-8 hover:shadow-lg transition-shadow">
-      <div className="w-14 h-14 bg-[#ff6b35] rounded-full flex items-center justify-center mb-6">
+      <div className="w-14 h-14 bg-[#7cb983] rounded-full flex items-center justify-center mb-6">
         <span className="text-2xl font-bold text-white">{number}</span>
       </div>
-      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#004e71] mb-4">{title}</h3>
+      <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-[#006837] mb-4">{title}</h3>
       <p className="text-gray-600 leading-relaxed">{description}</p>
     </div>
   );
@@ -988,11 +986,11 @@ function CareerCard({ icon, title, description }: {
 }) {
   return (
     <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 hover:bg-white/20 transition-all">
-      <div className="w-20 h-20 bg-[#ff6b35] rounded-full flex items-center justify-center mx-auto mb-6">
+      <div className="w-20 h-20 bg-[#7cb983] rounded-full flex items-center justify-center mx-auto mb-6">
         {icon}
       </div>
       <h3 className="text-2xl font-bold text-white mb-4 text-center">{title}</h3>
-      <p className="text-blue-100 leading-relaxed text-center">{description}</p>
+      <p className="text-white leading-relaxed text-center">{description}</p>
     </div>
   );
 }
@@ -1024,11 +1022,11 @@ function FAQItem({ question, answer, isOpen, onClick }: {
         onClick={onClick}
         className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-gray-100 transition-colors"
       >
-        <span className="text-lg font-bold text-[#004e71] pr-4">{question}</span>
+        <span className="text-lg font-bold text-[#006837] pr-4">{question}</span>
         {isOpen ? (
-          <ChevronUp className="w-6 h-6 text-[#004e71] flex-shrink-0" />
+          <ChevronUp className="w-6 h-6 text-[#006837] flex-shrink-0" />
         ) : (
-          <ChevronDown className="w-6 h-6 text-[#004e71] flex-shrink-0" />
+          <ChevronDown className="w-6 h-6 text-[#006837] flex-shrink-0" />
         )}
       </button>
       {isOpen && (

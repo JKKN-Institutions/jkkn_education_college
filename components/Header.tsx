@@ -7,7 +7,6 @@ import Image from 'next/image';
 
 const Header = () => {
   const pathname = usePathname();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   const isActiveRoute = (itemHref: string) => {
@@ -77,7 +76,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white shadow-sm fixed top-0 left-0 right-0 z-50">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
@@ -161,161 +160,29 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Search Icon */}
+          {/* Apply Now Button */}
           <div className="hidden lg:flex lg:items-center">
-            <button
-              className="p-2 text-gray-800 hover:text-gray-600 transition-colors duration-200"
-              aria-label="Search"
+            <Link
+              href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              className="px-6 py-2.5 font-bold text-white rounded-lg"
+              style={{ backgroundColor: '#0B7845' }}
             >
-              <svg
-                className="h-5 w-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                />
-              </svg>
-            </button>
+              Apply Now
+            </Link>
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile Apply Now Button */}
           <div className="flex lg:hidden">
-            <button
-              type="button"
-              className="inline-flex items-center justify-center rounded-md p-2 text-gray-800 hover:bg-gray-100 hover:text-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-600"
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            <Link
+              href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
+              className="px-4 py-2 font-bold text-white rounded-lg text-sm"
+              style={{ backgroundColor: '#0B7845' }}
             >
-              <span className="sr-only">Open main menu</span>
-              {!mobileMenuOpen ? (
-                <svg
-                  className="block h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                  />
-                </svg>
-              ) : (
-                <svg
-                  className="block h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              )}
-            </button>
+              Apply Now
+            </Link>
           </div>
         </div>
 
-        {/* Mobile menu */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden pb-4 mobile-menu-scroll">
-            <div className="space-y-1 pt-2 pb-safe">
-              {navItems.map((item) => (
-                <div key={item.name}>
-                  <div
-                    className={`flex items-center justify-between px-3 py-3 min-h-[48px] text-base font-semibold cursor-pointer rounded-lg ${
-                      isActiveRoute(item.href)
-                        ? 'text-gray-800 bg-gray-50 border-l-4 border-[#1e7f4e]'
-                        : 'text-gray-800 hover:bg-gray-50 hover:text-gray-600 active:bg-gray-100'
-                    }`}
-                    onClick={() => {
-                      if (item.hasDropdown) {
-                        setActiveDropdown(activeDropdown === item.name ? null : item.name);
-                      } else {
-                        setMobileMenuOpen(false);
-                      }
-                    }}
-                  >
-                    <Link
-                      href={item.href}
-                      className="flex-1"
-                      onClick={(e) => {
-                        if (item.hasDropdown) {
-                          e.preventDefault();
-                        } else {
-                          setMobileMenuOpen(false);
-                        }
-                      }}
-                    >
-                      {item.name}
-                    </Link>
-                    {item.hasDropdown && (
-                      <svg
-                        className={`h-3 w-3 transition-transform duration-200 ${activeDropdown === item.name ? 'rotate-180' : ''}`}
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                          clipRule="evenodd"
-                        />
-                      </svg>
-                    )}
-                  </div>
-
-                  {/* Mobile Dropdown Menu */}
-                  {item.hasDropdown && activeDropdown === item.name && dropdownMenus[item.name] && (
-                    <div className="ml-4 mt-1 space-y-1 border-l-2 border-gray-200 pl-2">
-                      {dropdownMenus[item.name].map((subItem) => (
-                        <Link
-                          key={subItem.name}
-                          href={subItem.href}
-                          className={`block px-3 py-2.5 min-h-[44px] text-sm rounded-md flex items-center ${
-                            pathname === subItem.href
-                              ? 'bg-[#1e7f4e] text-white'
-                              : 'text-gray-600 hover:bg-gray-50 hover:text-gray-800 active:bg-gray-100'
-                          }`}
-                          onClick={() => setMobileMenuOpen(false)}
-                        >
-                          {subItem.name}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              ))}
-              {/* Search in mobile menu */}
-              <button
-                className="flex w-full items-center px-3 py-3 min-h-[48px] text-base font-semibold text-gray-800 hover:bg-gray-50 hover:text-gray-600 active:bg-gray-100 rounded-lg"
-                aria-label="Search"
-              >
-                <svg
-                  className="h-5 w-5 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-                SEARCH
-              </button>
-            </div>
-          </div>
-        )}
       </nav>
     </header>
   );

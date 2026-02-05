@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
@@ -156,20 +157,18 @@ export default function EconomicsDepartment() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{
-        background: 'linear-gradient(135deg, #003d5c 0%, #005a7f 100%)'
-      }}>
+      <section className="relative py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8 bg-[linear-gradient(135deg,rgba(0,35,9,0.85)_0%,rgba(0,104,55,0.85)_100%)] lg:bg-[linear-gradient(135deg,rgba(0,35,9,0.85)_0%,rgba(0,104,55,0.85)_100%),url(/images/B.Ed-Economics-Hero-Banner-Image.png)] bg-cover bg-center">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             {/* Left Content */}
             <div>
               {/* NCTE Badge */}
               <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 mb-8"
-                   style={{ borderColor: '#ff6633' }}>
-                <svg className="w-5 h-5" style={{ color: '#ff6633' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ borderColor: '#7cb983' }}>
+                <svg className="w-5 h-5" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <span className="text-base font-semibold" style={{ color: '#ff6633' }}>
+                <span className="text-base font-semibold" style={{ color: '#7cb983' }}>
                   NCTE Approved | TNTEU Affiliated
                 </span>
               </div>
@@ -177,7 +176,7 @@ export default function EconomicsDepartment() {
               {/* Title */}
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
                 <span style={{ color: '#ffffff' }}>B.Ed </span>
-                <span style={{ color: '#ff6633' }}>Economics</span>
+                <span style={{ color: '#7cb983' }}>Economics</span>
               </h1>
 
               <h2 className="text-lg sm:text-xl lg:text-2xl font-semibold mb-6" style={{ color: '#ffffff' }}>
@@ -192,40 +191,39 @@ export default function EconomicsDepartment() {
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6 sm:mb-8 lg:mb-12">
                 {/* Years */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#ff6633' }}>2</div>
+                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>2</div>
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>YEARS</div>
                 </div>
 
                 {/* Seats */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#ff6633' }}>50</div>
+                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>50</div>
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEATS</div>
                 </div>
 
                 {/* Placement */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#ff6633' }}>94%</div>
+                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>94%</div>
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>PLACEMENT</div>
                 </div>
 
                 {/* Semesters */}
                 <div className="p-6 rounded-lg text-center" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
-                  <div className="text-4xl font-bold mb-2" style={{ color: '#ff6633' }}>4</div>
+                  <div className="text-4xl font-bold mb-2" style={{ color: '#7cb983' }}>4</div>
                   <div className="text-sm font-semibold tracking-wide" style={{ color: '#ffffff' }}>SEMESTERS</div>
                 </div>
               </div>
 
               {/* Buttons */}
               <div className="flex flex-wrap gap-4">
-                <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-white transition-transform hover:scale-105"
-                        style={{ backgroundColor: '#ff6633' }}>
+                <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-white bg-[#7cb983] hover:bg-[#6ba872] transition-transform hover:scale-105">
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                   </svg>
                   Apply Now
-                </button>
+                </Link>
 
-                <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 transition-all hover:bg-white hover:text-gray-900"
+                <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 transition-all hover:bg-white hover:text-[#002309]"
                         style={{ borderColor: '#ffffff', color: '#ffffff' }}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
@@ -235,34 +233,29 @@ export default function EconomicsDepartment() {
               </div>
             </div>
 
-            {/* Right Content - Program Card */}
-            <div className="relative">
-              <div className="p-12 rounded-2xl text-center"
-                   style={{ backgroundColor: 'rgba(0, 0, 0, 0.3)', backdropFilter: 'blur(10px)' }}>
-                <h3 className="text-4xl font-bold mb-8" style={{ color: '#ffffff' }}>
-                  Economics Education
-                </h3>
-                <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-                <p className="text-lg leading-relaxed" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
-                  <span className="font-semibold">Progressive Education</span> — Shaping future Economics educators since 1954
-                </p>
-              </div>
+            {/* Right Content - Hero Banner Image */}
+            <div className="relative mt-8 lg:mt-0">
+              <img
+                src="/images/B.Ed-Economics-Hero-Banner-Image.png"
+                alt="B.Ed Economics Department"
+                className="w-full h-auto rounded-xl sm:rounded-2xl"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Course Overview Section */}
-      <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f8f9fa' }}>
+      <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FBFBEE' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#003d5c' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               <span style={{ fontStyle: 'italic' }}>Course Overview</span>
             </h2>
-            <div className="h-1 w-20 mx-auto" style={{ backgroundColor: '#ff6633' }}></div>
+            <div className="h-1 w-20 mx-auto" style={{ backgroundColor: '#7cb983' }}></div>
           </div>
 
-          <p className="text-center text-lg mb-12" style={{ color: '#5a6c7d' }}>
+          <p className="text-center text-lg mb-12" style={{ color: '#006837' }}>
             Comprehensive teacher education program in Economics
           </p>
 
@@ -271,20 +264,20 @@ export default function EconomicsDepartment() {
             <div className="lg:col-span-2 space-y-8">
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <span className="text-8xl font-bold" style={{ color: '#ff6633' }}>T</span>
+                  <span className="text-8xl font-bold" style={{ color: '#7cb983' }}>T</span>
                 </div>
                 <div>
-                  <p className="text-lg leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-lg leading-relaxed" style={{ color: '#002309' }}>
                     he Bachelor of Education (B.Ed) in Economics at JKKN College of Education is a professionally designed 2-year undergraduate program that prepares passionate Economics graduates to become competent, skilled, and effective educators. This NCTE-approved program combines theoretical knowledge with practical teaching skills, enabling graduates to teach Economics, Indian Economic Development, Statistics for Economics, and related subjects at secondary and higher secondary levels.
                   </p>
                 </div>
               </div>
 
-              <p className="text-lg leading-relaxed" style={{ color: '#4a5568' }}>
+              <p className="text-lg leading-relaxed" style={{ color: '#002309' }}>
                 Our curriculum is aligned with the National Education Policy (NEP) 2020 and incorporates contemporary economic concepts including globalization, sustainable development, digital economy, GST framework, monetary policy, and international trade. The program emphasizes experiential learning through micro-teaching, peer teaching, simulated classroom experiences, and extensive school internships in partner institutions.
               </p>
 
-              <p className="text-lg leading-relaxed" style={{ color: '#4a5568' }}>
+              <p className="text-lg leading-relaxed" style={{ color: '#002309' }}>
                 Economics education is vital in developing analytical thinking, data interpretation, and economic literacy among young minds. As an Economics educator, you will play a crucial role in shaping future economists, policy analysts, business leaders, and informed citizens who can understand and navigate the complexities of economic systems and contribute meaningfully to national development.
               </p>
             </div>
@@ -293,58 +286,58 @@ export default function EconomicsDepartment() {
             <div className="space-y-6">
               {/* Program Duration */}
               <div className="p-6 rounded-xl border-l-4"
-                   style={{ backgroundColor: '#ffffff', borderColor: '#ff6633', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="text-sm font-semibold mb-2" style={{ color: '#5a6c7d' }}>
+                   style={{ backgroundColor: '#ffffff', borderColor: '#7cb983', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="text-sm font-semibold mb-2" style={{ color: '#006837' }}>
                   PROGRAM DURATION
                 </div>
-                <div className="text-2xl font-bold mb-1" style={{ color: '#003d5c' }}>
+                <div className="text-2xl font-bold mb-1" style={{ color: '#002309' }}>
                   2 Years
                 </div>
-                <div className="text-sm" style={{ color: '#5a6c7d' }}>
+                <div className="text-sm" style={{ color: '#006837' }}>
                   (4 Semesters)
                 </div>
               </div>
 
               {/* Total Credits */}
               <div className="p-6 rounded-xl border-l-4"
-                   style={{ backgroundColor: '#ffffff', borderColor: '#ff6633', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="text-sm font-semibold mb-2" style={{ color: '#5a6c7d' }}>
+                   style={{ backgroundColor: '#ffffff', borderColor: '#7cb983', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="text-sm font-semibold mb-2" style={{ color: '#006837' }}>
                   TOTAL CREDITS
                 </div>
-                <div className="text-2xl font-bold mb-1" style={{ color: '#003d5c' }}>
+                <div className="text-2xl font-bold mb-1" style={{ color: '#002309' }}>
                   80 Credits
                 </div>
               </div>
 
               {/* Medium of Instruction */}
               <div className="p-6 rounded-xl border-l-4"
-                   style={{ backgroundColor: '#ffffff', borderColor: '#ff6633', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="text-sm font-semibold mb-2" style={{ color: '#5a6c7d' }}>
+                   style={{ backgroundColor: '#ffffff', borderColor: '#7cb983', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="text-sm font-semibold mb-2" style={{ color: '#006837' }}>
                   MEDIUM OF INSTRUCTION
                 </div>
-                <div className="text-2xl font-bold mb-1" style={{ color: '#003d5c' }}>
+                <div className="text-2xl font-bold mb-1" style={{ color: '#002309' }}>
                   English & Tamil
                 </div>
               </div>
 
               {/* Affiliation */}
               <div className="p-6 rounded-xl border-l-4"
-                   style={{ backgroundColor: '#ffffff', borderColor: '#ff6633', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="text-sm font-semibold mb-2" style={{ color: '#5a6c7d' }}>
+                   style={{ backgroundColor: '#ffffff', borderColor: '#7cb983', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="text-sm font-semibold mb-2" style={{ color: '#006837' }}>
                   AFFILIATION
                 </div>
-                <div className="text-2xl font-bold mb-1" style={{ color: '#003d5c' }}>
+                <div className="text-2xl font-bold mb-1" style={{ color: '#002309' }}>
                   TNTEU Chennai
                 </div>
               </div>
 
               {/* Intake Capacity */}
               <div className="p-6 rounded-xl border-l-4"
-                   style={{ backgroundColor: '#ffffff', borderColor: '#ff6633', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="text-sm font-semibold mb-2" style={{ color: '#5a6c7d' }}>
+                   style={{ backgroundColor: '#ffffff', borderColor: '#7cb983', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="text-sm font-semibold mb-2" style={{ color: '#006837' }}>
                   INTAKE CAPACITY
                 </div>
-                <div className="text-2xl font-bold mb-1" style={{ color: '#003d5c' }}>
+                <div className="text-2xl font-bold mb-1" style={{ color: '#002309' }}>
                   50 Seats
                 </div>
               </div>
@@ -357,11 +350,11 @@ export default function EconomicsDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#003d5c' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               <span style={{ fontStyle: 'italic' }}>Program Highlights</span>
             </h2>
-            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#5a6c7d' }}>
+            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
               What makes our B.Ed Economics program exceptional
             </p>
           </div>
@@ -369,102 +362,102 @@ export default function EconomicsDepartment() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* NCTE Approved Program */}
             <div className="p-4 sm:p-6 lg:p-8 rounded-lg sm:rounded-xl text-center transition-transform hover:scale-105"
-                 style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                 style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: '#ffffff', border: '3px solid #0ea5e9' }}>
-                <svg className="w-10 h-10" style={{ color: '#0ea5e9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ backgroundColor: '#ffffff', border: '3px solid #7cb983' }}>
+                <svg className="w-10 h-10" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#003d5c' }}>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
                 NCTE Approved Program
               </h3>
-              <p className="leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="leading-relaxed" style={{ color: '#006837' }}>
                 Fully recognized by National Council for Teacher Education with curriculum meeting all regulatory standards for quality teacher preparation in India.
               </p>
             </div>
 
             {/* Expert Learning Facilitators */}
             <div className="p-4 sm:p-6 lg:p-8 rounded-lg sm:rounded-xl text-center transition-transform hover:scale-105"
-                 style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                 style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: '#ffffff', border: '3px solid #0ea5e9' }}>
-                <svg className="w-10 h-10" style={{ color: '#0ea5e9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ backgroundColor: '#ffffff', border: '3px solid #7cb983' }}>
+                <svg className="w-10 h-10" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#003d5c' }}>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
                 Expert Learning Facilitators
               </h3>
-              <p className="leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="leading-relaxed" style={{ color: '#006837' }}>
                 Learn from experienced educators with expertise in Economics education, pedagogical research, and contemporary teaching methodologies.
               </p>
             </div>
 
             {/* Technology-Enhanced Learning */}
             <div className="p-4 sm:p-6 lg:p-8 rounded-lg sm:rounded-xl text-center transition-transform hover:scale-105"
-                 style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                 style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: '#ffffff', border: '3px solid #0ea5e9' }}>
-                <svg className="w-10 h-10" style={{ color: '#0ea5e9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ backgroundColor: '#ffffff', border: '3px solid #7cb983' }}>
+                <svg className="w-10 h-10" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#003d5c' }}>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
                 Technology-Enhanced Learning
               </h3>
-              <p className="leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="leading-relaxed" style={{ color: '#006837' }}>
                 Modern smart classrooms, digital teaching tools, economic simulation software, data visualization tools, and online learning platforms for effective pedagogy.
               </p>
             </div>
 
             {/* Extensive School Internship */}
             <div className="p-4 sm:p-6 lg:p-8 rounded-lg sm:rounded-xl text-center transition-transform hover:scale-105"
-                 style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                 style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: '#ffffff', border: '3px solid #0ea5e9' }}>
-                <svg className="w-10 h-10" style={{ color: '#0ea5e9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ backgroundColor: '#ffffff', border: '3px solid #7cb983' }}>
+                <svg className="w-10 h-10" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#003d5c' }}>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
                 Extensive School Internship
               </h3>
-              <p className="leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="leading-relaxed" style={{ color: '#006837' }}>
                 16-week supervised teaching practice in partner schools providing real-world classroom experience with diverse learner groups and teaching environments.
               </p>
             </div>
 
             {/* Contemporary Economics Curriculum */}
             <div className="p-4 sm:p-6 lg:p-8 rounded-lg sm:rounded-xl text-center transition-transform hover:scale-105"
-                 style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                 style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: '#ffffff', border: '3px solid #0ea5e9' }}>
-                <svg className="w-10 h-10" style={{ color: '#0ea5e9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ backgroundColor: '#ffffff', border: '3px solid #7cb983' }}>
+                <svg className="w-10 h-10" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#003d5c' }}>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
                 Contemporary Economics Curriculum
               </h3>
-              <p className="leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="leading-relaxed" style={{ color: '#006837' }}>
                 Updated syllabus covering GST, digital economy, sustainable development goals, behavioral economics, and contemporary economic policies for comprehensive teaching preparation.
               </p>
             </div>
 
             {/* Scholarship Support */}
             <div className="p-4 sm:p-6 lg:p-8 rounded-lg sm:rounded-xl text-center transition-transform hover:scale-105"
-                 style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                 style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="w-20 h-20 mx-auto mb-6 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: '#ffffff', border: '3px solid #0ea5e9' }}>
-                <svg className="w-10 h-10" style={{ color: '#0ea5e9' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ backgroundColor: '#ffffff', border: '3px solid #7cb983' }}>
+                <svg className="w-10 h-10" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#003d5c' }}>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
                 Scholarship Support
               </h3>
-              <p className="leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="leading-relaxed" style={{ color: '#006837' }}>
                 Various government and institutional scholarships available for eligible candidates to ensure accessible, quality education for all deserving Learners.
               </p>
             </div>
@@ -473,14 +466,14 @@ export default function EconomicsDepartment() {
       </section>
 
       {/* Eligibility Criteria & Documents Section */}
-      <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f8f9fa' }}>
+      <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FBFBEE' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#003d5c' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               <span style={{ fontStyle: 'italic' }}>Eligibility Criteria & Documents</span>
             </h2>
-            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#5a6c7d' }}>
+            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
               Requirements for admission to B.Ed Economics program
             </p>
           </div>
@@ -494,7 +487,7 @@ export default function EconomicsDepartment() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold" style={{ color: '#0ea5e9' }}>
+                <h3 className="text-2xl font-bold" style={{ color: '#7cb983' }}>
                   Academic Requirements
                 </h3>
               </div>
@@ -502,78 +495,78 @@ export default function EconomicsDepartment() {
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     Bachelor's degree with Economics as major/subsidiary (BA Economics, B.Sc Economics, B.Com with Economics, or equivalent) from a recognized university
                   </p>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     Minimum 50% aggregate marks in graduation (45% for SC/ST/OBC/PWD candidates)
                   </p>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     Economics studied at degree level as a core or elective subject
                   </p>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     Candidates appearing for final year degree examinations may also apply
                   </p>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     Age limit as per Tamil Nadu government norms for teacher education
                   </p>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     Valid TNTEU B.Ed entrance examination score (if applicable)
                   </p>
                 </div>
@@ -588,7 +581,7 @@ export default function EconomicsDepartment() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </div>
-                <h3 className="text-2xl font-bold" style={{ color: '#0ea5e9' }}>
+                <h3 className="text-2xl font-bold" style={{ color: '#7cb983' }}>
                   Required Documents
                 </h3>
               </div>
@@ -596,91 +589,91 @@ export default function EconomicsDepartment() {
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     10th and 12th mark sheets and certificates (originals and copies)
                   </p>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     Degree certificate and consolidated mark sheet
                   </p>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     Transfer certificate from last institution attended
                   </p>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     Community certificate (for reserved category candidates)
                   </p>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     Income certificate (for scholarship purposes)
                   </p>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     Aadhar card and recent passport-size photographs
                   </p>
                 </div>
 
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 mt-1">
-                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#d4edda' }}>
-                      <svg className="w-4 h-4" style={{ color: '#1e7f4e' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div className="w-6 h-6 rounded-full flex items-center justify-center" style={{ backgroundColor: '#FBFBEE' }}>
+                      <svg className="w-4 h-4" style={{ color: '#006837' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#4a5568' }}>
+                  <p className="text-base leading-relaxed" style={{ color: '#002309' }}>
                     Migration certificate (if applicable for candidates from other states/universities)
                   </p>
                 </div>
@@ -694,18 +687,18 @@ export default function EconomicsDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#003d5c' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               <span style={{ fontStyle: 'italic' }}>Curriculum Structure</span>
             </h2>
-            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#5a6c7d' }}>
+            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
               Comprehensive syllabus aligned with NCTE norms and NEP 2020 guidelines
             </p>
           </div>
 
           {/* Semester Tabs */}
           <div className="max-w-4xl mx-auto">
-            <div className="flex flex-wrap justify-center gap-2 mb-8 p-2 rounded-xl" style={{ backgroundColor: '#f8f9fa' }}>
+            <div className="flex flex-wrap justify-center gap-2 mb-8 p-2 rounded-xl" style={{ backgroundColor: '#FBFBEE' }}>
               {[1, 2, 3, 4].map((semester) => (
                 <button
                   key={semester}
@@ -716,8 +709,8 @@ export default function EconomicsDepartment() {
                       : 'hover:bg-white/50'
                   }`}
                   style={{
-                    color: activeSemester === semester ? '#003d5c' : '#5a6c7d',
-                    border: activeSemester === semester ? '2px solid #0ea5e9' : '2px solid transparent'
+                    color: activeSemester === semester ? '#002309' : '#006837',
+                    border: activeSemester === semester ? '2px solid #7cb983' : '2px solid transparent'
                   }}
                 >
                   Semester {semester === 1 ? 'I' : semester === 2 ? 'II' : semester === 3 ? 'III' : 'IV'}
@@ -735,16 +728,16 @@ export default function EconomicsDepartment() {
                 >
                   <div
                     className="flex-shrink-0 w-16 h-16 rounded-lg flex flex-col items-center justify-center text-white font-bold"
-                    style={{ background: 'linear-gradient(135deg, #003d5c 0%, #0ea5e9 100%)' }}
+                    style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}
                   >
                     <span className="text-xs">{course.code.split(' ')[0]}</span>
                     <span className="text-lg">{course.code.split(' ')[1]}</span>
                   </div>
                   <div className="flex-1">
-                    <h4 className="text-xl font-bold mb-2" style={{ color: '#003d5c' }}>
+                    <h4 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
                       {course.title}
                     </h4>
-                    <p className="text-base leading-relaxed mb-3" style={{ color: '#5a6c7d' }}>
+                    <p className="text-base leading-relaxed mb-3" style={{ color: '#006837' }}>
                       {course.description}
                     </p>
                     <div className="flex gap-4 text-sm" style={{ color: '#8896a6' }}>
@@ -760,13 +753,13 @@ export default function EconomicsDepartment() {
       </section>
 
       {/* Career Prospects Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ background: 'linear-gradient(135deg, #003d5c 0%, #005a7f 100%)' }}>
+      <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ background: 'linear-gradient(135deg, #002309 0%, #004d28 50%, #006837 100%)' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#ffffff' }}>
               <span style={{ fontStyle: 'italic' }}>Career Prospects</span>
             </h2>
-            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#ff6633' }}></div>
+            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
             <p className="text-lg" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
               Diverse opportunities await B.Ed Economics graduates
             </p>
@@ -776,7 +769,7 @@ export default function EconomicsDepartment() {
             {/* School Economics Teacher */}
             <div className="p-8 rounded-xl" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
               <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: '#ff6633' }}>
+                   style={{ backgroundColor: '#7cb983' }}>
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
@@ -792,7 +785,7 @@ export default function EconomicsDepartment() {
             {/* TGT/PGT Economics */}
             <div className="p-8 rounded-xl" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
               <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: '#ff6633' }}>
+                   style={{ backgroundColor: '#7cb983' }}>
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                 </svg>
@@ -808,7 +801,7 @@ export default function EconomicsDepartment() {
             {/* Curriculum Developer */}
             <div className="p-8 rounded-xl" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
               <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: '#ff6633' }}>
+                   style={{ backgroundColor: '#7cb983' }}>
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
                 </svg>
@@ -824,7 +817,7 @@ export default function EconomicsDepartment() {
             {/* Coaching Institute Faculty */}
             <div className="p-8 rounded-xl" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
               <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: '#ff6633' }}>
+                   style={{ backgroundColor: '#7cb983' }}>
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
@@ -840,7 +833,7 @@ export default function EconomicsDepartment() {
             {/* Financial Literacy Educator */}
             <div className="p-8 rounded-xl" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
               <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: '#ff6633' }}>
+                   style={{ backgroundColor: '#7cb983' }}>
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
@@ -856,7 +849,7 @@ export default function EconomicsDepartment() {
             {/* Higher Education (M.Ed/Ph.D) */}
             <div className="p-8 rounded-xl" style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
               <div className="w-16 h-16 mx-auto mb-6 rounded-full flex items-center justify-center"
-                   style={{ backgroundColor: '#ff6633' }}>
+                   style={{ backgroundColor: '#7cb983' }}>
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                 </svg>
@@ -876,108 +869,108 @@ export default function EconomicsDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#003d5c' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               <span style={{ fontStyle: 'italic' }}>Why Choose JKKN for B.Ed Economics?</span>
             </h2>
-            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#5a6c7d' }}>
+            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
               Discover the advantages of pursuing your B.Ed Economics at JKKN College of Education
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* 70+ Years of Educational Excellence */}
-            <div className="p-8 rounded-xl" style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+            <div className="p-8 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold"
-                     style={{ backgroundColor: '#ff6633' }}>
+                     style={{ backgroundColor: '#7cb983' }}>
                   1
                 </div>
-                <h3 className="text-xl font-bold" style={{ color: '#003d5c' }}>
+                <h3 className="text-xl font-bold" style={{ color: '#002309' }}>
                   70+ Years of Educational Excellence
                 </h3>
               </div>
-              <p className="leading-relaxed ml-14" style={{ color: '#5a6c7d' }}>
+              <p className="leading-relaxed ml-14" style={{ color: '#006837' }}>
                 Part of J.K.K. Nattraja Educational Institutions with a proven legacy of transforming lives through progressive education since 1954.
               </p>
             </div>
 
             {/* 94% Placement Success Rate */}
-            <div className="p-8 rounded-xl" style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+            <div className="p-8 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold"
-                     style={{ backgroundColor: '#ff6633' }}>
+                     style={{ backgroundColor: '#7cb983' }}>
                   2
                 </div>
-                <h3 className="text-xl font-bold" style={{ color: '#003d5c' }}>
+                <h3 className="text-xl font-bold" style={{ color: '#002309' }}>
                   94% Placement Success Rate
                 </h3>
               </div>
-              <p className="leading-relaxed ml-14" style={{ color: '#5a6c7d' }}>
+              <p className="leading-relaxed ml-14" style={{ color: '#006837' }}>
                 Strong placement record with graduates securing positions in government schools, CBSE/ICSE schools, coaching institutes, and prestigious educational institutions.
               </p>
             </div>
 
             {/* Contemporary Economics Curriculum */}
-            <div className="p-8 rounded-xl" style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+            <div className="p-8 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold"
-                     style={{ backgroundColor: '#ff6633' }}>
+                     style={{ backgroundColor: '#7cb983' }}>
                   3
                 </div>
-                <h3 className="text-xl font-bold" style={{ color: '#003d5c' }}>
+                <h3 className="text-xl font-bold" style={{ color: '#002309' }}>
                   Contemporary Economics Curriculum
                 </h3>
               </div>
-              <p className="leading-relaxed ml-14" style={{ color: '#5a6c7d' }}>
+              <p className="leading-relaxed ml-14" style={{ color: '#006837' }}>
                 Curriculum updated with GST, digital economy, sustainable development, behavioral economics, and NEP 2020 aligned content.
               </p>
             </div>
 
             {/* Extensive Partner School Network */}
-            <div className="p-8 rounded-xl" style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+            <div className="p-8 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold"
-                     style={{ backgroundColor: '#ff6633' }}>
+                     style={{ backgroundColor: '#7cb983' }}>
                   4
                 </div>
-                <h3 className="text-xl font-bold" style={{ color: '#003d5c' }}>
+                <h3 className="text-xl font-bold" style={{ color: '#002309' }}>
                   Extensive Partner School Network
                 </h3>
               </div>
-              <p className="leading-relaxed ml-14" style={{ color: '#5a6c7d' }}>
+              <p className="leading-relaxed ml-14" style={{ color: '#006837' }}>
                 Tie-ups with 50+ schools for internship providing diverse teaching experiences in urban, rural, government, and private settings.
               </p>
             </div>
 
             {/* Holistic Development Focus */}
-            <div className="p-8 rounded-xl" style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+            <div className="p-8 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold"
-                     style={{ backgroundColor: '#ff6633' }}>
+                     style={{ backgroundColor: '#7cb983' }}>
                   5
                 </div>
-                <h3 className="text-xl font-bold" style={{ color: '#003d5c' }}>
+                <h3 className="text-xl font-bold" style={{ color: '#002309' }}>
                   Holistic Development Focus
                 </h3>
               </div>
-              <p className="leading-relaxed ml-14" style={{ color: '#5a6c7d' }}>
+              <p className="leading-relaxed ml-14" style={{ color: '#006837' }}>
                 Beyond academics, focus on soft skills, communication, personality development, and professional ethics for well-rounded educators.
               </p>
             </div>
 
             {/* Affordable Quality Education */}
-            <div className="p-8 rounded-xl" style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+            <div className="p-8 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <div className="flex items-start gap-4 mb-4">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold"
-                     style={{ backgroundColor: '#ff6633' }}>
+                     style={{ backgroundColor: '#7cb983' }}>
                   6
                 </div>
-                <h3 className="text-xl font-bold" style={{ color: '#003d5c' }}>
+                <h3 className="text-xl font-bold" style={{ color: '#002309' }}>
                   Affordable Quality Education
                 </h3>
               </div>
-              <p className="leading-relaxed ml-14" style={{ color: '#5a6c7d' }}>
+              <p className="leading-relaxed ml-14" style={{ color: '#006837' }}>
                 Government-regulated fees with multiple scholarship options ensuring quality teacher education accessible to all deserving candidates.
               </p>
             </div>
@@ -986,21 +979,21 @@ export default function EconomicsDepartment() {
       </section>
 
       {/* Campus Facilities Section */}
-      <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f8f9fa' }}>
+      <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FBFBEE' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#003d5c' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               <span style={{ fontStyle: 'italic' }}>Campus Facilities</span>
             </h2>
-            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#5a6c7d' }}>
+            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
               World-class infrastructure supporting your learning journey
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Economics Lab */}
-            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#003d5c' }}>
+            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#002309' }}>
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>
                   Economics Lab
@@ -1012,7 +1005,7 @@ export default function EconomicsDepartment() {
             </div>
 
             {/* Digital Library */}
-            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#0ea5e9' }}>
+            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>
                   Digital Library
@@ -1024,7 +1017,7 @@ export default function EconomicsDepartment() {
             </div>
 
             {/* Smart Classrooms */}
-            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#ff6633' }}>
+            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>
                   Smart Classrooms
@@ -1036,7 +1029,7 @@ export default function EconomicsDepartment() {
             </div>
 
             {/* Micro Teaching */}
-            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#003d5c' }}>
+            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#002309' }}>
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>
                   Micro Teaching
@@ -1048,7 +1041,7 @@ export default function EconomicsDepartment() {
             </div>
 
             {/* Computer Lab */}
-            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#0ea5e9' }}>
+            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>
                   Computer Lab
@@ -1060,7 +1053,7 @@ export default function EconomicsDepartment() {
             </div>
 
             {/* Seminar Hall */}
-            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#ff6633' }}>
+            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>
                   Seminar Hall
@@ -1072,7 +1065,7 @@ export default function EconomicsDepartment() {
             </div>
 
             {/* Resource Center */}
-            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#003d5c' }}>
+            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#002309' }}>
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-4" style={{ color: '#ffffff' }}>
                   Resource Center
@@ -1084,7 +1077,7 @@ export default function EconomicsDepartment() {
             </div>
 
             {/* Hostel */}
-            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#0ea5e9' }}>
+            <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
               <div className="p-8">
                 <h3 className="text-3xl font-bold mb-4" style={{ color: '#ffffff' }}>
                   Hostel
@@ -1102,11 +1095,11 @@ export default function EconomicsDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#003d5c' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               <span style={{ fontStyle: 'italic' }}>Admission Process</span>
             </h2>
-            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#5a6c7d' }}>
+            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
               Simple steps to begin your journey as an Economics educator
             </p>
           </div>
@@ -1120,16 +1113,16 @@ export default function EconomicsDepartment() {
               <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                    <h3 className="text-xl font-bold mb-3" style={{ color: '#003d5c' }}>
+                    <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Check Eligibility
                     </h3>
-                    <p className="leading-relaxed" style={{ color: '#5a6c7d' }}>
+                    <p className="leading-relaxed" style={{ color: '#006837' }}>
                       Verify you meet the academic requirements: BA Economics, B.Sc Economics, B.Com with Economics or equivalent degree with minimum 50% marks (45% for reserved categories).
                     </p>
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold z-10 hidden md:flex"
-                     style={{ backgroundColor: '#ff6633' }}>
+                     style={{ backgroundColor: '#7cb983' }}>
                   1
                 </div>
                 <div className="md:w-1/2 md:pl-12"></div>
@@ -1141,15 +1134,15 @@ export default function EconomicsDepartment() {
               <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 md:pr-12"></div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold z-10 hidden md:flex"
-                     style={{ backgroundColor: '#ff6633' }}>
+                     style={{ backgroundColor: '#7cb983' }}>
                   2
                 </div>
                 <div className="md:w-1/2 md:pl-12 mb-4 md:mb-0">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                    <h3 className="text-xl font-bold mb-3" style={{ color: '#003d5c' }}>
+                    <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Online Application
                     </h3>
-                    <p className="leading-relaxed" style={{ color: '#5a6c7d' }}>
+                    <p className="leading-relaxed" style={{ color: '#006837' }}>
                       Complete the online application form on our official website or TNTEU portal. Upload required documents and pay the application fee.
                     </p>
                   </div>
@@ -1162,16 +1155,16 @@ export default function EconomicsDepartment() {
               <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                    <h3 className="text-xl font-bold mb-3" style={{ color: '#003d5c' }}>
+                    <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Document Verification
                     </h3>
-                    <p className="leading-relaxed" style={{ color: '#5a6c7d' }}>
+                    <p className="leading-relaxed" style={{ color: '#006837' }}>
                       Submit original documents for verification at the college admission office. Ensure all certificates are attested and complete.
                     </p>
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold z-10 hidden md:flex"
-                     style={{ backgroundColor: '#ff6633' }}>
+                     style={{ backgroundColor: '#7cb983' }}>
                   3
                 </div>
                 <div className="md:w-1/2 md:pl-12"></div>
@@ -1183,15 +1176,15 @@ export default function EconomicsDepartment() {
               <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 md:pr-12"></div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold z-10 hidden md:flex"
-                     style={{ backgroundColor: '#ff6633' }}>
+                     style={{ backgroundColor: '#7cb983' }}>
                   4
                 </div>
                 <div className="md:w-1/2 md:pl-12 mb-4 md:mb-0">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                    <h3 className="text-xl font-bold mb-3" style={{ color: '#003d5c' }}>
+                    <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Counseling & Seat Allotment
                     </h3>
-                    <p className="leading-relaxed" style={{ color: '#5a6c7d' }}>
+                    <p className="leading-relaxed" style={{ color: '#006837' }}>
                       Attend counseling session as per TNTEU schedule. Seats are allotted based on merit, entrance exam scores, and reservation norms.
                     </p>
                   </div>
@@ -1204,16 +1197,16 @@ export default function EconomicsDepartment() {
               <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                    <h3 className="text-xl font-bold mb-3" style={{ color: '#003d5c' }}>
+                    <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Fee Payment & Enrollment
                     </h3>
-                    <p className="leading-relaxed" style={{ color: '#5a6c7d' }}>
+                    <p className="leading-relaxed" style={{ color: '#006837' }}>
                       Pay the prescribed fees within the stipulated time. Complete enrollment formalities and receive your admission confirmation.
                     </p>
                   </div>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold z-10 hidden md:flex"
-                     style={{ backgroundColor: '#ff6633' }}>
+                     style={{ backgroundColor: '#7cb983' }}>
                   5
                 </div>
                 <div className="md:w-1/2 md:pl-12"></div>
@@ -1225,15 +1218,15 @@ export default function EconomicsDepartment() {
               <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-1/2 md:pr-12"></div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold z-10 hidden md:flex"
-                     style={{ backgroundColor: '#ff6633' }}>
+                     style={{ backgroundColor: '#7cb983' }}>
                   6
                 </div>
                 <div className="md:w-1/2 md:pl-12">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                    <h3 className="text-xl font-bold mb-3" style={{ color: '#003d5c' }}>
+                    <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Orientation & Classes Begin
                     </h3>
-                    <p className="leading-relaxed" style={{ color: '#5a6c7d' }}>
+                    <p className="leading-relaxed" style={{ color: '#006837' }}>
                       Attend the orientation program to familiarize with campus, Learning Facilitators, and academic schedule. Begin your transformative journey!
                     </p>
                   </div>
@@ -1245,14 +1238,14 @@ export default function EconomicsDepartment() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#f8f9fa' }}>
+      <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FBFBEE' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#003d5c' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               <span style={{ fontStyle: 'italic' }}>Frequently Asked Questions</span>
             </h2>
-            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#ff6633' }}></div>
-            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#5a6c7d' }}>
+            <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+            <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
               Find answers to common queries about B.Ed Economics program
             </p>
           </div>
@@ -1261,14 +1254,14 @@ export default function EconomicsDepartment() {
             {/* FAQ 1 */}
             <details className="group p-6 rounded-xl bg-white" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <summary className="flex items-center justify-between cursor-pointer list-none">
-                <h3 className="text-lg font-bold pr-4" style={{ color: '#003d5c' }}>
+                <h3 className="text-lg font-bold pr-4" style={{ color: '#002309' }}>
                   What is the eligibility for B.Ed Economics admission?
                 </h3>
-                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#003d5c' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#002309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <p className="mt-4 leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
                 Candidates must hold a Bachelor's degree with Economics as a major or subsidiary subject (BA Economics, B.Sc Economics, B.Com with Economics, or equivalent) from a recognized university with minimum 50% aggregate marks. Reserved category candidates (SC/ST/OBC/PWD) require minimum 45% marks. Candidates appearing for final year degree examinations may also apply provisionally.
               </p>
             </details>
@@ -1276,14 +1269,14 @@ export default function EconomicsDepartment() {
             {/* FAQ 2 */}
             <details className="group p-6 rounded-xl bg-white" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <summary className="flex items-center justify-between cursor-pointer list-none">
-                <h3 className="text-lg font-bold pr-4" style={{ color: '#003d5c' }}>
+                <h3 className="text-lg font-bold pr-4" style={{ color: '#002309' }}>
                   What is the duration of B.Ed Economics program?
                 </h3>
-                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#003d5c' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#002309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <p className="mt-4 leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
                 The B.Ed Economics program is a 2-year full-time professional degree course spread across 4 semesters, as per NCTE (National Council for Teacher Education) norms. Each academic year consists of classroom learning, practical sessions, and school internship components as mandated by TNTEU guidelines.
               </p>
             </details>
@@ -1291,14 +1284,14 @@ export default function EconomicsDepartment() {
             {/* FAQ 3 */}
             <details className="group p-6 rounded-xl bg-white" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <summary className="flex items-center justify-between cursor-pointer list-none">
-                <h3 className="text-lg font-bold pr-4" style={{ color: '#003d5c' }}>
+                <h3 className="text-lg font-bold pr-4" style={{ color: '#002309' }}>
                   What subjects can I teach after completing B.Ed Economics?
                 </h3>
-                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#003d5c' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#002309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <p className="mt-4 leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
                 After completing B.Ed Economics, you are qualified to teach Economics, Indian Economic Development, Statistics for Economics, Business Economics, and related subjects at secondary (Classes 9-10) and higher secondary (Classes 11-12) levels in government, aided, and private schools across India following CBSE, ICSE, or State Board curricula.
               </p>
             </details>
@@ -1306,14 +1299,14 @@ export default function EconomicsDepartment() {
             {/* FAQ 4 */}
             <details className="group p-6 rounded-xl bg-white" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <summary className="flex items-center justify-between cursor-pointer list-none">
-                <h3 className="text-lg font-bold pr-4" style={{ color: '#003d5c' }}>
+                <h3 className="text-lg font-bold pr-4" style={{ color: '#002309' }}>
                   Is JKKN College of Education NCTE approved?
                 </h3>
-                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#003d5c' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#002309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <p className="mt-4 leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
                 Yes, JKKN College of Education is approved by the National Council for Teacher Education (NCTE) and affiliated to Tamil Nadu Teachers Education University (TNTEU), Chennai. The B.Ed Economics program meets all regulatory standards for teacher education in India, ensuring your degree is recognized nationally for teaching positions.
               </p>
             </details>
@@ -1321,14 +1314,14 @@ export default function EconomicsDepartment() {
             {/* FAQ 5 */}
             <details className="group p-6 rounded-xl bg-white" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <summary className="flex items-center justify-between cursor-pointer list-none">
-                <h3 className="text-lg font-bold pr-4" style={{ color: '#003d5c' }}>
+                <h3 className="text-lg font-bold pr-4" style={{ color: '#002309' }}>
                   What is the fee structure for B.Ed Economics?
                 </h3>
-                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#003d5c' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#002309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <p className="mt-4 leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
                 The fee structure is regulated by the Tamil Nadu government for teacher education programs. Various scholarships including government scholarships for SC/ST/OBC/BC candidates, merit scholarships, and institutional financial assistance are available for eligible Learners. Please contact our admission office for current fee details and scholarship information.
               </p>
             </details>
@@ -1336,14 +1329,14 @@ export default function EconomicsDepartment() {
             {/* FAQ 6 */}
             <details className="group p-6 rounded-xl bg-white" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <summary className="flex items-center justify-between cursor-pointer list-none">
-                <h3 className="text-lg font-bold pr-4" style={{ color: '#003d5c' }}>
+                <h3 className="text-lg font-bold pr-4" style={{ color: '#002309' }}>
                   Does the program include practical teaching experience?
                 </h3>
-                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#003d5c' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#002309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <p className="mt-4 leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
                 Yes, the B.Ed Economics program includes extensive practical training through micro-teaching sessions, simulated teaching practices, peer teaching, and a mandatory 16-week school internship program spread across two phases. Learners teach Economics subjects in actual classroom settings under mentor Learning Facilitator guidance in our partner schools.
               </p>
             </details>
@@ -1351,14 +1344,14 @@ export default function EconomicsDepartment() {
             {/* FAQ 7 */}
             <details className="group p-6 rounded-xl bg-white" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <summary className="flex items-center justify-between cursor-pointer list-none">
-                <h3 className="text-lg font-bold pr-4" style={{ color: '#003d5c' }}>
+                <h3 className="text-lg font-bold pr-4" style={{ color: '#002309' }}>
                   Can I pursue B.Ed Economics after BA Economics through distance education?
                 </h3>
-                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#003d5c' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#002309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <p className="mt-4 leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
                 Yes, candidates with BA Economics or equivalent degree from UGC-recognized distance education universities/institutions are eligible for B.Ed Economics admission, provided they meet the minimum percentage criteria (50% general, 45% reserved) and other eligibility requirements. The distance education degree must be from a recognized university listed in UGC/AIU approved list.
               </p>
             </details>
@@ -1366,14 +1359,14 @@ export default function EconomicsDepartment() {
             {/* FAQ 8 */}
             <details className="group p-6 rounded-xl bg-white" style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
               <summary className="flex items-center justify-between cursor-pointer list-none">
-                <h3 className="text-lg font-bold pr-4" style={{ color: '#003d5c' }}>
+                <h3 className="text-lg font-bold pr-4" style={{ color: '#002309' }}>
                   What are the career opportunities after B.Ed Economics?
                 </h3>
-                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#003d5c' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 flex-shrink-0 transition-transform group-open:rotate-180" style={{ color: '#002309' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </summary>
-              <p className="mt-4 leading-relaxed" style={{ color: '#5a6c7d' }}>
+              <p className="mt-4 leading-relaxed" style={{ color: '#006837' }}>
                 B.Ed Economics graduates have diverse career options including: Economics teachers in government and private schools, TGT/PGT positions in CBSE/ICSE schools, coaching institute faculty for competitive exams, curriculum developers, educational content writers, financial literacy educators, and opportunities to pursue M.Ed/Ph.D for academic and research roles in higher education.
               </p>
             </details>
@@ -1382,7 +1375,7 @@ export default function EconomicsDepartment() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ff6633' }}>
+      <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#7cb983' }}>
         <div className="mx-auto max-w-7xl text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#ffffff', fontStyle: 'italic' }}>
             Ready to Begin Your Journey as an Economics Educator?
@@ -1391,15 +1384,15 @@ export default function EconomicsDepartment() {
             Join JKKN College of Education and transform your passion for Economics into a rewarding teaching career. Admissions open for 2025-26 academic year.
           </p>
           <div className="flex flex-wrap justify-center gap-6">
-            <button className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold transition-transform hover:scale-105"
-                    style={{ backgroundColor: '#ffffff', color: '#ff6633' }}>
+            <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold transition-transform hover:scale-105"
+                    style={{ backgroundColor: '#ffffff', color: '#7cb983' }}>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
               </svg>
               Apply Online Now
-            </button>
+            </Link>
             <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-white transition-transform hover:scale-105"
-                    style={{ backgroundColor: '#003d5c' }}>
+                    style={{ backgroundColor: '#002309' }}>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
