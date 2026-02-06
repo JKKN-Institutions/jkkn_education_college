@@ -1293,7 +1293,7 @@ export default function PhysicsDepartment() {
                 </h3>
               </div>
               <p className="leading-relaxed ml-16" style={{ color: '#006837' }}>
-                Part of J.K.K. Nattraja Educational Institutions with a proven legacy of transforming lives through progressive education since 1954.
+                Part of JKKN Institutions with a proven legacy of transforming lives through progressive education since 1954.
               </p>
             </div>
 

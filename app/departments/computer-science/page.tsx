@@ -127,7 +127,7 @@ export default function ComputerScienceDepartment() {
               </p>
 
               <p className="text-lg leading-relaxed text-gray-700">
-                At J.K.K. Nattraja Educational Institutions, we believe in excellence without elitism. Our experienced Learning Facilitators, state-of-the-art computer labs, and comprehensive support systems ensure that every Learner receives personalized attention and guidance throughout their educational journey. Join us in our mission to transform lives through progressive education and prepare the next generation of digital citizens.
+                At JKKN Institutions, we believe in excellence without elitism. Our experienced Learning Facilitators, state-of-the-art computer labs, and comprehensive support systems ensure that every Learner receives personalized attention and guidance throughout their educational journey. Join us in our mission to transform lives through progressive education and prepare the next generation of digital citizens.
               </p>
             </div>
 
@@ -1524,13 +1524,13 @@ export default function ComputerScienceDepartment() {
               </svg>
               Apply Online Now
             </Link>
-            <button className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-lg font-semibold text-lg border-3 text-white hover:text-[#7cb983] transition-all hover:bg-white"
+            <a href="tel:+919345855001" className="inline-flex items-center justify-center gap-3 px-10 py-5 rounded-lg font-semibold text-lg border-3 text-white hover:text-[#7cb983] transition-all hover:bg-white"
                     style={{ borderColor: '#ffffff', borderWidth: '3px' }}>
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               Contact Admissions
-            </button>
+            </a>
           </div>
         </div>
       </section>

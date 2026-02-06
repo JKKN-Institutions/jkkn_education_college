@@ -124,7 +124,7 @@ export default function MathematicsPage() {
               </p>
 
               <p className="text-lg">
-                At J.K.K. Nattraja Educational Institutions, we believe in excellence without elitism. Our experienced Learning Facilitators, state-of-the-art Mathematics laboratories, and comprehensive support systems ensure that every Learner receives personalized attention and guidance throughout their educational journey. We focus on developing not just teaching skills but also nurturing a deep understanding of mathematical concepts and their real-world applications. Join us in our mission to transform lives through progressive education.
+                At JKKN Institutions, we believe in excellence without elitism. Our experienced Learning Facilitators, state-of-the-art Mathematics laboratories, and comprehensive support systems ensure that every Learner receives personalized attention and guidance throughout their educational journey. We focus on developing not just teaching skills but also nurturing a deep understanding of mathematical concepts and their real-world applications. Join us in our mission to transform lives through progressive education.
               </p>
             </div>
 
@@ -925,10 +925,10 @@ export default function MathematicsPage() {
               <Users className="w-6 h-6" />
               Apply Online Now
             </Link>
-            <button className="flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold rounded-lg shadow-lg transition-all transform hover:scale-105">
+            <a href="tel:+919345855001" className="flex items-center gap-3 px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white hover:bg-white hover:text-[#7cb983] font-bold rounded-lg shadow-lg transition-all transform hover:scale-105">
               <Phone className="w-6 h-6" />
               Contact Admissions
-            </button>
+            </a>
           </div>
         </div>
       </section>

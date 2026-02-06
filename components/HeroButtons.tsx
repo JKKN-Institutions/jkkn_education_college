@@ -16,7 +16,7 @@ export default function HeroButtons() {
         href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
         className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 text-center text-sm sm:text-base"
       >
-        Apply Now for 2025-26
+        Apply Now for 2026-27
       </Link>
       <button
         onClick={scrollToProgramme}

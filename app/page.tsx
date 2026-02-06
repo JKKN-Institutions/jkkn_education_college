@@ -35,7 +35,7 @@ export default function Home() {
                   <div className="text-xs sm:text-sm text-white/80">Placement Rate</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
-                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">25+</div>
+                  <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-[#7cb983] mb-1">70+</div>
                   <div className="text-xs sm:text-sm text-white/80">Years of Excellence</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3 sm:p-4 text-center">
@@ -81,7 +81,7 @@ export default function Home() {
                 {/* Top Left - Circular Years Badge */}
                 <div className="absolute top-2 left-2 sm:top-3 sm:left-3">
                   <div className="bg-[#7cb983] rounded-full w-16 h-16 sm:w-20 sm:h-20 flex flex-col items-center justify-center shadow-lg">
-                    <div className="text-white font-bold text-lg sm:text-xl">25+</div>
+                    <div className="text-white font-bold text-lg sm:text-xl">70+</div>
                     <div className="text-white text-[8px] sm:text-[9px] font-semibold uppercase tracking-wide text-center">Years<br/>Legacy</div>
                   </div>
                 </div>
@@ -89,7 +89,9 @@ export default function Home() {
                 {/* Bottom Right - Placement Badge */}
                 <div className="absolute bottom-2 right-2 sm:bottom-3 sm:right-3">
                   <div className="bg-white rounded-lg shadow-lg px-2 py-1.5 sm:px-3 sm:py-2 flex items-center gap-1.5 sm:gap-2">
-                    <div className="text-lg sm:text-xl">⭐</div>
+                    <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#FFD700]" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
                     <div>
                       <div className="font-bold text-[#006837] text-[10px] sm:text-xs">98%+ Placement</div>
                       <div className="text-gray-600 text-[8px] sm:text-[10px]">Success Rate</div>
@@ -129,7 +131,7 @@ export default function Home() {
                 </div>
                 <div className="min-w-0">
                   <div className="text-xs sm:text-sm text-gray-500 mb-0.5 sm:mb-1">DEPARTMENTS</div>
-                  <div className="font-bold text-sm sm:text-base lg:text-lg text-[#006837]">11 Specializations</div>
+                  <div className="font-bold text-sm sm:text-base lg:text-lg text-[#006837]">14 Specializations</div>
                 </div>
               </div>
 
@@ -258,7 +260,7 @@ export default function Home() {
               Our Departments
             </h2>
             <p className="text-sm sm:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto px-2">
-              Choose from 11 specialized B.Ed programmes designed to match your academic background and career aspirations
+              Choose from 14 specialized B.Ed programmes designed to match your academic background and career aspirations
             </p>
           </div>
 
@@ -282,9 +284,12 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className="inline-block bg-[#7cb983] text-white px-4 py-1 rounded-full text-xs font-semibold">
+              <span className="inline-block bg-[#7cb983] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 LANGUAGE
               </span>
+              <Link href="/departments/tamil" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
             </div>
 
             {/* B.Ed English */}
@@ -306,9 +311,12 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className="inline-block bg-[#7cb983] text-white px-4 py-1 rounded-full text-xs font-semibold">
+              <span className="inline-block bg-[#7cb983] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 LANGUAGE
               </span>
+              <Link href="/departments/english" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
             </div>
 
             {/* B.Ed Mathematics */}
@@ -330,15 +338,23 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold">
+              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
+              <Link href="/departments/maths" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
             </div>
 
             {/* B.Ed Physics */}
             <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
               <div className="bg-[#002309] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <span className="text-white text-xl sm:text-2xl font-bold">⚛</span>
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="2" fill="currentColor"/>
+                  <circle cx="12" cy="12" r="8" strokeWidth="1.5"/>
+                  <ellipse cx="12" cy="12" rx="10" ry="4" strokeWidth="1.5"/>
+                  <ellipse cx="12" cy="12" rx="4" ry="10" strokeWidth="1.5"/>
+                </svg>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2 sm:mb-3">B.Ed (Physics)</h3>
               <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
@@ -354,15 +370,23 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold">
+              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
+              <Link href="/departments/physics" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
             </div>
 
             {/* B.Ed Chemistry */}
             <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
               <div className="bg-[#7cb983] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <span className="text-white text-xl sm:text-2xl font-bold">🧪</span>
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                  <path d="M9 3L9 10L6 17C5.5 18 5.5 19 6 20C6.5 21 7.5 21.5 9 21.5H15C16.5 21.5 17.5 21 18 20C18.5 19 18.5 18 18 17L15 10V3"/>
+                  <path d="M9 3H15"/>
+                  <path d="M10 3V2"/>
+                  <path d="M14 3V2"/>
+                </svg>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2 sm:mb-3">B.Ed (Chemistry)</h3>
               <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
@@ -378,15 +402,21 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold">
+              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
+              <Link href="/departments/chemistry" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
             </div>
 
             {/* B.Ed Botany */}
             <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
               <div className="bg-[#006837] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <span className="text-white text-xl sm:text-2xl font-bold">🌿</span>
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                  <path d="M12 22V12M12 12C12 10 11 6 7 4M12 12C12 10 13 6 17 4M12 12C10 12 6 11 4 7M12 12C10 12 6 13 4 17"/>
+                  <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+                </svg>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2 sm:mb-3">B.Ed (Botany)</h3>
               <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
@@ -402,15 +432,25 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold">
+              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
+              <Link href="/departments/botany" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
             </div>
 
             {/* B.Ed Zoology */}
             <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
               <div className="bg-[#002309] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <span className="text-white text-xl sm:text-2xl font-bold">🔬</span>
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                  <path d="M8 2V6M16 2V6"/>
+                  <rect x="6" y="6" width="4" height="12" rx="1"/>
+                  <rect x="14" y="6" width="4" height="12" rx="1"/>
+                  <line x1="8" y1="10" x2="16" y2="10"/>
+                  <circle cx="12" cy="18" r="3"/>
+                  <line x1="12" y1="21" x2="12" y2="22"/>
+                </svg>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2 sm:mb-3">B.Ed (Zoology)</h3>
               <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
@@ -426,15 +466,23 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold">
+              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
+              <Link href="/departments/zoology" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
             </div>
 
             {/* B.Ed Computer Science */}
             <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
               <div className="bg-[#7cb983] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <span className="text-white text-xl sm:text-2xl font-bold">💻</span>
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                  <rect x="2" y="4" width="20" height="14" rx="2"/>
+                  <path d="M2 15h20"/>
+                  <path d="M9 19h6"/>
+                  <path d="M12 15v4"/>
+                </svg>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2 sm:mb-3">B.Ed (Computer Science)</h3>
               <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
@@ -450,9 +498,12 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold">
+              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SCIENCE
               </span>
+              <Link href="/departments/computer-science" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
             </div>
 
             {/* B.Ed Commerce */}
@@ -474,15 +525,23 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className="inline-block bg-[#7cb983] text-white px-4 py-1 rounded-full text-xs font-semibold">
+              <span className="inline-block bg-[#7cb983] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 COMMERCE
               </span>
+              <Link href="/departments/commerce" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
             </div>
 
             {/* B.Ed History */}
             <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
               <div className="bg-[#002309] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <span className="text-white text-xl sm:text-2xl font-bold">📜</span>
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                  <path d="M6 3h12c1 0 2 1 2 2v14c0 1-1 2-2 2H6c-1 0-2-1-2-2V5c0-1 1-2 2-2z"/>
+                  <line x1="8" y1="7" x2="16" y2="7"/>
+                  <line x1="8" y1="11" x2="16" y2="11"/>
+                  <line x1="8" y1="15" x2="13" y2="15"/>
+                </svg>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2 sm:mb-3">B.Ed (History)</h3>
               <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
@@ -498,15 +557,20 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className="inline-block bg-[#002309] text-white px-4 py-1 rounded-full text-xs font-semibold">
+              <span className="inline-block bg-[#002309] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SOCIAL SCIENCE
               </span>
+              <Link href="/departments/history" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
             </div>
 
             {/* B.Ed Economics */}
             <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
               <div className="bg-[#7cb983] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <span className="text-white text-xl sm:text-2xl font-bold">📊</span>
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                  <path d="M3 20V10L6 7V20M10 20V4L13 7V20M17 20V13L20 10V20M3 20H21"/>
+                </svg>
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2 sm:mb-3">B.Ed (Economics)</h3>
               <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
@@ -522,9 +586,112 @@ export default function Home() {
                   </li>
                 ))}
               </ul>
-              <span className="inline-block bg-[#002309] text-white px-4 py-1 rounded-full text-xs font-semibold">
+              <span className="inline-block bg-[#002309] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
                 SOCIAL SCIENCE
               </span>
+              <Link href="/departments/economics" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
+            </div>
+
+            {/* B.Ed Microbiology */}
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#002309] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                  <circle cx="12" cy="12" r="8"/>
+                  <circle cx="12" cy="12" r="3" fill="currentColor"/>
+                  <path d="M12 4v3M12 17v3M4 12h3M17 12h3"/>
+                  <circle cx="7" cy="7" r="1.5" fill="currentColor"/>
+                  <circle cx="17" cy="7" r="1.5" fill="currentColor"/>
+                  <circle cx="7" cy="17" r="1.5" fill="currentColor"/>
+                  <circle cx="17" cy="17" r="1.5" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2 sm:mb-3">B.Ed (Microbiology)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
+                Specialize in teaching microbiology through laboratory techniques, microscopy, and modern biotechnology applications.
+              </p>
+              <ul className="space-y-2 mb-4">
+                {['Microbial Science Pedagogy', 'Laboratory Techniques', 'Biotechnology Teaching'].map((item, idx) => (
+                  <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
+                    <svg className="w-4 h-4 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"/>
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <span className="inline-block bg-[#006837] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
+                SCIENCE
+              </span>
+              <Link href="/departments/microbiology" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
+            </div>
+
+            {/* B.Ed Political Science */}
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#7cb983] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                  <path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/>
+                  <line x1="5" y1="8" x2="5" y2="16"/>
+                  <line x1="19" y1="8" x2="19" y2="16"/>
+                  <circle cx="5" cy="16" r="0.5" fill="currentColor"/>
+                  <circle cx="19" cy="16" r="0.5" fill="currentColor"/>
+                </svg>
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2 sm:mb-3">B.Ed (Political Science)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
+                Learn to teach political systems, governance, civic education, and democratic values through interactive methods.
+              </p>
+              <ul className="space-y-2 mb-4">
+                {['Civic Education Methods', 'Constitutional Studies', 'Political System Analysis'].map((item, idx) => (
+                  <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
+                    <svg className="w-4 h-4 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"/>
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <span className="inline-block bg-[#002309] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
+                SOCIAL SCIENCE
+              </span>
+              <Link href="/departments/political-science" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
+            </div>
+
+            {/* B.Ed Social Science */}
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-200">
+              <div className="bg-[#006837] w-12 h-12 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
+                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5">
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M3 12h18"/>
+                  <ellipse cx="12" cy="12" rx="4" ry="9"/>
+                  <path d="M12 3c2 3 2 6 0 9s-2 6 0 9"/>
+                </svg>
+              </div>
+              <h3 className="text-lg sm:text-xl font-bold text-[#006837] mb-2 sm:mb-3">B.Ed (Social Science)</h3>
+              <p className="text-gray-600 mb-3 sm:mb-4 text-xs sm:text-sm leading-relaxed">
+                Develop integrated teaching skills for history, geography, civics, and economics with interdisciplinary approaches.
+              </p>
+              <ul className="space-y-2 mb-4">
+                {['Integrated Social Studies', 'Civic Awareness', 'Map Skills & Geography'].map((item, idx) => (
+                  <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
+                    <svg className="w-4 h-4 text-[#7cb983]" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"/>
+                    </svg>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+              <span className="inline-block bg-[#002309] text-white px-4 py-1 rounded-full text-xs font-semibold mb-4">
+                SOCIAL SCIENCE
+              </span>
+              <Link href="/departments/social-science" className="block w-full bg-[#006837] hover:bg-[#004d27] text-white text-center font-semibold px-4 py-2 rounded-lg transition-colors duration-200 text-xs sm:text-sm">
+                Learn More
+              </Link>
             </div>
           </div>
 
@@ -533,9 +700,9 @@ export default function Home() {
             <p className="text-sm sm:text-base lg:text-lg text-gray-700 mb-3 sm:mb-4">
               <span className="font-semibold text-[#006837]">Not sure which department suits you?</span> Our academic counselors can help you choose the right specialization based on your graduation background.
             </p>
-            <button className="bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-colors duration-200 text-sm sm:text-base">
+            <a href="tel:+919345855001" className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg transition-colors duration-200 text-sm sm:text-base cursor-pointer">
               Get Counselling
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -1197,12 +1364,12 @@ export default function Home() {
                 >
                   Apply Online Now
                 </Link>
-                <Link
-                  href="/prospectus"
+                <button
+                  
                   className="inline-block bg-transparent border-2 border-[#006837] hover:bg-[#006837] hover:text-white text-[#006837] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-all duration-200 text-center text-sm sm:text-base"
                 >
                   Download Prospectus
-                </Link>
+                </button>
               </div>
 
           

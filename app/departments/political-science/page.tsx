@@ -183,7 +183,7 @@ export default function PoliticalScienceDepartment() {
               </p>
 
               <p className="text-lg leading-relaxed" style={{ color: '#002309' }}>
-                At J.K.K. Nattraja Educational Institutions, we believe in excellence without elitism. Our experienced Learning Facilitators, state-of-the-art Learning Studios, well-equipped social science resource centers, and comprehensive support systems ensure that every Learner receives personalized attention and guidance throughout their educational journey. Join us in our mission to transform lives through progressive education and create a new generation of inspiring Political Science educators who promote democratic values and civic responsibility.
+                At JKKN Institutions, we believe in excellence without elitism. Our experienced Learning Facilitators, state-of-the-art Learning Studios, well-equipped social science resource centers, and comprehensive support systems ensure that every Learner receives personalized attention and guidance throughout their educational journey. Join us in our mission to transform lives through progressive education and create a new generation of inspiring Political Science educators who promote democratic values and civic responsibility.
               </p>
             </div>
 
@@ -805,7 +805,7 @@ export default function PoliticalScienceDepartment() {
                 </h3>
               </div>
               <p className="leading-relaxed" style={{ color: '#006837' }}>
-                Part of J.K.K. Nattraja Educational Institutions with a proven legacy of transforming lives through progressive education since 1954.
+                Part of JKKN Institutions with a proven legacy of transforming lives through progressive education since 1954.
               </p>
             </div>
 
