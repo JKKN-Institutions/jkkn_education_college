@@ -555,7 +555,7 @@ export default function PhysicsDepartment() {
       <section id="curriculum-structure" className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309', fontStyle: 'italic' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#006837' }}>
               Curriculum Structure
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
@@ -570,8 +570,8 @@ export default function PhysicsDepartment() {
               onClick={() => setActiveSemester('semester1')}
               className="px-8 py-3 rounded-lg font-semibold transition-all"
               style={{
-                backgroundColor: activeSemester === 'semester1' ? '#ffffff' : 'transparent',
-                color: activeSemester === 'semester1' ? '#002309' : '#006837',
+                backgroundColor: activeSemester === 'semester1' ? '#006837' : 'transparent',
+                color: activeSemester === 'semester1' ? '#ffffff' : '#006837',
                 boxShadow: activeSemester === 'semester1' ? '0 2px 8px rgba(0,0,0,0.1)' : 'none',
                 border: activeSemester === 'semester1' ? 'none' : '1px solid #e5e7eb'
               }}
@@ -582,8 +582,8 @@ export default function PhysicsDepartment() {
               onClick={() => setActiveSemester('semester2')}
               className="px-8 py-3 rounded-lg font-semibold transition-all"
               style={{
-                backgroundColor: activeSemester === 'semester2' ? '#ffffff' : 'transparent',
-                color: activeSemester === 'semester2' ? '#002309' : '#006837',
+                backgroundColor: activeSemester === 'semester2' ? '#006837' : 'transparent',
+                color: activeSemester === 'semester2' ? '#ffffff' : '#006837',
                 boxShadow: activeSemester === 'semester2' ? '0 2px 8px rgba(0,0,0,0.1)' : 'none',
                 border: activeSemester === 'semester2' ? 'none' : '1px solid #e5e7eb'
               }}
@@ -594,8 +594,8 @@ export default function PhysicsDepartment() {
               onClick={() => setActiveSemester('semester3')}
               className="px-8 py-3 rounded-lg font-semibold transition-all"
               style={{
-                backgroundColor: activeSemester === 'semester3' ? '#ffffff' : 'transparent',
-                color: activeSemester === 'semester3' ? '#002309' : '#006837',
+                backgroundColor: activeSemester === 'semester3' ? '#006837' : 'transparent',
+                color: activeSemester === 'semester3' ? '#ffffff' : '#006837',
                 boxShadow: activeSemester === 'semester3' ? '0 2px 8px rgba(0,0,0,0.1)' : 'none',
                 border: activeSemester === 'semester3' ? 'none' : '1px solid #e5e7eb'
               }}
@@ -606,8 +606,8 @@ export default function PhysicsDepartment() {
               onClick={() => setActiveSemester('semester4')}
               className="px-8 py-3 rounded-lg font-semibold transition-all"
               style={{
-                backgroundColor: activeSemester === 'semester4' ? '#ffffff' : 'transparent',
-                color: activeSemester === 'semester4' ? '#002309' : '#006837',
+                backgroundColor: activeSemester === 'semester4' ? '#006837' : 'transparent',
+                color: activeSemester === 'semester4' ? '#ffffff' : '#006837',
                 boxShadow: activeSemester === 'semester4' ? '0 2px 8px rgba(0,0,0,0.1)' : 'none',
                 border: activeSemester === 'semester4' ? 'none' : '1px solid #e5e7eb'
               }}
@@ -620,22 +620,22 @@ export default function PhysicsDepartment() {
           {activeSemester === 'semester1' && (
             <div className="space-y-6">
               {/* Course 1 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">101</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Childhood and Growing Up
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Understanding child development, adolescent psychology, learning theories, and educational psychology principles for effective science teaching.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -643,22 +643,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 2 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">102</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Contemporary India and Education
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Exploring the Indian education system, national policies, constitutional provisions, and contemporary challenges in science education.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory</span>
                   </div>
@@ -666,22 +666,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 3 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">PHY</div>
                     <div className="text-lg">103</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Pedagogy of Physical Science - Part I
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Foundations of physics teaching, curriculum design, instructional strategies, and teaching methods for mechanics, thermodynamics, and waves.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -689,22 +689,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 4 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">104</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Language Across the Curriculum
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Integration of language skills in teaching physics, scientific vocabulary, mathematical communication, and effective explanation strategies.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Theory</span>
                   </div>
@@ -712,22 +712,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 5 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">105</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Reading and Reflecting on Texts
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Critical analysis of educational and scientific texts, research papers, and development of reflective practices in teacher education.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Theory + Assignment</span>
                   </div>
@@ -735,22 +735,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 6 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">PHY</div>
                     <div className="text-lg">106</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Physics Laboratory Techniques
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Hands-on training in physics experiments, laboratory management, safety protocols, and demonstration techniques for effective teaching.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Practical</span>
                   </div>
@@ -763,22 +763,22 @@ export default function PhysicsDepartment() {
           {activeSemester === 'semester2' && (
             <div className="space-y-6">
               {/* Course 1 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">201</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Learning and Teaching
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     In-depth study of learning theories, teaching-learning processes, constructivist approaches, and differentiated instruction strategies for physics education.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -786,22 +786,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 2 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">PHY</div>
                     <div className="text-lg">202</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Pedagogy of Physical Science - Part II
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Advanced teaching methods for electromagnetism, optics, modern physics, and integration of technology in physics instruction.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -809,22 +809,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 3 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">203</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Assessment for Learning
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Formative and summative assessment methods, rubric development, question paper design, and continuous evaluation in physics education.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -832,22 +832,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 4 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">204</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Drama and Art in Education
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Using creative arts, demonstrations, role-play, and dramatization to make physics concepts engaging and memorable for diverse learners.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Practical</span>
                   </div>
@@ -855,22 +855,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 5 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">205</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     ICT in Education
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Integration of simulations, virtual labs, interactive tools, and educational technology for enhanced physics teaching and learning.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -878,22 +878,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 6 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">PHY</div>
                     <div className="text-lg">206</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Micro-Teaching Practice
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Simulated teaching sessions focusing on specific teaching skills, peer feedback, video analysis, and iterative improvement in physics instruction.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Practical</span>
                   </div>
@@ -906,22 +906,22 @@ export default function PhysicsDepartment() {
           {activeSemester === 'semester3' && (
             <div className="space-y-6">
               {/* Course 1 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">301</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Knowledge and Curriculum
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Philosophy of knowledge, curriculum development theories, syllabus design for physics education, and alignment with national frameworks.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory</span>
                   </div>
@@ -929,22 +929,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 2 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">302</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Gender, School and Society
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Understanding gender issues in science education, promoting inclusive practices, and addressing stereotypes in physics teaching.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory</span>
                   </div>
@@ -952,22 +952,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 3 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">303</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Inclusive Education
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Strategies for teaching physics to learners with diverse needs, adapting experiments for accessibility, and creating inclusive Learning Studios.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -975,22 +975,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 4 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">INT</div>
                     <div className="text-lg">304</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     School Internship - Phase I
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Eight weeks of supervised teaching practice in partner schools, developing lesson plans, conducting experiments, and managing physics laboratories.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 8</span>
                     <span>Internship</span>
                   </div>
@@ -998,22 +998,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 5 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">PHY</div>
                     <div className="text-lg">305</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Physics Project Work
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Designing and executing action research projects, innovative teaching material development, and physics education improvement initiatives.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Project</span>
                   </div>
@@ -1026,22 +1026,22 @@ export default function PhysicsDepartment() {
           {activeSemester === 'semester4' && (
             <div className="space-y-6">
               {/* Course 1 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">401</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Creating an Inclusive School
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Developing school-wide inclusive practices, universal design for learning in physics, and collaborative teaching approaches.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -1049,22 +1049,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 2 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">402</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Understanding the Self
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Self-awareness, reflective practice, professional ethics, stress management, and developing teacher identity in science education.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -1072,22 +1072,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 3 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">403</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Optional Paper: Environmental Education
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Teaching environmental physics, sustainability concepts, climate science, and integrating environmental awareness in physics education.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory</span>
                   </div>
@@ -1095,22 +1095,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 4 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">INT</div>
                     <div className="text-lg">404</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     School Internship - Phase II
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Eight weeks of advanced teaching practice, taking full responsibility for physics classes, laboratory sessions, and assessment activities.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 8</span>
                     <span>Internship</span>
                   </div>
@@ -1118,22 +1118,22 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Course 5 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex items-center justify-center text-white font-bold"
-                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-16 sm:h-16 rounded-lg flex items-center justify-center text-white font-bold"
+                     style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div className="text-lg">405</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                     Action Research Project
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Conducting classroom-based research on physics teaching, analyzing data, presenting findings, and contributing to physics education scholarship.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Research Project</span>
                   </div>
@@ -1518,8 +1518,15 @@ export default function PhysicsDepartment() {
             {/* Timeline */}
             <div className="relative">
               {/* Step 1 - Check Eligibility (Left) */}
-              <div className="flex flex-col-reverse lg:flex-row items-center mb-0">
-                <div className="w-full lg:w-5/12 lg:pr-8 mb-4 lg:mb-0 order-2 lg:order-1">
+              <div className="flex flex-col lg:flex-row items-center mb-0">
+                <div className="flex flex-col items-center mb-4 lg:mb-0 lg:w-2/12">
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
+                       style={{ backgroundColor: '#7cb983' }}>
+                    1
+                  </div>
+                  <div className="w-0.5 h-24 lg:h-32" style={{ backgroundColor: '#7cb983' }}></div>
+                </div>
+                <div className="w-full lg:w-5/12 lg:pr-8 lg:order-first">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Check Eligibility
@@ -1529,27 +1536,20 @@ export default function PhysicsDepartment() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col items-center order-1 lg:order-2 lg:w-2/12">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
-                       style={{ backgroundColor: '#7cb983' }}>
-                    1
-                  </div>
-                  <div className="w-0.5 h-24 lg:h-32" style={{ backgroundColor: '#7cb983' }}></div>
-                </div>
-                <div className="hidden lg:block lg:w-5/12 order-3"></div>
+                <div className="hidden lg:block lg:w-5/12"></div>
               </div>
 
               {/* Step 2 - Online Application (Right) */}
               <div className="flex flex-col lg:flex-row items-center mb-0">
-                <div className="hidden lg:block lg:w-5/12 order-1"></div>
-                <div className="flex flex-col items-center order-1 lg:order-2 lg:w-2/12">
+                <div className="hidden lg:block lg:w-5/12"></div>
+                <div className="flex flex-col items-center mb-4 lg:mb-0 lg:w-2/12">
                   <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
                        style={{ backgroundColor: '#7cb983' }}>
                     2
                   </div>
                   <div className="w-0.5 h-24 lg:h-32" style={{ backgroundColor: '#7cb983' }}></div>
                 </div>
-                <div className="w-full lg:w-5/12 lg:pl-8 mb-4 lg:mb-0 order-2 lg:order-3">
+                <div className="w-full lg:w-5/12 lg:pl-8">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Online Application
@@ -1562,8 +1562,15 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Step 3 - Document Verification (Left) */}
-              <div className="flex flex-col-reverse lg:flex-row items-center mb-0">
-                <div className="w-full lg:w-5/12 lg:pr-8 mb-4 lg:mb-0 order-2 lg:order-1">
+              <div className="flex flex-col lg:flex-row items-center mb-0">
+                <div className="flex flex-col items-center mb-4 lg:mb-0 lg:w-2/12">
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
+                       style={{ backgroundColor: '#7cb983' }}>
+                    3
+                  </div>
+                  <div className="w-0.5 h-24 lg:h-32" style={{ backgroundColor: '#7cb983' }}></div>
+                </div>
+                <div className="w-full lg:w-5/12 lg:pr-8 lg:order-first">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Document Verification
@@ -1573,27 +1580,20 @@ export default function PhysicsDepartment() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col items-center order-1 lg:order-2 lg:w-2/12">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
-                       style={{ backgroundColor: '#7cb983' }}>
-                    3
-                  </div>
-                  <div className="w-0.5 h-24 lg:h-32" style={{ backgroundColor: '#7cb983' }}></div>
-                </div>
-                <div className="hidden lg:block lg:w-5/12 order-3"></div>
+                <div className="hidden lg:block lg:w-5/12"></div>
               </div>
 
               {/* Step 4 - Counseling & Seat Allotment (Right) */}
               <div className="flex flex-col lg:flex-row items-center mb-0">
-                <div className="hidden lg:block lg:w-5/12 order-1"></div>
-                <div className="flex flex-col items-center order-1 lg:order-2 lg:w-2/12">
+                <div className="hidden lg:block lg:w-5/12"></div>
+                <div className="flex flex-col items-center mb-4 lg:mb-0 lg:w-2/12">
                   <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
                        style={{ backgroundColor: '#7cb983' }}>
                     4
                   </div>
                   <div className="w-0.5 h-24 lg:h-32" style={{ backgroundColor: '#7cb983' }}></div>
                 </div>
-                <div className="w-full lg:w-5/12 lg:pl-8 mb-4 lg:mb-0 order-2 lg:order-3">
+                <div className="w-full lg:w-5/12 lg:pl-8">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Counseling & Seat Allotment
@@ -1606,8 +1606,15 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Step 5 - Fee Payment & Enrollment (Left) */}
-              <div className="flex flex-col-reverse lg:flex-row items-center mb-0">
-                <div className="w-full lg:w-5/12 lg:pr-8 mb-4 lg:mb-0 order-2 lg:order-1">
+              <div className="flex flex-col lg:flex-row items-center mb-0">
+                <div className="flex flex-col items-center mb-4 lg:mb-0 lg:w-2/12">
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
+                       style={{ backgroundColor: '#7cb983' }}>
+                    5
+                  </div>
+                  <div className="w-0.5 h-24 lg:h-32" style={{ backgroundColor: '#7cb983' }}></div>
+                </div>
+                <div className="w-full lg:w-5/12 lg:pr-8 lg:order-first">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Fee Payment & Enrollment
@@ -1617,27 +1624,20 @@ export default function PhysicsDepartment() {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col items-center order-1 lg:order-2 lg:w-2/12">
-                  <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
-                       style={{ backgroundColor: '#7cb983' }}>
-                    5
-                  </div>
-                  <div className="w-0.5 h-24 lg:h-32" style={{ backgroundColor: '#7cb983' }}></div>
-                </div>
-                <div className="hidden lg:block lg:w-5/12 order-3"></div>
+                <div className="hidden lg:block lg:w-5/12"></div>
               </div>
 
               {/* Step 6 - Orientation & Classes Begin (Right) */}
               <div className="flex flex-col lg:flex-row items-center">
-                <div className="hidden lg:block lg:w-5/12 order-1"></div>
-                <div className="flex flex-col items-center order-1 lg:order-2 lg:w-2/12">
+                <div className="hidden lg:block lg:w-5/12"></div>
+                <div className="flex flex-col items-center mb-4 lg:mb-0 lg:w-2/12">
                   <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
                        style={{ backgroundColor: '#7cb983' }}>
                     6
                   </div>
                   <div className="w-0.5 h-16" style={{ backgroundColor: '#7cb983' }}></div>
                 </div>
-                <div className="w-full lg:w-5/12 lg:pl-8 mb-4 lg:mb-0 order-2 lg:order-3">
+                <div className="w-full lg:w-5/12 lg:pl-8">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Orientation & Classes Begin
@@ -1657,7 +1657,7 @@ export default function PhysicsDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FBFBEE' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309', fontStyle: 'italic' }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               Frequently Asked Questions
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
@@ -1823,12 +1823,12 @@ export default function PhysicsDepartment() {
               </svg>
               Apply Online
             </Link>
-            <button className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold border-2 border-white text-white transition-all hover:bg-white hover:text-orange-500">
+            <a href="tel:+919345855001" className="inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold border-2 border-white text-white transition-all hover:bg-white hover:text-orange-500">
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
-              Request Callback
-            </button>
+              Contact Admission
+            </a>
           </div>
         </div>
       </section>

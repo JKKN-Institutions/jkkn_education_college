@@ -563,115 +563,115 @@ export default function ZoologyDepartment() {
           </div>
 
           <div className="relative max-w-4xl mx-auto">
-            <div className="space-y-8">
+            <div className="space-y-6 sm:space-y-8">
               {/* Step 1 - Online Application */}
-              <div className="relative flex items-start gap-6">
+              <div className="relative flex items-start gap-3 sm:gap-4 lg:gap-6">
                 <div className="flex-shrink-0 relative z-10">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg"
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg"
                        style={{ backgroundColor: '#7cb983' }}>
                     1
                   </div>
                 </div>
-                <div className="flex-1 p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
+                <div className="flex-1 p-4 sm:p-6 lg:p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 lg:mb-4" style={{ color: '#002309' }}>
                     Online Application
                   </h3>
-                  <p className="leading-relaxed" style={{ color: '#006837' }}>
+                  <p className="text-sm sm:text-base leading-relaxed" style={{ color: '#006837' }}>
                     Fill out the online application form on our website with accurate personal and academic details. Upload required documents in specified formats.
                   </p>
                 </div>
-                <div className="absolute top-12 left-6 w-0.5 h-full" style={{ backgroundColor: '#7cb983' }}></div>
+                <div className="absolute top-10 sm:top-12 left-5 sm:left-6 w-0.5 h-full" style={{ backgroundColor: '#7cb983' }}></div>
               </div>
 
               {/* Step 2 - Document Verification */}
-              <div className="relative flex items-start gap-6">
+              <div className="relative flex items-start gap-3 sm:gap-4 lg:gap-6">
                 <div className="flex-shrink-0 relative z-10">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg"
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg"
                        style={{ backgroundColor: '#7cb983' }}>
                     2
                   </div>
                 </div>
-                <div className="flex-1 p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
+                <div className="flex-1 p-4 sm:p-6 lg:p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 lg:mb-4" style={{ color: '#002309' }}>
                     Document Verification
                   </h3>
-                  <p className="leading-relaxed" style={{ color: '#006837' }}>
+                  <p className="text-sm sm:text-base leading-relaxed" style={{ color: '#006837' }}>
                     Submit original documents for verification at the college admission office. Ensure all certificates are properly attested.
                   </p>
                 </div>
-                <div className="absolute top-12 left-6 w-0.5 h-full" style={{ backgroundColor: '#7cb983' }}></div>
+                <div className="absolute top-10 sm:top-12 left-5 sm:left-6 w-0.5 h-full" style={{ backgroundColor: '#7cb983' }}></div>
               </div>
 
               {/* Step 3 - Entrance/Counseling */}
-              <div className="relative flex items-start gap-6">
+              <div className="relative flex items-start gap-3 sm:gap-4 lg:gap-6">
                 <div className="flex-shrink-0 relative z-10">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg"
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg"
                        style={{ backgroundColor: '#7cb983' }}>
                     3
                   </div>
                 </div>
-                <div className="flex-1 p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
-                    Entrance/Counseling
+                <div className="flex-1 p-4 sm:p-6 lg:p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 lg:mb-4" style={{ color: '#002309' }}>
+                    Entrance
                   </h3>
-                  <p className="leading-relaxed" style={{ color: '#006837' }}>
+                  <p className="text-sm sm:text-base leading-relaxed" style={{ color: '#006837' }}>
                     Attend TNTEU counseling based on entrance exam rank or participate in institutional admission process as applicable.
                   </p>
                 </div>
-                <div className="absolute top-12 left-6 w-0.5 h-full" style={{ backgroundColor: '#7cb983' }}></div>
+                <div className="absolute top-10 sm:top-12 left-5 sm:left-6 w-0.5 h-full" style={{ backgroundColor: '#7cb983' }}></div>
               </div>
 
               {/* Step 4 - Seat Allotment */}
-              <div className="relative flex items-start gap-6">
+              <div className="relative flex items-start gap-3 sm:gap-4 lg:gap-6">
                 <div className="flex-shrink-0 relative z-10">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg"
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg"
                        style={{ backgroundColor: '#7cb983' }}>
                     4
                   </div>
                 </div>
-                <div className="flex-1 p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
+                <div className="flex-1 p-4 sm:p-6 lg:p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 lg:mb-4" style={{ color: '#002309' }}>
                     Seat Allotment
                   </h3>
-                  <p className="leading-relaxed" style={{ color: '#006837' }}>
+                  <p className="text-sm sm:text-base leading-relaxed" style={{ color: '#006837' }}>
                     Receive provisional seat allotment based on merit and availability. Confirm your acceptance within the specified timeline.
                   </p>
                 </div>
-                <div className="absolute top-12 left-6 w-0.5 h-full" style={{ backgroundColor: '#7cb983' }}></div>
+                <div className="absolute top-10 sm:top-12 left-5 sm:left-6 w-0.5 h-full" style={{ backgroundColor: '#7cb983' }}></div>
               </div>
 
               {/* Step 5 - Fee Payment */}
-              <div className="relative flex items-start gap-6">
+              <div className="relative flex items-start gap-3 sm:gap-4 lg:gap-6">
                 <div className="flex-shrink-0 relative z-10">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg"
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg"
                        style={{ backgroundColor: '#7cb983' }}>
                     5
                   </div>
                 </div>
-                <div className="flex-1 p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
+                <div className="flex-1 p-4 sm:p-6 lg:p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 lg:mb-4" style={{ color: '#002309' }}>
                     Fee Payment
                   </h3>
-                  <p className="leading-relaxed" style={{ color: '#006837' }}>
+                  <p className="text-sm sm:text-base leading-relaxed" style={{ color: '#006837' }}>
                     Complete the fee payment process through online or offline modes. Apply for scholarships if eligible before the deadline.
                   </p>
                 </div>
-                <div className="absolute top-12 left-6 w-0.5 h-full" style={{ backgroundColor: '#7cb983' }}></div>
+                <div className="absolute top-10 sm:top-12 left-5 sm:left-6 w-0.5 h-full" style={{ backgroundColor: '#7cb983' }}></div>
               </div>
 
               {/* Step 6 - Enrollment Complete */}
-              <div className="relative flex items-start gap-6">
+              <div className="relative flex items-start gap-3 sm:gap-4 lg:gap-6">
                 <div className="flex-shrink-0 relative z-10">
-                  <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-bold text-lg"
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg"
                        style={{ backgroundColor: '#7cb983' }}>
                     6
                   </div>
                 </div>
-                <div className="flex-1 p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
+                <div className="flex-1 p-4 sm:p-6 lg:p-8 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                  <h3 className="text-base sm:text-lg lg:text-xl font-bold mb-2 sm:mb-3 lg:mb-4" style={{ color: '#002309' }}>
                     Enrollment Complete
                   </h3>
-                  <p className="leading-relaxed" style={{ color: '#006837' }}>
+                  <p className="text-sm sm:text-base leading-relaxed" style={{ color: '#006837' }}>
                     Receive your enrollment confirmation and college ID. Attend the orientation program to begin your academic journey.
                   </p>
                 </div>
@@ -884,55 +884,55 @@ export default function ZoologyDepartment() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto">
             {/* NCTE */}
             <div className="text-center">
-              <div className="p-8 rounded-xl mb-4 transition-transform hover:scale-105"
+              <div className="aspect-square flex items-center justify-center rounded-xl mb-3 sm:mb-4 transition-transform hover:scale-105"
                    style={{ backgroundColor: '#002309' }}>
-                <div className="text-4xl font-bold" style={{ color: '#ffffff' }}>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold px-2" style={{ color: '#ffffff' }}>
                   NCTE
                 </div>
               </div>
-              <p className="text-sm font-semibold" style={{ color: '#006837' }}>
+              <p className="text-xs sm:text-sm font-semibold leading-tight" style={{ color: '#006837' }}>
                 NCTE Approved
               </p>
             </div>
 
             {/* TNTEU */}
             <div className="text-center">
-              <div className="p-8 rounded-xl mb-4 transition-transform hover:scale-105"
+              <div className="aspect-square flex items-center justify-center rounded-xl mb-3 sm:mb-4 transition-transform hover:scale-105"
                    style={{ backgroundColor: '#7cb983' }}>
-                <div className="text-4xl font-bold" style={{ color: '#ffffff' }}>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold px-2" style={{ color: '#ffffff' }}>
                   TNTEU
                 </div>
               </div>
-              <p className="text-sm font-semibold" style={{ color: '#006837' }}>
+              <p className="text-xs sm:text-sm font-semibold leading-tight" style={{ color: '#006837' }}>
                 TNTEU Affiliated
               </p>
             </div>
 
             {/* NAAC */}
             <div className="text-center">
-              <div className="p-8 rounded-xl mb-4 transition-transform hover:scale-105"
+              <div className="aspect-square flex items-center justify-center rounded-xl mb-3 sm:mb-4 transition-transform hover:scale-105"
                    style={{ backgroundColor: '#7cb983' }}>
-                <div className="text-4xl font-bold" style={{ color: '#ffffff' }}>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold px-2" style={{ color: '#ffffff' }}>
                   NAAC
                 </div>
               </div>
-              <p className="text-sm font-semibold" style={{ color: '#006837' }}>
+              <p className="text-xs sm:text-sm font-semibold leading-tight" style={{ color: '#006837' }}>
                 NAAC Accredited
               </p>
             </div>
 
             {/* UGC */}
             <div className="text-center">
-              <div className="p-8 rounded-xl mb-4 transition-transform hover:scale-105"
+              <div className="aspect-square flex items-center justify-center rounded-xl mb-3 sm:mb-4 transition-transform hover:scale-105"
                    style={{ backgroundColor: '#002309' }}>
-                <div className="text-4xl font-bold" style={{ color: '#ffffff' }}>
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold px-2" style={{ color: '#ffffff' }}>
                   UGC
                 </div>
               </div>
-              <p className="text-sm font-semibold" style={{ color: '#006837' }}>
+              <p className="text-xs sm:text-sm font-semibold leading-tight" style={{ color: '#006837' }}>
                 UGC Recognized
               </p>
             </div>

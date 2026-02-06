@@ -910,91 +910,91 @@ export default function PoliticalScienceDepartment() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Social Science Lab */}
-            <div className="rounded-2xl p-8 flex flex-col justify-end min-h-[200px]"
+            <div className="rounded-2xl p-3 sm:p-8 flex flex-col justify-end min-h-[140px] sm:min-h-[200px]"
                  style={{ backgroundColor: '#002309' }}>
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-sm sm:text-2xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>
                 Social Science Lab
               </h3>
-              <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+              <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                 Social Science Lab
               </p>
             </div>
 
             {/* Digital Library */}
-            <div className="rounded-2xl p-8 flex flex-col justify-end min-h-[200px]"
+            <div className="rounded-2xl p-3 sm:p-8 flex flex-col justify-end min-h-[140px] sm:min-h-[200px]"
                  style={{ backgroundColor: '#7cb983' }}>
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-sm sm:text-2xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>
                 Digital Library
               </h3>
-              <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+              <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                 Digital Library
               </p>
             </div>
 
             {/* Micro Teaching */}
-            <div className="rounded-2xl p-8 flex flex-col justify-end min-h-[200px]"
+            <div className="rounded-2xl p-3 sm:p-8 flex flex-col justify-end min-h-[140px] sm:min-h-[200px]"
                  style={{ backgroundColor: '#002309' }}>
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-sm sm:text-2xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>
                 Micro Teaching
               </h3>
-              <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+              <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                 Micro-Teaching Lab
               </p>
             </div>
 
             {/* Computer Lab */}
-            <div className="rounded-2xl p-8 flex flex-col justify-end min-h-[200px]"
+            <div className="rounded-2xl p-3 sm:p-8 flex flex-col justify-end min-h-[140px] sm:min-h-[200px]"
                  style={{ backgroundColor: '#7cb983' }}>
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-sm sm:text-2xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>
                 Computer Lab
               </h3>
-              <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+              <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                 Computer Lab
               </p>
             </div>
 
             {/* Seminar Hall */}
-            <div className="rounded-2xl p-8 flex flex-col justify-end min-h-[200px]"
+            <div className="rounded-2xl p-3 sm:p-8 flex flex-col justify-end min-h-[140px] sm:min-h-[200px]"
                  style={{ backgroundColor: '#7cb983' }}>
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-sm sm:text-2xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>
                 Seminar Hall
               </h3>
-              <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+              <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                 Seminar Hall
               </p>
             </div>
 
             {/* Resource Center */}
-            <div className="rounded-2xl p-8 flex flex-col justify-end min-h-[200px]"
+            <div className="rounded-2xl p-3 sm:p-8 flex flex-col justify-end min-h-[140px] sm:min-h-[200px]"
                  style={{ backgroundColor: '#002309' }}>
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-sm sm:text-2xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>
                 Resource Center
               </h3>
-              <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+              <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                 Resource Center
               </p>
             </div>
 
             {/* Hostel */}
-            <div className="rounded-2xl p-8 flex flex-col justify-end min-h-[200px]"
+            <div className="rounded-2xl p-3 sm:p-8 flex flex-col justify-end min-h-[140px] sm:min-h-[200px]"
                  style={{ backgroundColor: '#7cb983' }}>
-              <h3 className="text-3xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-base sm:text-3xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>
                 Hostel
               </h3>
-              <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+              <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                 Hostel Facility
               </p>
             </div>
 
             {/* Auditorium */}
-            <div className="rounded-2xl p-8 flex flex-col justify-end min-h-[200px]"
+            <div className="rounded-2xl p-3 sm:p-8 flex flex-col justify-end min-h-[140px] sm:min-h-[200px]"
                  style={{ backgroundColor: '#7cb983' }}>
-              <h3 className="text-2xl font-bold mb-2" style={{ color: '#ffffff' }}>
+              <h3 className="text-sm sm:text-2xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>
                 Auditorium
               </h3>
-              <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
+              <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
                 Auditorium
               </p>
             </div>
@@ -1021,8 +1021,14 @@ export default function PoliticalScienceDepartment() {
                  style={{ background: 'linear-gradient(to bottom, #7cb983 0%, #7cb983 100%)' }}></div>
 
             {/* Step 1 - Check Eligibility */}
-            <div className="relative flex flex-col-reverse md:flex-row items-center mb-12">
-              <div className="w-full md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
+            <div className="relative flex flex-col md:flex-row items-center mb-12">
+              <div className="flex-shrink-0 z-10 mb-6 md:mb-0">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
+                     style={{ backgroundColor: '#7cb983' }}>
+                  1
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 md:pr-12 md:text-right md:order-first">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', border: '1px solid #e5e7eb' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Check Eligibility
@@ -1032,25 +1038,19 @@ export default function PoliticalScienceDepartment() {
                   </p>
                 </div>
               </div>
-              <div className="flex-shrink-0 z-10 order-1 md:order-2 mb-4 md:mb-0">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
-                     style={{ backgroundColor: '#7cb983' }}>
-                  1
-                </div>
-              </div>
-              <div className="w-full md:w-1/2 md:pl-12 order-3 hidden md:block"></div>
+              <div className="w-full md:w-1/2 md:pl-12 hidden md:block"></div>
             </div>
 
             {/* Step 2 - Online Application */}
             <div className="relative flex flex-col md:flex-row items-center mb-12">
-              <div className="w-full md:w-1/2 md:pr-12 order-2 hidden md:block"></div>
-              <div className="flex-shrink-0 z-10 order-1 mb-4 md:mb-0">
+              <div className="w-full md:w-1/2 md:pr-12 hidden md:block"></div>
+              <div className="flex-shrink-0 z-10 mb-6 md:mb-0">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
                      style={{ backgroundColor: '#7cb983' }}>
                   2
                 </div>
               </div>
-              <div className="w-full md:w-1/2 md:pl-12 md:text-left order-3">
+              <div className="w-full md:w-1/2 md:pl-12 md:text-left">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', border: '1px solid #e5e7eb' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Online Application
@@ -1063,8 +1063,14 @@ export default function PoliticalScienceDepartment() {
             </div>
 
             {/* Step 3 - Document Verification */}
-            <div className="relative flex flex-col-reverse md:flex-row items-center mb-12">
-              <div className="w-full md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
+            <div className="relative flex flex-col md:flex-row items-center mb-12">
+              <div className="flex-shrink-0 z-10 mb-6 md:mb-0">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
+                     style={{ backgroundColor: '#7cb983' }}>
+                  3
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 md:pr-12 md:text-right md:order-first">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', border: '1px solid #e5e7eb' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Document Verification
@@ -1074,25 +1080,19 @@ export default function PoliticalScienceDepartment() {
                   </p>
                 </div>
               </div>
-              <div className="flex-shrink-0 z-10 order-1 md:order-2 mb-4 md:mb-0">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
-                     style={{ backgroundColor: '#7cb983' }}>
-                  3
-                </div>
-              </div>
-              <div className="w-full md:w-1/2 md:pl-12 order-3 hidden md:block"></div>
+              <div className="w-full md:w-1/2 md:pl-12 hidden md:block"></div>
             </div>
 
             {/* Step 4 - Counseling & Seat Allotment */}
             <div className="relative flex flex-col md:flex-row items-center mb-12">
-              <div className="w-full md:w-1/2 md:pr-12 order-2 hidden md:block"></div>
-              <div className="flex-shrink-0 z-10 order-1 mb-4 md:mb-0">
+              <div className="w-full md:w-1/2 md:pr-12 hidden md:block"></div>
+              <div className="flex-shrink-0 z-10 mb-6 md:mb-0">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
                      style={{ backgroundColor: '#7cb983' }}>
                   4
                 </div>
               </div>
-              <div className="w-full md:w-1/2 md:pl-12 md:text-left order-3">
+              <div className="w-full md:w-1/2 md:pl-12 md:text-left">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', border: '1px solid #e5e7eb' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Counseling & Seat Allotment
@@ -1105,8 +1105,14 @@ export default function PoliticalScienceDepartment() {
             </div>
 
             {/* Step 5 - Fee Payment & Enrollment */}
-            <div className="relative flex flex-col-reverse md:flex-row items-center mb-12">
-              <div className="w-full md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
+            <div className="relative flex flex-col md:flex-row items-center mb-12">
+              <div className="flex-shrink-0 z-10 mb-6 md:mb-0">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
+                     style={{ backgroundColor: '#7cb983' }}>
+                  5
+                </div>
+              </div>
+              <div className="w-full md:w-1/2 md:pr-12 md:text-right md:order-first">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', border: '1px solid #e5e7eb' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Fee Payment & Enrollment
@@ -1116,25 +1122,19 @@ export default function PoliticalScienceDepartment() {
                   </p>
                 </div>
               </div>
-              <div className="flex-shrink-0 z-10 order-1 md:order-2 mb-4 md:mb-0">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
-                     style={{ backgroundColor: '#7cb983' }}>
-                  5
-                </div>
-              </div>
-              <div className="w-full md:w-1/2 md:pl-12 order-3 hidden md:block"></div>
+              <div className="w-full md:w-1/2 md:pl-12 hidden md:block"></div>
             </div>
 
             {/* Step 6 - Orientation & Classes Begin */}
             <div className="relative flex flex-col md:flex-row items-center">
-              <div className="w-full md:w-1/2 md:pr-12 order-2 hidden md:block"></div>
-              <div className="flex-shrink-0 z-10 order-1 mb-4 md:mb-0">
+              <div className="w-full md:w-1/2 md:pr-12 hidden md:block"></div>
+              <div className="flex-shrink-0 z-10 mb-6 md:mb-0">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
                      style={{ backgroundColor: '#7cb983' }}>
                   6
                 </div>
               </div>
-              <div className="w-full md:w-1/2 md:pl-12 md:text-left order-3">
+              <div className="w-full md:w-1/2 md:pl-12 md:text-left">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)', border: '1px solid #e5e7eb' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Orientation & Classes Begin
@@ -1303,13 +1303,13 @@ export default function PoliticalScienceDepartment() {
               </svg>
               Apply Now
             </Link>
-            <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 transition-all hover:bg-white hover:text-[#002309]"
+            <a href= "tel: +919345855001" className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 transition-all hover:bg-white hover:text-[#002309]"
                     style={{ borderColor: '#ffffff', color: '#ffffff' }}>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
               </svg>
               Talk to Counselor
-            </button>
+            </a>
           </div>
         </div>
       </section>

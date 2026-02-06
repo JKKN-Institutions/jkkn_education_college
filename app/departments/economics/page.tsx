@@ -255,7 +255,7 @@ export default function EconomicsDepartment() {
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
-              <span style={{ fontStyle: 'italic' }}>Course Overview</span>
+              Course Overview
             </h2>
             <div className="h-1 w-20 mx-auto" style={{ backgroundColor: '#7cb983' }}></div>
           </div>
@@ -356,7 +356,7 @@ export default function EconomicsDepartment() {
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
-              <span style={{ fontStyle: 'italic' }}>Program Highlights</span>
+              Program Highlights
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
             <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
@@ -475,7 +475,7 @@ export default function EconomicsDepartment() {
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
-              <span style={{ fontStyle: 'italic' }}>Eligibility Criteria & Documents</span>
+              Eligibility Criteria & Documents
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
             <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
@@ -693,7 +693,7 @@ export default function EconomicsDepartment() {
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
-              <span style={{ fontStyle: 'italic' }}>Curriculum Structure</span>
+              Curriculum Structure
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
             <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
@@ -728,24 +728,24 @@ export default function EconomicsDepartment() {
               {curriculumData[activeSemester as keyof typeof curriculumData].map((course, index) => (
                 <div
                   key={index}
-                  className="p-6 rounded-xl flex gap-6 items-start"
+                  className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 lg:p-8 rounded-xl"
                   style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
                 >
                   <div
-                    className="flex-shrink-0 w-16 h-16 rounded-lg flex flex-col items-center justify-center text-white font-bold"
+                    className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex flex-col items-center justify-center text-white font-bold"
                     style={{ background: 'linear-gradient(135deg, #002309 0%, #7cb983 100%)' }}
                   >
                     <span className="text-xs">{course.code.split(' ')[0]}</span>
-                    <span className="text-lg">{course.code.split(' ')[1]}</span>
+                    <span className="text-base sm:text-lg">{course.code.split(' ')[1]}</span>
                   </div>
-                  <div className="flex-1">
-                    <h4 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h4 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#002309' }}>
                       {course.title}
                     </h4>
-                    <p className="text-base leading-relaxed mb-3" style={{ color: '#006837' }}>
+                    <p className="text-sm sm:text-base leading-relaxed mb-3 break-words" style={{ color: '#006837' }}>
                       {course.description}
                     </p>
-                    <div className="flex gap-4 text-sm" style={{ color: '#8896a6' }}>
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm" style={{ color: '#8896a6' }}>
                       <span>Credits: {course.credits}</span>
                       <span>{course.type}</span>
                     </div>
@@ -762,7 +762,7 @@ export default function EconomicsDepartment() {
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#ffffff' }}>
-              <span style={{ fontStyle: 'italic' }}>Career Prospects</span>
+              Career Prospects
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
             <p className="text-lg" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>
@@ -875,7 +875,7 @@ export default function EconomicsDepartment() {
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
-              <span style={{ fontStyle: 'italic' }}>Why Choose JKKN for B.Ed Economics?</span>
+              Why Choose JKKN for B.Ed Economics?
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
             <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
@@ -988,7 +988,7 @@ export default function EconomicsDepartment() {
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
-              <span style={{ fontStyle: 'italic' }}>Campus Facilities</span>
+              Campus Facilities
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
             <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
@@ -1101,7 +1101,7 @@ export default function EconomicsDepartment() {
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
-              <span style={{ fontStyle: 'italic' }}>Admission Process</span>
+              Admission Process
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
             <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
@@ -1115,8 +1115,12 @@ export default function EconomicsDepartment() {
 
             {/* Step 1 - Check Eligibility */}
             <div className="relative mb-12">
-              <div className="flex flex-col-reverse md:flex-row items-center">
-                <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+              <div className="flex flex-col md:flex-row items-center">
+                <div className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold z-10 mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2"
+                     style={{ backgroundColor: '#7cb983' }}>
+                  1
+                </div>
+                <div className="md:w-1/2 md:pr-12 md:text-right">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Check Eligibility
@@ -1126,10 +1130,6 @@ export default function EconomicsDepartment() {
                     </p>
                   </div>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold z-10 hidden md:flex"
-                     style={{ backgroundColor: '#7cb983' }}>
-                  1
-                </div>
                 <div className="md:w-1/2 md:pl-12"></div>
               </div>
             </div>
@@ -1137,12 +1137,12 @@ export default function EconomicsDepartment() {
             {/* Step 2 - Online Application */}
             <div className="relative mb-12">
               <div className="flex flex-col md:flex-row items-center">
-                <div className="md:w-1/2 md:pr-12"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold z-10 hidden md:flex"
+                <div className="md:w-1/2 md:pr-12 md:order-1"></div>
+                <div className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold z-10 mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2"
                      style={{ backgroundColor: '#7cb983' }}>
                   2
                 </div>
-                <div className="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+                <div className="md:w-1/2 md:pl-12 md:order-2">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Online Application
@@ -1157,8 +1157,12 @@ export default function EconomicsDepartment() {
 
             {/* Step 3 - Document Verification */}
             <div className="relative mb-12">
-              <div className="flex flex-col-reverse md:flex-row items-center">
-                <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+              <div className="flex flex-col md:flex-row items-center">
+                <div className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold z-10 mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2"
+                     style={{ backgroundColor: '#7cb983' }}>
+                  3
+                </div>
+                <div className="md:w-1/2 md:pr-12 md:text-right">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Document Verification
@@ -1168,10 +1172,6 @@ export default function EconomicsDepartment() {
                     </p>
                   </div>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold z-10 hidden md:flex"
-                     style={{ backgroundColor: '#7cb983' }}>
-                  3
-                </div>
                 <div className="md:w-1/2 md:pl-12"></div>
               </div>
             </div>
@@ -1179,12 +1179,12 @@ export default function EconomicsDepartment() {
             {/* Step 4 - Counseling & Seat Allotment */}
             <div className="relative mb-12">
               <div className="flex flex-col md:flex-row items-center">
-                <div className="md:w-1/2 md:pr-12"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold z-10 hidden md:flex"
+                <div className="md:w-1/2 md:pr-12 md:order-1"></div>
+                <div className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold z-10 mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2"
                      style={{ backgroundColor: '#7cb983' }}>
                   4
                 </div>
-                <div className="md:w-1/2 md:pl-12 mb-4 md:mb-0">
+                <div className="md:w-1/2 md:pl-12 md:order-2">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Counseling & Seat Allotment
@@ -1199,8 +1199,12 @@ export default function EconomicsDepartment() {
 
             {/* Step 5 - Fee Payment & Enrollment */}
             <div className="relative mb-12">
-              <div className="flex flex-col-reverse md:flex-row items-center">
-                <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+              <div className="flex flex-col md:flex-row items-center">
+                <div className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold z-10 mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2"
+                     style={{ backgroundColor: '#7cb983' }}>
+                  5
+                </div>
+                <div className="md:w-1/2 md:pr-12 md:text-right">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Fee Payment & Enrollment
@@ -1210,10 +1214,6 @@ export default function EconomicsDepartment() {
                     </p>
                   </div>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold z-10 hidden md:flex"
-                     style={{ backgroundColor: '#7cb983' }}>
-                  5
-                </div>
                 <div className="md:w-1/2 md:pl-12"></div>
               </div>
             </div>
@@ -1221,12 +1221,12 @@ export default function EconomicsDepartment() {
             {/* Step 6 - Orientation & Classes Begin */}
             <div className="relative">
               <div className="flex flex-col md:flex-row items-center">
-                <div className="md:w-1/2 md:pr-12"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold z-10 hidden md:flex"
+                <div className="md:w-1/2 md:pr-12 md:order-1"></div>
+                <div className="flex items-center justify-center w-8 h-8 rounded-full text-white font-bold z-10 mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2"
                      style={{ backgroundColor: '#7cb983' }}>
                   6
                 </div>
-                <div className="md:w-1/2 md:pl-12">
+                <div className="md:w-1/2 md:pl-12 md:order-2">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                       Orientation & Classes Begin
@@ -1247,7 +1247,7 @@ export default function EconomicsDepartment() {
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
-              <span style={{ fontStyle: 'italic' }}>Frequently Asked Questions</span>
+              Frequently Asked Questions
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
             <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
@@ -1382,7 +1382,7 @@ export default function EconomicsDepartment() {
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#7cb983' }}>
         <div className="mx-auto max-w-7xl text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#ffffff', fontStyle: 'italic' }}>
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6" style={{ color: '#ffffff' }}>
             Ready to Begin Your Journey as an Economics Educator?
           </h2>
           <p className="text-xl mb-10 max-w-3xl mx-auto" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>
@@ -1397,7 +1397,7 @@ export default function EconomicsDepartment() {
               Apply Online Now
             </Link>
             <a href="tel:+919345855001" className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold text-white transition-transform hover:scale-105"
-                    style={{ backgroundColor: '#002309' }}>
+                 style={{ borderColor: '#ffffff', borderWidth: '3px' }}   >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>

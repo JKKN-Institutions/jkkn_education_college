@@ -79,8 +79,10 @@ export default function ComputerScienceDepartment() {
                   Apply Now
                 </Link>
 
-                <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 transition-all hover:bg-white hover:text-[#002309]"
-                        style={{ borderColor: '#ffffff', color: '#ffffff' }}>
+                <button
+                  onClick={() => document.getElementById('curriculum-structure')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                  className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 text-white transition-all hover:bg-white hover:text-[#002309]"
+                  style={{ borderColor: '#ffffff' }}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
@@ -108,7 +110,7 @@ export default function ComputerScienceDepartment() {
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#002309' }}>
               Course Overview
             </h2>
-            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #ffa366)' }}></div>
+            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #006837)' }}></div>
             <p className="text-xl text-gray-600">
               A comprehensive teacher education program designed to shape innovative Computer Science educators
             </p>
@@ -172,7 +174,7 @@ export default function ComputerScienceDepartment() {
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#002309' }}>
               Program Highlights
             </h2>
-            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #ffa366)' }}></div>
+            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #006837)' }}></div>
             <p className="text-xl text-gray-600">
               Discover what makes our B.Ed Computer Science program exceptional
             </p>
@@ -182,8 +184,8 @@ export default function ComputerScienceDepartment() {
             {/* NCTE Approved */}
             <div className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
-                   style={{ backgroundColor: 'rgba(0, 188, 212, 0.1)', border: '2px solid #00bcd4' }}>
-                <svg className="w-8 h-8" style={{ color: '#00bcd4' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ backgroundColor: 'rgba(124, 185, 131, 0.1)', border: '2px solid #7cb983' }}>
+                <svg className="w-8 h-8" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
                 </svg>
               </div>
@@ -198,8 +200,8 @@ export default function ComputerScienceDepartment() {
             {/* Advanced Computer Labs */}
             <div className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
-                   style={{ backgroundColor: 'rgba(0, 188, 212, 0.1)', border: '2px solid #00bcd4' }}>
-                <svg className="w-8 h-8" style={{ color: '#00bcd4' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ backgroundColor: 'rgba(124, 185, 131, 0.1)', border: '2px solid #7cb983' }}>
+                <svg className="w-8 h-8" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                 </svg>
               </div>
@@ -214,8 +216,8 @@ export default function ComputerScienceDepartment() {
             {/* Programming Pedagogy */}
             <div className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
-                   style={{ backgroundColor: 'rgba(0, 188, 212, 0.1)', border: '2px solid #00bcd4' }}>
-                <svg className="w-8 h-8" style={{ color: '#00bcd4' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ backgroundColor: 'rgba(124, 185, 131, 0.1)', border: '2px solid #7cb983' }}>
+                <svg className="w-8 h-8" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>
               </div>
@@ -230,8 +232,8 @@ export default function ComputerScienceDepartment() {
             {/* Expert Learning Facilitators */}
             <div className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
-                   style={{ backgroundColor: 'rgba(0, 188, 212, 0.1)', border: '2px solid #00bcd4' }}>
-                <svg className="w-8 h-8" style={{ color: '#00bcd4' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ backgroundColor: 'rgba(124, 185, 131, 0.1)', border: '2px solid #7cb983' }}>
+                <svg className="w-8 h-8" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
               </div>
@@ -246,8 +248,8 @@ export default function ComputerScienceDepartment() {
             {/* Practical Training */}
             <div className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
-                   style={{ backgroundColor: 'rgba(0, 188, 212, 0.1)', border: '2px solid #00bcd4' }}>
-                <svg className="w-8 h-8" style={{ color: '#00bcd4' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ backgroundColor: 'rgba(124, 185, 131, 0.1)', border: '2px solid #7cb983' }}>
+                <svg className="w-8 h-8" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -262,8 +264,8 @@ export default function ComputerScienceDepartment() {
             {/* Scholarship Support */}
             <div className="bg-gray-50 p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
-                   style={{ backgroundColor: 'rgba(0, 188, 212, 0.1)', border: '2px solid #00bcd4' }}>
-                <svg className="w-8 h-8" style={{ color: '#00bcd4' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                   style={{ backgroundColor: 'rgba(124, 185, 131, 0.1)', border: '2px solid #7cb983' }}>
+                <svg className="w-8 h-8" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
@@ -285,7 +287,7 @@ export default function ComputerScienceDepartment() {
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#002309' }}>
               Eligibility Criteria & Documents
             </h2>
-            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #ffa366)' }}></div>
+            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #006837)' }}></div>
             <p className="text-xl text-gray-600">
               Requirements for admission to B.Ed Computer Science program
             </p>
@@ -305,7 +307,7 @@ export default function ComputerScienceDepartment() {
 
               <div className="space-y-4">
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -314,7 +316,7 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -323,7 +325,7 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -332,7 +334,7 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -341,7 +343,7 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -350,7 +352,7 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -373,7 +375,7 @@ export default function ComputerScienceDepartment() {
 
               <div className="space-y-4">
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -382,7 +384,7 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -391,7 +393,7 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -400,7 +402,7 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -409,7 +411,7 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -418,7 +420,7 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -427,7 +429,7 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 <div className="flex gap-3">
-                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#4caf50' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: '#7cb983' }} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <p className="text-gray-700 leading-relaxed">
@@ -444,10 +446,10 @@ export default function ComputerScienceDepartment() {
       <section id="curriculum-structure" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl font-bold mb-4" style={{ color: '#002309' }}>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4" style={{ color: '#006837' }}>
               Curriculum Structure
             </h2>
-            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #ffa366)' }}></div>
+            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #006837)' }}></div>
             <p className="text-xl text-gray-600">
               Comprehensive syllabus aligned with NCTE norms and NEP 2020 guidelines
             </p>
@@ -463,7 +465,7 @@ export default function ComputerScienceDepartment() {
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
               style={activeSemester === 'semester1' ? {
-                backgroundColor: '#002309',
+                backgroundColor: '#006837',
                 color: '#ffffff'
               } : {}}
             >
@@ -477,7 +479,7 @@ export default function ComputerScienceDepartment() {
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
               style={activeSemester === 'semester2' ? {
-                backgroundColor: '#002309',
+                backgroundColor: '#006837',
                 color: '#ffffff'
               } : {}}
             >
@@ -491,7 +493,7 @@ export default function ComputerScienceDepartment() {
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
               style={activeSemester === 'semester3' ? {
-                backgroundColor: '#002309',
+                backgroundColor: '#006837',
                 color: '#ffffff'
               } : {}}
             >
@@ -505,7 +507,7 @@ export default function ComputerScienceDepartment() {
                   : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
               style={activeSemester === 'semester4' ? {
-                backgroundColor: '#002309',
+                backgroundColor: '#006837',
                 color: '#ffffff'
               } : {}}
             >
@@ -519,22 +521,22 @@ export default function ComputerScienceDepartment() {
             {activeSemester === 'semester1' && (
               <div className="space-y-6 animate-fadeIn">
                 {/* Course 1 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>101</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Childhood and Growing Up
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Understanding child development, learning theories, and educational psychology principles for effective teaching.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 4</span>
                       <span>Theory + Practical</span>
                     </div>
@@ -542,22 +544,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 2 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>102</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Contemporary India and Education
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Exploring the Indian education system, policies, NEP 2020, and contemporary challenges in education.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 4</span>
                       <span>Theory</span>
                     </div>
@@ -565,22 +567,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 3 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">CS</div>
                       <div>103</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Pedagogy of Computer Science - Part I
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Foundations of computer science teaching, curriculum design, and instructional strategies for programming education.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 4</span>
                       <span>Theory + Practical</span>
                     </div>
@@ -588,22 +590,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 4 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>104</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Language Across the Curriculum
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Integration of language skills in teaching technical subjects including computer science effectively.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 2</span>
                       <span>Theory</span>
                     </div>
@@ -611,22 +613,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 5 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>105</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Reading and Reflecting on Texts
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Critical analysis of educational texts and development of reflective teaching practices.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 2</span>
                       <span>Practical</span>
                     </div>
@@ -639,22 +641,22 @@ export default function ComputerScienceDepartment() {
             {activeSemester === 'semester2' && (
               <div className="space-y-6 animate-fadeIn">
                 {/* Course 1 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>201</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Learning and Teaching
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Advanced learning theories, teaching methodologies, and classroom management strategies for educators.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 4</span>
                       <span>Theory + Practical</span>
                     </div>
@@ -662,22 +664,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 2 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>202</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Assessment for Learning
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Formative and summative assessment techniques, evaluation methods, and student performance analysis.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 4</span>
                       <span>Theory + Practical</span>
                     </div>
@@ -685,22 +687,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 3 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">CS</div>
                       <div>203</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Pedagogy of Computer Science - Part II
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Advanced programming pedagogy, teaching data structures, algorithms, and database concepts effectively.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 4</span>
                       <span>Theory + Practical</span>
                     </div>
@@ -708,22 +710,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 4 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>204</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Drama and Art in Education
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Creative teaching methods using drama, art, and multimedia for enhanced learning experiences.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 2</span>
                       <span>Practical</span>
                     </div>
@@ -731,22 +733,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 5 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>205</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       ICT in Education
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Integration of Information and Communication Technology in teaching-learning process and digital literacy.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 2</span>
                       <span>Practical</span>
                     </div>
@@ -759,22 +761,22 @@ export default function ComputerScienceDepartment() {
             {activeSemester === 'semester3' && (
               <div className="space-y-6 animate-fadeIn">
                 {/* Course 1 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>301</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Knowledge and Curriculum
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Curriculum development theories, knowledge construction, and pedagogical content knowledge.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 4</span>
                       <span>Theory</span>
                     </div>
@@ -782,22 +784,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 2 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>302</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Gender, School and Society
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Understanding gender dynamics in education, inclusive practices, and social diversity in learning environments.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 4</span>
                       <span>Theory</span>
                     </div>
@@ -805,22 +807,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 3 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">CS</div>
                       <div>303</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Teaching of Web Technologies
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Pedagogical approaches for teaching HTML, CSS, JavaScript, and responsive web design concepts.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 4</span>
                       <span>Theory + Practical</span>
                     </div>
@@ -828,22 +830,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 4 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>304</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       School Internship - Phase I
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Initial teaching practice in partner schools with mentorship and supervised teaching sessions.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 8</span>
                       <span>Practical</span>
                     </div>
@@ -851,22 +853,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 5 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">CS</div>
                       <div>305</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Computational Thinking Pedagogy
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Teaching problem-solving, logical reasoning, and algorithmic thinking skills to secondary school learners.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 2</span>
                       <span>Theory + Practical</span>
                     </div>
@@ -879,22 +881,22 @@ export default function ComputerScienceDepartment() {
             {activeSemester === 'semester4' && (
               <div className="space-y-6 animate-fadeIn">
                 {/* Course 1 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>401</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Creating an Inclusive School
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Strategies for inclusive education, addressing diverse learning needs, and special education approaches.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 4</span>
                       <span>Theory</span>
                     </div>
@@ -902,22 +904,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 2 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>402</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Understanding the Self
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Self-reflection, emotional intelligence, and professional ethics for educators.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 2</span>
                       <span>Theory + Practical</span>
                     </div>
@@ -925,22 +927,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 3 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">CS</div>
                       <div>403</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Emerging Technologies in Education
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Teaching AI, Machine Learning concepts, cybersecurity awareness, and emerging tech to school learners.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 4</span>
                       <span>Theory + Practical</span>
                     </div>
@@ -948,22 +950,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 4 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>404</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       School Internship - Phase II
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Extended teaching practice with full classroom responsibilities and comprehensive teaching experience.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 16</span>
                       <span>Practical</span>
                     </div>
@@ -971,22 +973,22 @@ export default function ComputerScienceDepartment() {
                 </div>
 
                 {/* Course 5 */}
-                <div className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex gap-6">
-                  <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-xl"
-                       style={{ backgroundColor: '#002309' }}>
+                <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow flex flex-col sm:flex-row gap-4 sm:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-xl"
+                       style={{ backgroundColor: '#006837' }}>
                     <div className="text-center">
                       <div className="text-xs">EDU</div>
                       <div>405</div>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold mb-2" style={{ color: '#002309' }}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                       Action Research Project
                     </h3>
-                    <p className="text-gray-600 mb-3">
+                    <p className="text-gray-600 mb-3 text-sm sm:text-base break-words">
                       Independent research project addressing real classroom challenges in computer science education.
                     </p>
-                    <div className="flex gap-4 text-sm text-gray-500">
+                    <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                       <span>Credits: 4</span>
                       <span>Research + Viva</span>
                     </div>
@@ -1005,7 +1007,7 @@ export default function ComputerScienceDepartment() {
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#002309' }}>
               Career Prospects
             </h2>
-            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #ffa366)' }}></div>
+            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #006837)' }}></div>
             <p className="text-xl text-gray-600">
               Diverse opportunities await B.Ed Computer Science graduates in the education sector
             </p>
@@ -1013,7 +1015,7 @@ export default function ComputerScienceDepartment() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Secondary School Teacher */}
-            <div className="bg-gradient-to-br from-blue-900 to-blue-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+            <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1" style={{ background: 'linear-gradient(135deg, #002309 0%, #006837 100%)' }}>
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
                    style={{ backgroundColor: '#7cb983' }}>
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1029,7 +1031,7 @@ export default function ComputerScienceDepartment() {
             </div>
 
             {/* Higher Secondary Teacher */}
-            <div className="bg-gradient-to-br from-blue-900 to-blue-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+            <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1" style={{ background: 'linear-gradient(135deg, #002309 0%, #006837 100%)' }}>
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
                    style={{ backgroundColor: '#7cb983' }}>
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1045,7 +1047,7 @@ export default function ComputerScienceDepartment() {
             </div>
 
             {/* Curriculum Developer */}
-            <div className="bg-gradient-to-br from-blue-900 to-blue-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+            <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1" style={{ background: 'linear-gradient(135deg, #002309 0%, #006837 100%)' }}>
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
                    style={{ backgroundColor: '#7cb983' }}>
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1061,7 +1063,7 @@ export default function ComputerScienceDepartment() {
             </div>
 
             {/* E-Learning Content Creator */}
-            <div className="bg-gradient-to-br from-blue-900 to-blue-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+            <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1" style={{ background: 'linear-gradient(135deg, #002309 0%, #006837 100%)' }}>
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
                    style={{ backgroundColor: '#7cb983' }}>
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1077,7 +1079,7 @@ export default function ComputerScienceDepartment() {
             </div>
 
             {/* Educational Technology Specialist */}
-            <div className="bg-gradient-to-br from-blue-900 to-blue-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+            <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1" style={{ background: 'linear-gradient(135deg, #002309 0%, #006837 100%)' }}>
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
                    style={{ backgroundColor: '#7cb983' }}>
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1094,7 +1096,7 @@ export default function ComputerScienceDepartment() {
             </div>
 
             {/* Higher Education */}
-            <div className="bg-gradient-to-br from-blue-900 to-blue-700 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1">
+            <div className="p-8 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1" style={{ background: 'linear-gradient(135deg, #002309 0%, #006837 100%)' }}>
               <div className="w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto"
                    style={{ backgroundColor: '#7cb983' }}>
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1119,7 +1121,7 @@ export default function ComputerScienceDepartment() {
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#002309' }}>
               Campus Facilities
             </h2>
-            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #ffa366)' }}></div>
+            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #006837)' }}></div>
             <p className="text-xl text-gray-600">
               World-class infrastructure supporting your learning journey
             </p>
@@ -1128,7 +1130,7 @@ export default function ComputerScienceDepartment() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* Computer Lab */}
             <div className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-700 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105">
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105" style={{ background: 'linear-gradient(135deg, #002309 0%, #006837 100%)' }}>
                 <h3 className="text-3xl font-bold mb-4">Computer Lab</h3>
                 <p className="text-xl font-semibold text-center">Advanced Computer Lab</p>
               </div>
@@ -1136,7 +1138,7 @@ export default function ComputerScienceDepartment() {
 
             {/* Digital Library */}
             <div className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-500 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105">
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105" style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                 <h3 className="text-3xl font-bold mb-4">Digital Library</h3>
                 <p className="text-xl font-semibold text-center">Digital Library</p>
               </div>
@@ -1145,7 +1147,7 @@ export default function ComputerScienceDepartment() {
             {/* Smart Classrooms */}
             <div className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer">
               <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105"
-                   style={{ background: 'linear-gradient(135deg, #7cb983 0%, #ff8855 100%)' }}>
+                   style={{ background: 'linear-gradient(135deg, #7cb983 0%, #006837 100%)' }}>
                 <h3 className="text-3xl font-bold mb-4">Smart Classrooms</h3>
                 <p className="text-xl font-semibold text-center">Smart Learning Studios</p>
               </div>
@@ -1153,7 +1155,7 @@ export default function ComputerScienceDepartment() {
 
             {/* Micro Teaching */}
             <div className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-700 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105">
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105" style={{ background: 'linear-gradient(135deg, #002309 0%, #006837 100%)' }}>
                 <h3 className="text-3xl font-bold mb-4">Micro Teaching</h3>
                 <p className="text-xl font-semibold text-center">Micro-Teaching Lab</p>
               </div>
@@ -1161,7 +1163,7 @@ export default function ComputerScienceDepartment() {
 
             {/* Programming Lab */}
             <div className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-500 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105">
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105" style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                 <h3 className="text-3xl font-bold mb-4">Programming Lab</h3>
                 <p className="text-xl font-semibold text-center">Programming Lab</p>
               </div>
@@ -1170,7 +1172,7 @@ export default function ComputerScienceDepartment() {
             {/* Seminar Hall */}
             <div className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer">
               <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105"
-                   style={{ background: 'linear-gradient(135deg, #7cb983 0%, #ff8855 100%)' }}>
+                   style={{ background: 'linear-gradient(135deg, #7cb983 0%, #006837 100%)' }}>
                 <h3 className="text-3xl font-bold mb-4">Seminar Hall</h3>
                 <p className="text-xl font-semibold text-center">Seminar Hall</p>
               </div>
@@ -1178,7 +1180,7 @@ export default function ComputerScienceDepartment() {
 
             {/* Resource Center */}
             <div className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-900 to-blue-700 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105">
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105" style={{ background: 'linear-gradient(135deg, #002309 0%, #006837 100%)' }}>
                 <h3 className="text-3xl font-bold mb-4">Resource Center</h3>
                 <p className="text-xl font-semibold text-center">Resource Center</p>
               </div>
@@ -1186,7 +1188,7 @@ export default function ComputerScienceDepartment() {
 
             {/* Hostel */}
             <div className="group relative overflow-hidden rounded-xl aspect-square cursor-pointer">
-              <div className="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-500 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105">
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-6 text-white transition-transform hover:scale-105" style={{ background: 'linear-gradient(135deg, #006837 0%, #7cb983 100%)' }}>
                 <h3 className="text-3xl font-bold mb-4">Hostel</h3>
                 <p className="text-xl font-semibold text-center">Hostel Facility</p>
               </div>
@@ -1202,7 +1204,7 @@ export default function ComputerScienceDepartment() {
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#002309' }}>
               Admission Process
             </h2>
-            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #ffa366)' }}></div>
+            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #006837)' }}></div>
             <p className="text-xl text-gray-600">
               Simple steps to begin your journey as a Computer Science educator
             </p>
@@ -1211,12 +1213,18 @@ export default function ComputerScienceDepartment() {
           <div className="relative max-w-5xl mx-auto">
             {/* Timeline Line */}
             <div className="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full"
-                 style={{ background: 'linear-gradient(to bottom, #7cb983, #00bcd4)' }}></div>
+                 style={{ background: 'linear-gradient(to bottom, #7cb983, #006837)' }}></div>
 
             {/* Step 1 - Left */}
             <div className="relative mb-12 lg:mb-20">
-              <div className="flex flex-col-reverse lg:flex-row items-center">
-                <div className="w-full lg:w-5/12 lg:pr-12 mb-6 lg:mb-0">
+              <div className="flex flex-col lg:flex-row items-center">
+                <div className="flex-shrink-0 z-10 mb-6 lg:mb-0">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg"
+                       style={{ backgroundColor: '#7cb983' }}>
+                    1
+                  </div>
+                </div>
+                <div className="w-full lg:w-5/12 lg:pr-12 lg:order-first">
                   <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                     <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
                       Check Eligibility
@@ -1224,12 +1232,6 @@ export default function ComputerScienceDepartment() {
                     <p className="text-gray-600 leading-relaxed">
                       Verify that you meet the academic requirements for B.Ed Computer Science admission, including graduation with CS/IT as a major subject.
                     </p>
-                  </div>
-                </div>
-                <div className="flex-shrink-0 z-10">
-                  <div className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg"
-                       style={{ backgroundColor: '#7cb983' }}>
-                    1
                   </div>
                 </div>
                 <div className="hidden lg:block w-5/12"></div>
@@ -1240,13 +1242,13 @@ export default function ComputerScienceDepartment() {
             <div className="relative mb-12 lg:mb-20">
               <div className="flex flex-col lg:flex-row items-center">
                 <div className="hidden lg:block w-5/12"></div>
-                <div className="flex-shrink-0 z-10 order-2 lg:order-none">
+                <div className="flex-shrink-0 z-10 mb-6 lg:mb-0">
                   <div className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg"
                        style={{ backgroundColor: '#7cb983' }}>
                     2
                   </div>
                 </div>
-                <div className="w-full lg:w-5/12 lg:pl-12 mb-6 lg:mb-0 order-1 lg:order-none">
+                <div className="w-full lg:w-5/12 lg:pl-12">
                   <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                     <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
                       Online Application
@@ -1261,8 +1263,14 @@ export default function ComputerScienceDepartment() {
 
             {/* Step 3 - Left */}
             <div className="relative mb-12 lg:mb-20">
-              <div className="flex flex-col-reverse lg:flex-row items-center">
-                <div className="w-full lg:w-5/12 lg:pr-12 mb-6 lg:mb-0">
+              <div className="flex flex-col lg:flex-row items-center">
+                <div className="flex-shrink-0 z-10 mb-6 lg:mb-0">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg"
+                       style={{ backgroundColor: '#7cb983' }}>
+                    3
+                  </div>
+                </div>
+                <div className="w-full lg:w-5/12 lg:pr-12 lg:order-first">
                   <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                     <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
                       Document Verification
@@ -1270,12 +1278,6 @@ export default function ComputerScienceDepartment() {
                     <p className="text-gray-600 leading-relaxed">
                       Submit original documents for verification at the college admission office as per the scheduled date.
                     </p>
-                  </div>
-                </div>
-                <div className="flex-shrink-0 z-10">
-                  <div className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg"
-                       style={{ backgroundColor: '#7cb983' }}>
-                    3
                   </div>
                 </div>
                 <div className="hidden lg:block w-5/12"></div>
@@ -1286,13 +1288,13 @@ export default function ComputerScienceDepartment() {
             <div className="relative mb-12 lg:mb-20">
               <div className="flex flex-col lg:flex-row items-center">
                 <div className="hidden lg:block w-5/12"></div>
-                <div className="flex-shrink-0 z-10 order-2 lg:order-none">
+                <div className="flex-shrink-0 z-10 mb-6 lg:mb-0">
                   <div className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg"
                        style={{ backgroundColor: '#7cb983' }}>
                     4
                   </div>
                 </div>
-                <div className="w-full lg:w-5/12 lg:pl-12 mb-6 lg:mb-0 order-1 lg:order-none">
+                <div className="w-full lg:w-5/12 lg:pl-12">
                   <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                     <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
                       Counseling Process
@@ -1307,8 +1309,14 @@ export default function ComputerScienceDepartment() {
 
             {/* Step 5 - Left */}
             <div className="relative mb-12 lg:mb-20">
-              <div className="flex flex-col-reverse lg:flex-row items-center">
-                <div className="w-full lg:w-5/12 lg:pr-12 mb-6 lg:mb-0">
+              <div className="flex flex-col lg:flex-row items-center">
+                <div className="flex-shrink-0 z-10 mb-6 lg:mb-0">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg"
+                       style={{ backgroundColor: '#7cb983' }}>
+                    5
+                  </div>
+                </div>
+                <div className="w-full lg:w-5/12 lg:pr-12 lg:order-first">
                   <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                     <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
                       Fee Payment
@@ -1316,12 +1324,6 @@ export default function ComputerScienceDepartment() {
                     <p className="text-gray-600 leading-relaxed">
                       Complete the admission by paying the prescribed fee as per government norms and receive your admission confirmation.
                     </p>
-                  </div>
-                </div>
-                <div className="flex-shrink-0 z-10">
-                  <div className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg"
-                       style={{ backgroundColor: '#7cb983' }}>
-                    5
                   </div>
                 </div>
                 <div className="hidden lg:block w-5/12"></div>
@@ -1332,13 +1334,13 @@ export default function ComputerScienceDepartment() {
             <div className="relative">
               <div className="flex flex-col lg:flex-row items-center">
                 <div className="hidden lg:block w-5/12"></div>
-                <div className="flex-shrink-0 z-10 order-2 lg:order-none">
+                <div className="flex-shrink-0 z-10 mb-6 lg:mb-0">
                   <div className="w-16 h-16 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg"
                        style={{ backgroundColor: '#7cb983' }}>
                     6
                   </div>
                 </div>
-                <div className="w-full lg:w-5/12 lg:pl-12 mb-6 lg:mb-0 order-1 lg:order-none">
+                <div className="w-full lg:w-5/12 lg:pl-12">
                   <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                     <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
                       Begin Your Journey
@@ -1361,7 +1363,7 @@ export default function ComputerScienceDepartment() {
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#002309' }}>
               Frequently Asked Questions
             </h2>
-            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #ffa366)' }}></div>
+            <div className="w-20 h-1 mx-auto mb-6" style={{ background: 'linear-gradient(to right, #7cb983, #006837)' }}></div>
             <p className="text-xl text-gray-600">
               Find answers to common queries about B.Ed Computer Science program
             </p>
@@ -1508,7 +1510,7 @@ export default function ComputerScienceDepartment() {
       </section>
 
       {/* Call to Action Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ background: 'linear-gradient(135deg, #7cb983 0%, #ff8855 100%)' }}>
+      <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ background: 'linear-gradient(135deg, #7cb983 0%, #006837 100%)' }}>
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
             Ready to Shape the Future of Technology Education?

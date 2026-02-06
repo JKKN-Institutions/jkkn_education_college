@@ -734,22 +734,22 @@ export default function ChemistryDepartment() {
           {activeSemester === 'semester1' && (
             <div className="space-y-6">
               {/* Course 1 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>101</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Childhood and Growing Up
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Understanding child development, learning theories, cognitive development, and educational psychology principles essential for effective teaching.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -757,22 +757,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 2 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>102</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Contemporary India and Education
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Exploring the Indian education system, educational policies, NEP 2020, constitutional provisions, and contemporary challenges in education.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory</span>
                   </div>
@@ -780,22 +780,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 3 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">CHE</div>
                     <div>103</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Pedagogy of Chemistry - Part I
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Foundations of Chemistry teaching, curriculum design, nature of Chemistry education, historical development, and instructional strategies for secondary level.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -803,22 +803,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 4 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>104</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Language Across the Curriculum
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Integration of language skills in science teaching, scientific communication, and effective use of terminology in Chemistry instruction.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Theory</span>
                   </div>
@@ -826,22 +826,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 5 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>105</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Reading and Reflecting on Texts
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Critical analysis of educational texts, reflective practices, and professional development through reading scientific and pedagogical literature.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Theory</span>
                   </div>
@@ -854,22 +854,22 @@ export default function ChemistryDepartment() {
           {activeSemester === 'semester2' && (
             <div className="space-y-6">
               {/* Course 1 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>201</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Learning and Teaching
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Theories of learning, teaching models, constructivist approaches, and practical applications in Chemistry classroom settings.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -877,22 +877,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 2 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">CHE</div>
                     <div>202</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Pedagogy of Chemistry - Part II
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Advanced teaching methods, laboratory pedagogy, demonstration techniques, safety protocols, and assessment strategies for Chemistry education.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -900,22 +900,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 3 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>203</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Assessment for Learning
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Formative and summative assessment, rubric design, practical examination assessment, continuous comprehensive evaluation in science subjects.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory</span>
                   </div>
@@ -923,22 +923,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 4 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>204</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Drama and Art in Education
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Creative approaches to science teaching using drama, visual arts, models, and multimedia for engaging Chemistry instruction.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Practical</span>
                   </div>
@@ -946,22 +946,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 5 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">CHE</div>
                     <div>205</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Chemistry Laboratory Teaching
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Planning and conducting laboratory sessions, safety management, practical skills development, and evaluation of laboratory work.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Practical</span>
                   </div>
@@ -974,22 +974,22 @@ export default function ChemistryDepartment() {
           {activeSemester === 'semester3' && (
             <div className="space-y-6">
               {/* Course 1 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>301</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Knowledge and Curriculum
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Curriculum development processes, science curriculum frameworks, NCERT guidelines, and state-level curriculum adaptations for Chemistry.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory</span>
                   </div>
@@ -997,22 +997,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 2 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>302</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Inclusive Education
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Teaching diverse learners, accommodations for students with special needs, differentiated instruction in Chemistry, and inclusive laboratory practices.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -1020,22 +1020,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 3 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>303</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Gender, School and Society
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Gender issues in science education, promoting equity in Chemistry classrooms, and addressing stereotypes about women in science.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Theory</span>
                   </div>
@@ -1043,22 +1043,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 4 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">INT</div>
                     <div>304</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     School Internship - Phase I
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     8-10 weeks of intensive teaching practice in partner schools, lesson planning, classroom management, and supervised Chemistry teaching.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 8</span>
                     <span>Practical</span>
                   </div>
@@ -1066,22 +1066,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 5 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">CHE</div>
                     <div>305</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     ICT in Chemistry Education
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Digital tools for Chemistry teaching, virtual labs, molecular visualization software, online simulations, and educational technology integration.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Practical</span>
                   </div>
@@ -1094,22 +1094,22 @@ export default function ChemistryDepartment() {
           {activeSemester === 'semester4' && (
             <div className="space-y-6">
               {/* Course 1 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">INT</div>
                     <div>401</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     School Internship - Phase II
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Extended 8-10 weeks teaching practice with increased responsibilities, action research, and professional development activities.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 8</span>
                     <span>Practical</span>
                   </div>
@@ -1117,22 +1117,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 2 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>402</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Understanding the Self
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Self-reflection, professional identity development, emotional intelligence, stress management, and teacher wellness strategies.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -1140,22 +1140,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 3 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">CHE</div>
                     <div>403</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Environmental Chemistry Education
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Teaching environmental concepts through Chemistry, green chemistry principles, sustainability education, and connecting chemistry to real-world issues.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Theory + Practical</span>
                   </div>
@@ -1163,22 +1163,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 4 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>404</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Action Research Project
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Conducting classroom-based research on Chemistry teaching, data collection, analysis, and presenting findings for educational improvement.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 4</span>
                     <span>Practical</span>
                   </div>
@@ -1186,22 +1186,22 @@ export default function ChemistryDepartment() {
               </div>
 
               {/* Course 5 */}
-              <div className="flex gap-6 p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold text-lg"
-                     style={{ backgroundColor: '#002309' }}>
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold text-base sm:text-lg"
+                     style={{ backgroundColor: '#006837' }}>
                   <div className="text-center">
                     <div className="text-xs">EDU</div>
                     <div>405</div>
                   </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 break-words" style={{ color: '#006837' }}>
                     Yoga and Health Education
                   </h3>
-                  <p className="mb-3 leading-relaxed" style={{ color: '#002309' }}>
+                  <p className="mb-2 sm:mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#002309' }}>
                     Physical and mental wellness practices, stress management techniques, and promoting holistic health for educators and learners.
                   </p>
-                  <div className="flex gap-6 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-6 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                     <span>Credits: 2</span>
                     <span>Practical</span>
                   </div>

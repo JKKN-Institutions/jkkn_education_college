@@ -729,7 +729,8 @@ export default function MathematicsPage() {
           </div>
 
           <div className="max-w-5xl mx-auto">
-            <div className="relative">
+            {/* Desktop Timeline Layout (md and up) */}
+            <div className="relative hidden md:block">
               {/* Timeline Line */}
               <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-[#7cb983] to-[#006837]"></div>
 
@@ -838,6 +839,90 @@ export default function MathematicsPage() {
                       </p>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Mobile Timeline Layout (sm and below) */}
+            <div className="relative md:hidden">
+              {/* Timeline Line */}
+              <div className="absolute left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-[#7cb983] to-[#006837]"></div>
+
+              {/* Step 1 */}
+              <div className="relative mb-8 pl-16">
+                <div className="absolute left-0 w-12 h-12 bg-[#7cb983] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  1
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <h3 className="text-lg font-bold text-[#006837] mb-2">Check Eligibility</h3>
+                  <p className="text-gray-600 text-sm">
+                    Verify that you meet the academic requirements: Bachelor's degree with Mathematics and minimum 50% marks (45% for reserved categories).
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 2 */}
+              <div className="relative mb-8 pl-16">
+                <div className="absolute left-0 w-12 h-12 bg-[#7cb983] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  2
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <h3 className="text-lg font-bold text-[#006837] mb-2">Online Application</h3>
+                  <p className="text-gray-600 text-sm">
+                    Fill out the online application form on our website with accurate personal and academic details. Pay the application fee online.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 3 */}
+              <div className="relative mb-8 pl-16">
+                <div className="absolute left-0 w-12 h-12 bg-[#7cb983] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  3
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <h3 className="text-lg font-bold text-[#006837] mb-2">Document Submission</h3>
+                  <p className="text-gray-600 text-sm">
+                    Upload scanned copies of required documents including mark sheets, certificates, and photographs during the application process.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 4 */}
+              <div className="relative mb-8 pl-16">
+                <div className="absolute left-0 w-12 h-12 bg-[#7cb983] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  4
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <h3 className="text-lg font-bold text-[#006837] mb-2">Counseling & Selection</h3>
+                  <p className="text-gray-600 text-sm">
+                    Attend the counseling session (online/offline) where selection is based on academic merit and TNTEU entrance score (if applicable).
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 5 */}
+              <div className="relative mb-8 pl-16">
+                <div className="absolute left-0 w-12 h-12 bg-[#7cb983] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  5
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <h3 className="text-lg font-bold text-[#006837] mb-2">Fee Payment</h3>
+                  <p className="text-gray-600 text-sm">
+                    Upon selection, complete the fee payment process. Avail government scholarships if eligible. Various payment options available.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 6 */}
+              <div className="relative pl-16">
+                <div className="absolute left-0 w-12 h-12 bg-[#7cb983] rounded-full flex items-center justify-center text-white font-bold text-xl shadow-lg">
+                  6
+                </div>
+                <div className="bg-white rounded-lg p-4 shadow-md">
+                  <h3 className="text-lg font-bold text-[#006837] mb-2">Begin Your Journey</h3>
+                  <p className="text-gray-600 text-sm">
+                    Complete document verification, attend orientation program, and start your transformative journey as a future Mathematics educator!
+                  </p>
                 </div>
               </div>
             </div>

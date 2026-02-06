@@ -910,17 +910,17 @@ export default function HistoryDepartment() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* History Resource Center */}
             <div className="group relative overflow-hidden rounded-xl transition-transform hover:scale-105"
                  style={{ backgroundColor: '#002309', aspectRatio: '1' }}>
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                <h3 className="text-lg font-semibold mb-2" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-2 sm:p-4 text-center">
+                <h3 className="text-xs sm:text-lg font-semibold mb-1 sm:mb-2 break-words" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
                   History Resource Center
                 </h3>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <p className="text-sm font-semibold" style={{ color: '#ffffff' }}>
+              <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
+                <p className="text-xs sm:text-sm font-semibold break-words" style={{ color: '#ffffff' }}>
                   History Resource Center
                 </p>
               </div>
@@ -929,13 +929,13 @@ export default function HistoryDepartment() {
             {/* Digital Library */}
             <div className="group relative overflow-hidden rounded-xl transition-transform hover:scale-105"
                  style={{ backgroundColor: '#7cb983', aspectRatio: '1' }}>
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                <h3 className="text-2xl font-bold" style={{ color: '#ffffff' }}>
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-2 sm:p-4 text-center">
+                <h3 className="text-sm sm:text-2xl font-bold break-words" style={{ color: '#ffffff' }}>
                   Digital Library
                 </h3>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <p className="text-sm font-semibold" style={{ color: '#ffffff' }}>
+              <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
+                <p className="text-xs sm:text-sm font-semibold break-words" style={{ color: '#ffffff' }}>
                   Digital Library
                 </p>
               </div>
@@ -944,13 +944,13 @@ export default function HistoryDepartment() {
             {/* Smart Classrooms */}
             <div className="group relative overflow-hidden rounded-xl transition-transform hover:scale-105"
                  style={{ backgroundColor: '#7cb983', aspectRatio: '1' }}>
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                <h3 className="text-2xl font-bold" style={{ color: '#ffffff' }}>
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-2 sm:p-4 text-center">
+                <h3 className="text-sm sm:text-2xl font-bold break-words" style={{ color: '#ffffff' }}>
                   Smart Classrooms
                 </h3>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <p className="text-sm font-semibold" style={{ color: '#ffffff' }}>
+              <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
+                <p className="text-xs sm:text-sm font-semibold break-words" style={{ color: '#ffffff' }}>
                   Smart Learning Studios
                 </p>
               </div>
@@ -959,13 +959,13 @@ export default function HistoryDepartment() {
             {/* Micro Teaching Lab */}
             <div className="group relative overflow-hidden rounded-xl transition-transform hover:scale-105"
                  style={{ backgroundColor: '#002309', aspectRatio: '1' }}>
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                <h3 className="text-2xl font-bold" style={{ color: '#ffffff' }}>
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-2 sm:p-4 text-center">
+                <h3 className="text-sm sm:text-2xl font-bold break-words" style={{ color: '#ffffff' }}>
                   Micro Teaching Lab
                 </h3>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <p className="text-sm font-semibold" style={{ color: '#ffffff' }}>
+              <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
+                <p className="text-xs sm:text-sm font-semibold break-words" style={{ color: '#ffffff' }}>
                   Micro-Teaching Lab
                 </p>
               </div>
@@ -974,13 +974,13 @@ export default function HistoryDepartment() {
             {/* Map & Globe Room */}
             <div className="group relative overflow-hidden rounded-xl transition-transform hover:scale-105"
                  style={{ backgroundColor: '#002309', aspectRatio: '1' }}>
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                <h3 className="text-lg font-semibold" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-2 sm:p-4 text-center">
+                <h3 className="text-xs sm:text-lg font-semibold break-words" style={{ color: 'rgba(255, 255, 255, 0.7)' }}>
                   Map & Globe Room
                 </h3>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <p className="text-sm font-semibold" style={{ color: '#ffffff' }}>
+              <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
+                <p className="text-xs sm:text-sm font-semibold break-words" style={{ color: '#ffffff' }}>
                   Map & Globe Room
                 </p>
               </div>
@@ -989,13 +989,13 @@ export default function HistoryDepartment() {
             {/* Seminar Hall */}
             <div className="group relative overflow-hidden rounded-xl transition-transform hover:scale-105"
                  style={{ backgroundColor: '#7cb983', aspectRatio: '1' }}>
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                <h3 className="text-2xl font-bold" style={{ color: '#ffffff' }}>
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-2 sm:p-4 text-center">
+                <h3 className="text-sm sm:text-2xl font-bold break-words" style={{ color: '#ffffff' }}>
                   Seminar Hall
                 </h3>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <p className="text-sm font-semibold" style={{ color: '#ffffff' }}>
+              <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
+                <p className="text-xs sm:text-sm font-semibold break-words" style={{ color: '#ffffff' }}>
                   Seminar Hall
                 </p>
               </div>
@@ -1004,13 +1004,13 @@ export default function HistoryDepartment() {
             {/* Computer Lab */}
             <div className="group relative overflow-hidden rounded-xl transition-transform hover:scale-105"
                  style={{ backgroundColor: '#002309', aspectRatio: '1' }}>
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                <h3 className="text-2xl font-bold" style={{ color: '#ffffff' }}>
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-2 sm:p-4 text-center">
+                <h3 className="text-sm sm:text-2xl font-bold break-words" style={{ color: '#ffffff' }}>
                   Computer Lab
                 </h3>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <p className="text-sm font-semibold" style={{ color: '#ffffff' }}>
+              <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
+                <p className="text-xs sm:text-sm font-semibold break-words" style={{ color: '#ffffff' }}>
                   Computer Lab
                 </p>
               </div>
@@ -1019,13 +1019,13 @@ export default function HistoryDepartment() {
             {/* Hostel Facility */}
             <div className="group relative overflow-hidden rounded-xl transition-transform hover:scale-105"
                  style={{ backgroundColor: '#7cb983', aspectRatio: '1' }}>
-              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center">
-                <h3 className="text-2xl font-bold" style={{ color: '#ffffff' }}>
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-2 sm:p-4 text-center">
+                <h3 className="text-sm sm:text-2xl font-bold break-words" style={{ color: '#ffffff' }}>
                   Hostel Facility
                 </h3>
               </div>
-              <div className="absolute bottom-0 left-0 right-0 p-4">
-                <p className="text-sm font-semibold" style={{ color: '#ffffff' }}>
+              <div className="absolute bottom-0 left-0 right-0 p-2 sm:p-4">
+                <p className="text-xs sm:text-sm font-semibold break-words" style={{ color: '#ffffff' }}>
                   Hostel Facility
                 </p>
               </div>
@@ -1052,8 +1052,12 @@ export default function HistoryDepartment() {
             <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 transform -translate-x-1/2" style={{ backgroundColor: '#7cb983' }}></div>
 
             {/* Step 1 - Check Eligibility */}
-            <div className="relative flex flex-col-reverse md:flex-row items-center mb-12">
-              <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+            <div className="relative flex flex-col md:flex-row items-center mb-12">
+              <div className="mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
+                   style={{ backgroundColor: '#7cb983' }}>
+                1
+              </div>
+              <div className="md:w-1/2 md:pr-12 md:text-right">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Check Eligibility
@@ -1063,21 +1067,17 @@ export default function HistoryDepartment() {
                   </p>
                 </div>
               </div>
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
-                   style={{ backgroundColor: '#7cb983' }}>
-                1
-              </div>
               <div className="md:w-1/2 md:pl-12"></div>
             </div>
 
             {/* Step 2 - Online Application */}
             <div className="relative flex flex-col md:flex-row items-center mb-12">
-              <div className="md:w-1/2 md:pr-12 order-2 md:order-1"></div>
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
+              <div className="md:w-1/2 md:pr-12 md:order-1"></div>
+              <div className="mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
                    style={{ backgroundColor: '#7cb983' }}>
                 2
               </div>
-              <div className="md:w-1/2 md:pl-12 order-1 md:order-2 mb-4 md:mb-0">
+              <div className="md:w-1/2 md:pl-12 md:order-2">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Online Application
@@ -1090,8 +1090,12 @@ export default function HistoryDepartment() {
             </div>
 
             {/* Step 3 - Document Verification */}
-            <div className="relative flex flex-col-reverse md:flex-row items-center mb-12">
-              <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+            <div className="relative flex flex-col md:flex-row items-center mb-12">
+              <div className="mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
+                   style={{ backgroundColor: '#7cb983' }}>
+                3
+              </div>
+              <div className="md:w-1/2 md:pr-12 md:text-right">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Document Verification
@@ -1101,21 +1105,17 @@ export default function HistoryDepartment() {
                   </p>
                 </div>
               </div>
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
-                   style={{ backgroundColor: '#7cb983' }}>
-                3
-              </div>
               <div className="md:w-1/2 md:pl-12"></div>
             </div>
 
             {/* Step 4 - Counseling & Seat Allotment */}
             <div className="relative flex flex-col md:flex-row items-center mb-12">
-              <div className="md:w-1/2 md:pr-12 order-2 md:order-1"></div>
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
+              <div className="md:w-1/2 md:pr-12 md:order-1"></div>
+              <div className="mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
                    style={{ backgroundColor: '#7cb983' }}>
                 4
               </div>
-              <div className="md:w-1/2 md:pl-12 order-1 md:order-2 mb-4 md:mb-0">
+              <div className="md:w-1/2 md:pl-12 md:order-2">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Counseling & Seat Allotment
@@ -1128,8 +1128,12 @@ export default function HistoryDepartment() {
             </div>
 
             {/* Step 5 - Fee Payment & Enrollment */}
-            <div className="relative flex flex-col-reverse md:flex-row items-center mb-12">
-              <div className="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+            <div className="relative flex flex-col md:flex-row items-center mb-12">
+              <div className="mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
+                   style={{ backgroundColor: '#7cb983' }}>
+                5
+              </div>
+              <div className="md:w-1/2 md:pr-12 md:text-right">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Fee Payment & Enrollment
@@ -1139,21 +1143,17 @@ export default function HistoryDepartment() {
                   </p>
                 </div>
               </div>
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
-                   style={{ backgroundColor: '#7cb983' }}>
-                5
-              </div>
               <div className="md:w-1/2 md:pl-12"></div>
             </div>
 
             {/* Step 6 - Orientation & Classes Begin */}
             <div className="relative flex flex-col md:flex-row items-center">
-              <div className="md:w-1/2 md:pr-12 order-2 md:order-1"></div>
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
+              <div className="md:w-1/2 md:pr-12 md:order-1"></div>
+              <div className="mb-6 md:mb-0 md:absolute md:left-1/2 md:transform md:-translate-x-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white font-bold z-10"
                    style={{ backgroundColor: '#7cb983' }}>
                 6
               </div>
-              <div className="md:w-1/2 md:pl-12 order-1 md:order-2 mb-4 md:mb-0">
+              <div className="md:w-1/2 md:pl-12 md:order-2">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Orientation & Classes Begin

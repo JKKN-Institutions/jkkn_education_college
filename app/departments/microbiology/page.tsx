@@ -634,14 +634,11 @@ export default function MicrobiologyDepartment() {
               <button
                 key={sem}
                 onClick={() => setActiveSemester(sem)}
-                className={`px-8 py-4 rounded-lg font-semibold transition-all ${
-                  activeSemester === sem
-                    ? 'text-white'
-                    : 'text-gray-600 hover:bg-gray-100'
-                }`}
+                className="px-3 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4 rounded-lg font-semibold transition-all text-xs sm:text-sm lg:text-base"
                 style={{
                   backgroundColor: activeSemester === sem ? '#002309' : '#FBFBEE',
-                  border: activeSemester === sem ? 'none' : '1px solid #e5e7eb'
+                  color: activeSemester === sem ? '#ffffff' : '#006837',
+                  border: activeSemester === sem ? 'none' : '1px solid #7cb983'
                 }}
               >
                 Semester {sem === 1 ? 'I' : sem === 2 ? 'II' : sem === 3 ? 'III' : 'IV'}
@@ -654,24 +651,24 @@ export default function MicrobiologyDepartment() {
             {curriculumData[activeSemester as keyof typeof curriculumData].map((course, index) => (
               <div
                 key={index}
-                className="p-6 rounded-xl flex items-start gap-6"
+                className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 lg:p-8 rounded-xl"
                 style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}
               >
                 <div
-                  className="flex-shrink-0 w-16 h-16 rounded-lg flex flex-col items-center justify-center text-white font-bold"
+                  className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex flex-col items-center justify-center text-white font-bold"
                   style={{ backgroundColor: course.code === 'MIC' ? '#7cb983' : '#002309' }}
                 >
                   <span className="text-xs">{course.code}</span>
-                  <span className="text-lg">{course.number}</span>
+                  <span className="text-base sm:text-lg">{course.number}</span>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#002309' }}>
                     {course.title}
                   </h3>
-                  <p className="leading-relaxed mb-3" style={{ color: '#006837' }}>
+                  <p className="text-sm sm:text-base leading-relaxed mb-3 break-words" style={{ color: '#006837' }}>
                     {course.description}
                   </p>
-                  <div className="flex gap-4 text-sm" style={{ color: '#006837' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm" style={{ color: '#006837' }}>
                     <span>Credits: {course.credits}</span>
                     <span>{course.type}</span>
                   </div>
@@ -984,84 +981,84 @@ export default function MicrobiologyDepartment() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Microbiology Lab */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105">
-              <div className="h-32 flex items-center justify-center" style={{ backgroundColor: '#002309' }}>
-                <h3 className="text-xl font-bold text-white text-center px-4">Microbiology Lab</h3>
+              <div className="h-24 sm:h-32 flex items-center justify-center" style={{ backgroundColor: '#002309' }}>
+                <h3 className="text-sm sm:text-xl font-bold text-white text-center px-2 sm:px-4 break-words">Microbiology Lab</h3>
               </div>
-              <div className="p-4" style={{ backgroundColor: '#002309' }}>
-                <p className="text-sm text-white">Microbiology Lab</p>
+              <div className="p-2 sm:p-4" style={{ backgroundColor: '#002309' }}>
+                <p className="text-xs sm:text-sm text-white break-words">Microbiology Lab</p>
               </div>
             </div>
 
             {/* Digital Library */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105">
-              <div className="h-32 flex items-center justify-center" style={{ backgroundColor: '#7cb983' }}>
-                <h3 className="text-xl font-bold text-white text-center px-4">Digital Library</h3>
+              <div className="h-24 sm:h-32 flex items-center justify-center" style={{ backgroundColor: '#7cb983' }}>
+                <h3 className="text-sm sm:text-xl font-bold text-white text-center px-2 sm:px-4 break-words">Digital Library</h3>
               </div>
-              <div className="p-4" style={{ backgroundColor: '#7cb983' }}>
-                <p className="text-sm text-white">Digital Library</p>
+              <div className="p-2 sm:p-4" style={{ backgroundColor: '#7cb983' }}>
+                <p className="text-xs sm:text-sm text-white break-words">Digital Library</p>
               </div>
             </div>
 
             {/* Smart Classrooms */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105">
-              <div className="h-32 flex items-center justify-center" style={{ backgroundColor: '#7cb983' }}>
-                <h3 className="text-xl font-bold text-white text-center px-4">Smart Classrooms</h3>
+              <div className="h-24 sm:h-32 flex items-center justify-center" style={{ backgroundColor: '#7cb983' }}>
+                <h3 className="text-sm sm:text-xl font-bold text-white text-center px-2 sm:px-4 break-words">Smart Classrooms</h3>
               </div>
-              <div className="p-4" style={{ backgroundColor: '#7cb983' }}>
-                <p className="text-sm text-white">Smart Learning Studios</p>
+              <div className="p-2 sm:p-4" style={{ backgroundColor: '#7cb983' }}>
+                <p className="text-xs sm:text-sm text-white break-words">Smart Learning Studios</p>
               </div>
             </div>
 
             {/* Micro Teaching */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105">
-              <div className="h-32 flex items-center justify-center" style={{ backgroundColor: '#7cb983' }}>
-                <h3 className="text-xl font-bold text-white text-center px-4">Micro Teaching</h3>
+              <div className="h-24 sm:h-32 flex items-center justify-center" style={{ backgroundColor: '#7cb983' }}>
+                <h3 className="text-sm sm:text-xl font-bold text-white text-center px-2 sm:px-4 break-words">Micro Teaching</h3>
               </div>
-              <div className="p-4" style={{ backgroundColor: '#7cb983' }}>
-                <p className="text-sm text-white">Micro-Teaching Lab</p>
+              <div className="p-2 sm:p-4" style={{ backgroundColor: '#7cb983' }}>
+                <p className="text-xs sm:text-sm text-white break-words">Micro-Teaching Lab</p>
               </div>
             </div>
 
             {/* Biology Lab */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105">
-              <div className="h-32 flex items-center justify-center" style={{ backgroundColor: '#7cb983' }}>
-                <h3 className="text-xl font-bold text-white text-center px-4">Biology Lab</h3>
+              <div className="h-24 sm:h-32 flex items-center justify-center" style={{ backgroundColor: '#7cb983' }}>
+                <h3 className="text-sm sm:text-xl font-bold text-white text-center px-2 sm:px-4 break-words">Biology Lab</h3>
               </div>
-              <div className="p-4" style={{ backgroundColor: '#7cb983' }}>
-                <p className="text-sm text-white">Biology Laboratory</p>
+              <div className="p-2 sm:p-4" style={{ backgroundColor: '#7cb983' }}>
+                <p className="text-xs sm:text-sm text-white break-words">Biology Laboratory</p>
               </div>
             </div>
 
             {/* Seminar Hall */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105">
-              <div className="h-32 flex items-center justify-center" style={{ backgroundColor: '#7cb983' }}>
-                <h3 className="text-xl font-bold text-white text-center px-4">Seminar Hall</h3>
+              <div className="h-24 sm:h-32 flex items-center justify-center" style={{ backgroundColor: '#7cb983' }}>
+                <h3 className="text-sm sm:text-xl font-bold text-white text-center px-2 sm:px-4 break-words">Seminar Hall</h3>
               </div>
-              <div className="p-4" style={{ backgroundColor: '#7cb983' }}>
-                <p className="text-sm text-white">Seminar Hall</p>
+              <div className="p-2 sm:p-4" style={{ backgroundColor: '#7cb983' }}>
+                <p className="text-xs sm:text-sm text-white break-words">Seminar Hall</p>
               </div>
             </div>
 
             {/* Resource Center */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105">
-              <div className="h-32 flex items-center justify-center" style={{ backgroundColor: '#002309' }}>
-                <h3 className="text-xl font-bold text-white text-center px-4">Resource Center</h3>
+              <div className="h-24 sm:h-32 flex items-center justify-center" style={{ backgroundColor: '#002309' }}>
+                <h3 className="text-sm sm:text-xl font-bold text-white text-center px-2 sm:px-4 break-words">Resource Center</h3>
               </div>
-              <div className="p-4" style={{ backgroundColor: '#002309' }}>
-                <p className="text-sm text-white">Resource Center</p>
+              <div className="p-2 sm:p-4" style={{ backgroundColor: '#002309' }}>
+                <p className="text-xs sm:text-sm text-white break-words">Resource Center</p>
               </div>
             </div>
 
             {/* Hostel */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105">
-              <div className="h-32 flex items-center justify-center" style={{ backgroundColor: '#7cb983' }}>
-                <h3 className="text-xl font-bold text-white text-center px-4">Hostel</h3>
+              <div className="h-24 sm:h-32 flex items-center justify-center" style={{ backgroundColor: '#7cb983' }}>
+                <h3 className="text-sm sm:text-xl font-bold text-white text-center px-2 sm:px-4 break-words">Hostel</h3>
               </div>
-              <div className="p-4" style={{ backgroundColor: '#7cb983' }}>
-                <p className="text-sm text-white">Hostel Facility</p>
+              <div className="p-2 sm:p-4" style={{ backgroundColor: '#7cb983' }}>
+                <p className="text-xs sm:text-sm text-white break-words">Hostel Facility</p>
               </div>
             </div>
           </div>
@@ -1083,32 +1080,32 @@ export default function MicrobiologyDepartment() {
 
           <div className="max-w-4xl mx-auto">
             {/* Step 1 - Left */}
-            <div className="flex items-center mb-0">
-              <div className="w-1/2 pr-8 text-right">
-                <div className="p-6 rounded-xl inline-block text-left" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+            <div className="flex flex-col md:flex-row items-center mb-12 md:mb-0">
+              <div className="flex flex-col items-center mb-6 md:mb-0">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
+                     style={{ backgroundColor: '#7cb983' }}>1</div>
+                <div className="w-0.5 h-32 hidden md:block" style={{ backgroundColor: '#7cb983' }}></div>
+              </div>
+              <div className="w-full md:w-1/2 md:pr-8 md:text-right md:order-first">
+                <div className="p-6 rounded-xl md:inline-block md:text-left" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>Check Eligibility</h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
                     Verify you meet the academic requirements: B.Sc Microbiology or equivalent degree with minimum 50% marks (45% for reserved categories) with Microbiology as a major subject.
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col items-center">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
-                     style={{ backgroundColor: '#7cb983' }}>1</div>
-                <div className="w-0.5 h-32" style={{ backgroundColor: '#7cb983' }}></div>
-              </div>
-              <div className="w-1/2 pl-8"></div>
+              <div className="w-full md:w-1/2 md:pl-8 hidden md:block"></div>
             </div>
 
             {/* Step 2 - Right */}
-            <div className="flex items-center mb-0">
-              <div className="w-1/2 pr-8"></div>
-              <div className="flex flex-col items-center">
+            <div className="flex flex-col md:flex-row items-center mb-12 md:mb-0">
+              <div className="w-full md:w-1/2 md:pr-8 hidden md:block"></div>
+              <div className="flex flex-col items-center mb-6 md:mb-0">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
                      style={{ backgroundColor: '#7cb983' }}>2</div>
-                <div className="w-0.5 h-32" style={{ backgroundColor: '#7cb983' }}></div>
+                <div className="w-0.5 h-32 hidden md:block" style={{ backgroundColor: '#7cb983' }}></div>
               </div>
-              <div className="w-1/2 pl-8">
+              <div className="w-full md:w-1/2 md:pl-8">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>Online Application</h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
@@ -1119,32 +1116,32 @@ export default function MicrobiologyDepartment() {
             </div>
 
             {/* Step 3 - Left */}
-            <div className="flex items-center mb-0">
-              <div className="w-1/2 pr-8 text-right">
-                <div className="p-6 rounded-xl inline-block text-left" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+            <div className="flex flex-col md:flex-row items-center mb-12 md:mb-0">
+              <div className="flex flex-col items-center mb-6 md:mb-0">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
+                     style={{ backgroundColor: '#7cb983' }}>3</div>
+                <div className="w-0.5 h-32 hidden md:block" style={{ backgroundColor: '#7cb983' }}></div>
+              </div>
+              <div className="w-full md:w-1/2 md:pr-8 md:text-right md:order-first">
+                <div className="p-6 rounded-xl md:inline-block md:text-left" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>Document Verification</h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
                     Submit original documents for verification at the college admission office. Ensure all certificates including B.Sc marksheets are attested and complete.
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col items-center">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
-                     style={{ backgroundColor: '#7cb983' }}>3</div>
-                <div className="w-0.5 h-32" style={{ backgroundColor: '#7cb983' }}></div>
-              </div>
-              <div className="w-1/2 pl-8"></div>
+              <div className="w-full md:w-1/2 md:pl-8 hidden md:block"></div>
             </div>
 
             {/* Step 4 - Right */}
-            <div className="flex items-center mb-0">
-              <div className="w-1/2 pr-8"></div>
-              <div className="flex flex-col items-center">
+            <div className="flex flex-col md:flex-row items-center mb-12 md:mb-0">
+              <div className="w-full md:w-1/2 md:pr-8 hidden md:block"></div>
+              <div className="flex flex-col items-center mb-6 md:mb-0">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
                      style={{ backgroundColor: '#7cb983' }}>4</div>
-                <div className="w-0.5 h-32" style={{ backgroundColor: '#7cb983' }}></div>
+                <div className="w-0.5 h-32 hidden md:block" style={{ backgroundColor: '#7cb983' }}></div>
               </div>
-              <div className="w-1/2 pl-8">
+              <div className="w-full md:w-1/2 md:pl-8">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>Counseling & Seat Allotment</h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
@@ -1155,31 +1152,31 @@ export default function MicrobiologyDepartment() {
             </div>
 
             {/* Step 5 - Left */}
-            <div className="flex items-center mb-0">
-              <div className="w-1/2 pr-8 text-right">
-                <div className="p-6 rounded-xl inline-block text-left" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
+            <div className="flex flex-col md:flex-row items-center mb-12 md:mb-0">
+              <div className="flex flex-col items-center mb-6 md:mb-0">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
+                     style={{ backgroundColor: '#7cb983' }}>5</div>
+                <div className="w-0.5 h-32 hidden md:block" style={{ backgroundColor: '#7cb983' }}></div>
+              </div>
+              <div className="w-full md:w-1/2 md:pr-8 md:text-right md:order-first">
+                <div className="p-6 rounded-xl md:inline-block md:text-left" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>Fee Payment & Enrollment</h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
                     Pay the prescribed fees within the stipulated time. Complete enrollment formalities and receive your admission confirmation.
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col items-center">
-                <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
-                     style={{ backgroundColor: '#7cb983' }}>5</div>
-                <div className="w-0.5 h-32" style={{ backgroundColor: '#7cb983' }}></div>
-              </div>
-              <div className="w-1/2 pl-8"></div>
+              <div className="w-full md:w-1/2 md:pl-8 hidden md:block"></div>
             </div>
 
             {/* Step 6 - Right */}
-            <div className="flex items-center">
-              <div className="w-1/2 pr-8"></div>
-              <div className="flex flex-col items-center">
+            <div className="flex flex-col md:flex-row items-center">
+              <div className="w-full md:w-1/2 md:pr-8 hidden md:block"></div>
+              <div className="flex flex-col items-center mb-6 md:mb-0">
                 <div className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold"
                      style={{ backgroundColor: '#7cb983' }}>6</div>
               </div>
-              <div className="w-1/2 pl-8">
+              <div className="w-full md:w-1/2 md:pl-8">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>Orientation & Classes Begin</h3>
                   <p className="leading-relaxed" style={{ color: '#006837' }}>
@@ -1196,7 +1193,7 @@ export default function MicrobiologyDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FBFBEE' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold italic mb-4" style={{ color: '#002309' }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               Frequently Asked Questions
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>

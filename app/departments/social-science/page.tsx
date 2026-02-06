@@ -666,17 +666,16 @@ export default function SocialScienceDepartment() {
 
           {/* Semester Tabs */}
           <div className="flex justify-center mb-12">
-            <div className="inline-flex rounded-xl overflow-hidden border-2" style={{ borderColor: '#e5e7eb' }}>
+            <div className="flex flex-col w-full max-w-xs rounded-xl overflow-hidden border-2" style={{ borderColor: '#e5e7eb' }}>
               {[1, 2, 3, 4].map((sem) => (
                 <button
                   key={sem}
                   onClick={() => setActiveSemester(sem)}
-                  className="px-8 py-4 font-semibold transition-all"
+                  className="px-6 py-4 font-semibold transition-all text-sm lg:text-base text-center"
                   style={{
-                    backgroundColor: activeSemester === sem ? '#ffffff' : 'transparent',
-                    color: activeSemester === sem ? '#002309' : '#006837',
-                    borderRight: sem < 4 ? '2px solid #e5e7eb' : 'none',
-                    boxShadow: activeSemester === sem ? '0 2px 8px rgba(0,0,0,0.1)' : 'none'
+                    backgroundColor: activeSemester === sem ? '#006837' : '#ffffff',
+                    color: activeSemester === sem ? '#ffffff' : '#002309',
+                    borderBottom: sem < 4 ? '2px solid #e5e7eb' : 'none'
                   }}
                 >
                   Semester {sem === 1 ? 'I' : sem === 2 ? 'II' : sem === 3 ? 'III' : 'IV'}
@@ -688,21 +687,21 @@ export default function SocialScienceDepartment() {
           {/* Course Cards */}
           <div className="space-y-4 max-w-4xl mx-auto">
             {curriculumData[activeSemester as keyof typeof curriculumData].map((course, index) => (
-              <div key={index} className="p-6 rounded-xl flex items-start gap-6"
+              <div key={index} className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 lg:p-8 rounded-xl"
                    style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
-                <div className="flex-shrink-0 w-16 h-16 rounded-lg flex flex-col items-center justify-center text-white font-bold"
+                <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex flex-col items-center justify-center text-white font-bold"
                      style={{ background: course.code === 'SSC' ? 'linear-gradient(135deg, #7cb983 0%, #6ba872 100%)' : 'linear-gradient(135deg, #7cb983 0%, #6ba872 100%)' }}>
                   <span className="text-xs">{course.code}</span>
-                  <span className="text-lg">{course.number}</span>
+                  <span className="text-base sm:text-lg">{course.number}</span>
                 </div>
-                <div className="flex-1">
-                  <h3 className="text-xl font-bold mb-2" style={{ color: '#002309' }}>
+                <div className="flex-1 min-w-0">
+                  <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#002309' }}>
                     {course.title}
                   </h3>
-                  <p className="text-base mb-3" style={{ color: '#006837' }}>
+                  <p className="text-sm sm:text-base mb-3 break-words" style={{ color: '#006837' }}>
                     {course.description}
                   </p>
-                  <div className="flex gap-4 text-sm" style={{ color: '#9ca3af' }}>
+                  <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm" style={{ color: '#9ca3af' }}>
                     <span>Credits: {course.credits}</span>
                     <span>{course.type}</span>
                   </div>
@@ -959,100 +958,100 @@ export default function SocialScienceDepartment() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Map Laboratory */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#002309' }}>
-              <div className="p-8 h-32 flex items-center justify-center">
-                <h3 className="text-2xl font-bold text-center" style={{ color: '#ffffff' }}>
+              <div className="p-3 sm:p-8 h-24 sm:h-32 flex items-center justify-center">
+                <h3 className="text-sm sm:text-2xl font-bold text-center break-words" style={{ color: '#ffffff' }}>
                   Map Laboratory
                 </h3>
               </div>
-              <div className="px-4 pb-4">
-                <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Map Laboratory</p>
+              <div className="px-2 pb-2 sm:px-4 sm:pb-4">
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Map Laboratory</p>
               </div>
             </div>
 
             {/* Digital Library */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
-              <div className="p-8 h-32 flex items-center justify-center">
-                <h3 className="text-2xl font-bold text-center" style={{ color: '#ffffff' }}>
+              <div className="p-3 sm:p-8 h-24 sm:h-32 flex items-center justify-center">
+                <h3 className="text-sm sm:text-2xl font-bold text-center break-words" style={{ color: '#ffffff' }}>
                   Digital Library
                 </h3>
               </div>
-              <div className="px-4 pb-4">
-                <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Digital Library</p>
+              <div className="px-2 pb-2 sm:px-4 sm:pb-4">
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Digital Library</p>
               </div>
             </div>
 
             {/* Smart Classrooms */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
-              <div className="p-8 h-32 flex items-center justify-center">
-                <h3 className="text-2xl font-bold text-center" style={{ color: '#ffffff' }}>
+              <div className="p-3 sm:p-8 h-24 sm:h-32 flex items-center justify-center">
+                <h3 className="text-sm sm:text-2xl font-bold text-center break-words" style={{ color: '#ffffff' }}>
                   Smart Classrooms
                 </h3>
               </div>
-              <div className="px-4 pb-4">
-                <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Smart Learning Studios</p>
+              <div className="px-2 pb-2 sm:px-4 sm:pb-4">
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Smart Learning Studios</p>
               </div>
             </div>
 
             {/* Micro Teaching */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#002309' }}>
-              <div className="p-8 h-32 flex items-center justify-center">
-                <h3 className="text-2xl font-bold text-center" style={{ color: '#ffffff' }}>
+              <div className="p-3 sm:p-8 h-24 sm:h-32 flex items-center justify-center">
+                <h3 className="text-sm sm:text-2xl font-bold text-center break-words" style={{ color: '#ffffff' }}>
                   Micro Teaching
                 </h3>
               </div>
-              <div className="px-4 pb-4">
-                <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Micro-Teaching Lab</p>
+              <div className="px-2 pb-2 sm:px-4 sm:pb-4">
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Micro-Teaching Lab</p>
               </div>
             </div>
 
             {/* History Museum */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#002309' }}>
-              <div className="p-8 h-32 flex items-center justify-center">
-                <h3 className="text-2xl font-bold text-center" style={{ color: '#ffffff' }}>
+              <div className="p-3 sm:p-8 h-24 sm:h-32 flex items-center justify-center">
+                <h3 className="text-sm sm:text-2xl font-bold text-center break-words" style={{ color: '#ffffff' }}>
                   History Museum
                 </h3>
               </div>
-              <div className="px-4 pb-4">
-                <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>History Museum</p>
+              <div className="px-2 pb-2 sm:px-4 sm:pb-4">
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>History Museum</p>
               </div>
             </div>
 
             {/* Seminar Hall */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
-              <div className="p-8 h-32 flex items-center justify-center">
-                <h3 className="text-2xl font-bold text-center" style={{ color: '#ffffff' }}>
+              <div className="p-3 sm:p-8 h-24 sm:h-32 flex items-center justify-center">
+                <h3 className="text-sm sm:text-2xl font-bold text-center break-words" style={{ color: '#ffffff' }}>
                   Seminar Hall
                 </h3>
               </div>
-              <div className="px-4 pb-4">
-                <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Seminar Hall</p>
+              <div className="px-2 pb-2 sm:px-4 sm:pb-4">
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Seminar Hall</p>
               </div>
             </div>
 
             {/* Resource Center */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#002309' }}>
-              <div className="p-8 h-32 flex items-center justify-center">
-                <h3 className="text-2xl font-bold text-center" style={{ color: '#ffffff' }}>
+              <div className="p-3 sm:p-8 h-24 sm:h-32 flex items-center justify-center">
+                <h3 className="text-sm sm:text-2xl font-bold text-center break-words" style={{ color: '#ffffff' }}>
                   Resource Center
                 </h3>
               </div>
-              <div className="px-4 pb-4">
-                <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Resource Center</p>
+              <div className="px-2 pb-2 sm:px-4 sm:pb-4">
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Resource Center</p>
               </div>
             </div>
 
             {/* Hostel */}
             <div className="rounded-xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
-              <div className="p-8 h-32 flex items-center justify-center">
-                <h3 className="text-3xl font-bold text-center" style={{ color: '#ffffff' }}>
+              <div className="p-3 sm:p-8 h-24 sm:h-32 flex items-center justify-center">
+                <h3 className="text-base sm:text-3xl font-bold text-center break-words" style={{ color: '#ffffff' }}>
                   Hostel
                 </h3>
               </div>
-              <div className="px-4 pb-4">
-                <p className="text-sm" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Hostel Facility</p>
+              <div className="px-2 pb-2 sm:px-4 sm:pb-4">
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Hostel Facility</p>
               </div>
             </div>
           </div>
@@ -1077,8 +1076,12 @@ export default function SocialScienceDepartment() {
             <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full hidden md:block" style={{ backgroundColor: '#7cb983' }}></div>
 
             {/* Step 1 - Online Application */}
-            <div className="relative flex flex-col-reverse md:flex-row items-center mb-12">
-              <div className="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
+            <div className="relative flex flex-row md:flex-row items-start mb-12 gap-4">
+              <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10"
+                   style={{ backgroundColor: '#7cb983' }}>
+                1
+              </div>
+              <div className="flex-1 md:w-1/2 md:pr-12 md:text-right md:order-1">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Online Application
@@ -1088,21 +1091,17 @@ export default function SocialScienceDepartment() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10 order-1 md:order-2 mb-4 md:mb-0"
-                   style={{ backgroundColor: '#7cb983' }}>
-                1
-              </div>
-              <div className="md:w-1/2 md:pl-12 order-3 hidden md:block"></div>
+              <div className="md:w-1/2 md:pl-12 hidden md:block"></div>
             </div>
 
             {/* Step 2 - Document Submission */}
-            <div className="relative flex flex-col md:flex-row items-center mb-12">
-              <div className="md:w-1/2 md:pr-12 order-2 hidden md:block"></div>
-              <div className="flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10 order-1 mb-4 md:mb-0"
+            <div className="relative flex flex-row md:flex-row items-start mb-12 gap-4">
+              <div className="md:w-1/2 md:pr-12 md:order-1 hidden md:block"></div>
+              <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10 md:order-2"
                    style={{ backgroundColor: '#7cb983' }}>
                 2
               </div>
-              <div className="md:w-1/2 md:pl-12 order-3 md:order-3">
+              <div className="flex-1 md:w-1/2 md:pl-12 md:order-3">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Document Submission
@@ -1115,8 +1114,12 @@ export default function SocialScienceDepartment() {
             </div>
 
             {/* Step 3 - Entrance Exam / Counseling */}
-            <div className="relative flex flex-col-reverse md:flex-row items-center mb-12">
-              <div className="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
+            <div className="relative flex flex-row md:flex-row items-start mb-12 gap-4">
+              <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10"
+                   style={{ backgroundColor: '#7cb983' }}>
+                3
+              </div>
+              <div className="flex-1 md:w-1/2 md:pr-12 md:text-right md:order-1">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Entrance Exam / Counseling
@@ -1126,21 +1129,17 @@ export default function SocialScienceDepartment() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10 order-1 md:order-2 mb-4 md:mb-0"
-                   style={{ backgroundColor: '#7cb983' }}>
-                3
-              </div>
-              <div className="md:w-1/2 md:pl-12 order-3 hidden md:block"></div>
+              <div className="md:w-1/2 md:pl-12 hidden md:block"></div>
             </div>
 
             {/* Step 4 - Merit List & Selection */}
-            <div className="relative flex flex-col md:flex-row items-center mb-12">
-              <div className="md:w-1/2 md:pr-12 order-2 hidden md:block"></div>
-              <div className="flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10 order-1 mb-4 md:mb-0"
+            <div className="relative flex flex-row md:flex-row items-start mb-12 gap-4">
+              <div className="md:w-1/2 md:pr-12 md:order-1 hidden md:block"></div>
+              <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10 md:order-2"
                    style={{ backgroundColor: '#7cb983' }}>
                 4
               </div>
-              <div className="md:w-1/2 md:pl-12 order-3 md:order-3">
+              <div className="flex-1 md:w-1/2 md:pl-12 md:order-3">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Merit List & Selection
@@ -1153,8 +1152,12 @@ export default function SocialScienceDepartment() {
             </div>
 
             {/* Step 5 - Fee Payment */}
-            <div className="relative flex flex-col-reverse md:flex-row items-center mb-12">
-              <div className="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1">
+            <div className="relative flex flex-row md:flex-row items-start mb-12 gap-4">
+              <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10"
+                   style={{ backgroundColor: '#7cb983' }}>
+                5
+              </div>
+              <div className="flex-1 md:w-1/2 md:pr-12 md:text-right md:order-1">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Fee Payment
@@ -1164,21 +1167,17 @@ export default function SocialScienceDepartment() {
                   </p>
                 </div>
               </div>
-              <div className="flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10 order-1 md:order-2 mb-4 md:mb-0"
-                   style={{ backgroundColor: '#7cb983' }}>
-                5
-              </div>
-              <div className="md:w-1/2 md:pl-12 order-3 hidden md:block"></div>
+              <div className="md:w-1/2 md:pl-12 hidden md:block"></div>
             </div>
 
             {/* Step 6 - Document Verification & Enrollment */}
-            <div className="relative flex flex-col md:flex-row items-center">
-              <div className="md:w-1/2 md:pr-12 order-2 hidden md:block"></div>
-              <div className="flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10 order-1 mb-4 md:mb-0"
+            <div className="relative flex flex-row md:flex-row items-start gap-4">
+              <div className="md:w-1/2 md:pr-12 md:order-1 hidden md:block"></div>
+              <div className="flex-shrink-0 flex items-center justify-center w-10 h-10 rounded-full text-white font-bold z-10 md:order-2"
                    style={{ backgroundColor: '#7cb983' }}>
                 6
               </div>
-              <div className="md:w-1/2 md:pl-12 order-3 md:order-3">
+              <div className="flex-1 md:w-1/2 md:pl-12 md:order-3">
                 <div className="p-6 rounded-xl" style={{ backgroundColor: '#ffffff', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                   <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
                     Document Verification & Enrollment
@@ -1373,13 +1372,13 @@ export default function SocialScienceDepartment() {
               </svg>
               Apply for Admission
             </Link>
-            <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 transition-all hover:bg-white hover:text-[#002309]"
+            <a href='tel:+919345855001' className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 transition-all hover:bg-white hover:text-[#002309]"
                     style={{ borderColor: '#ffffff', color: '#ffffff' }}>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
               </svg>
               Call Us Now
-            </button>
+            </a>
           </div>
         </div>
       </section>

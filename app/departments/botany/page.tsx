@@ -143,7 +143,7 @@ export default function BotanyDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FBFBEE' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold italic mb-4" style={{ color: '#002309' }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               Course Overview
             </h2>
             <div className="h-1 w-20 mx-auto" style={{ backgroundColor: '#7cb983' }}></div>
@@ -230,7 +230,7 @@ export default function BotanyDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold italic mb-4" style={{ color: '#002309' }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               Program Highlights
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
@@ -350,7 +350,7 @@ export default function BotanyDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FBFBEE' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold italic mb-4" style={{ color: '#002309' }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               Eligibility & Admission
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
@@ -406,7 +406,7 @@ export default function BotanyDepartment() {
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#7cb983' }}>
+                  <p className="text-base leading-relaxed" >
                     Minimum 50% aggregate marks in the qualifying degree (General category)
                   </p>
                 </div>
@@ -419,7 +419,7 @@ export default function BotanyDepartment() {
                       </svg>
                     </div>
                   </div>
-                  <p className="text-base leading-relaxed" style={{ color: '#7cb983' }}>
+                  <p className="text-base leading-relaxed" >
                     45% aggregate marks for reserved categories (SC/ST/OBC/PWD)
                   </p>
                 </div>
@@ -551,7 +551,7 @@ export default function BotanyDepartment() {
       <section id="curriculum-structure" className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FBFBEE' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold italic mb-4" style={{ color: '#002309' }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               Curriculum Structure
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
@@ -622,7 +622,7 @@ export default function BotanyDepartment() {
       }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold italic mb-4" style={{ color: '#ffffff' }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#ffffff' }}>
               Career Prospects
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
@@ -736,7 +736,7 @@ export default function BotanyDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold italic mb-4" style={{ color: '#002309' }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               Why Choose JKKN for B.Ed Botany?
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
@@ -861,7 +861,7 @@ export default function BotanyDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FBFBEE' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold italic mb-4" style={{ color: '#002309' }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               Campus Facilities
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
@@ -870,76 +870,76 @@ export default function BotanyDepartment() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {/* Botanical Lab */}
             <div className="rounded-2xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#002309' }}>
-              <div className="h-24 rounded-t-2xl"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2" style={{ color: '#ffffff' }}>Botanical Lab</h3>
-                <p className="text-sm" style={{ color: 'rgba(255,255,255,0.8)' }}>Botanical Laboratory</p>
+              <div className="h-16 sm:h-24 rounded-t-2xl"></div>
+              <div className="p-3 sm:p-6">
+                <h3 className="text-sm sm:text-xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>Botanical Lab</h3>
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255,255,255,0.8)' }}>Botanical Laboratory</p>
               </div>
             </div>
 
             {/* Herbarium */}
             <div className="rounded-2xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
-              <div className="h-24 rounded-t-2xl"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2" style={{ color: '#ffffff' }}>Herbarium</h3>
-                <p className="text-sm" style={{ color: 'rgba(255,255,255,0.8)' }}>Herbarium Collection</p>
+              <div className="h-16 sm:h-24 rounded-t-2xl"></div>
+              <div className="p-3 sm:p-6">
+                <h3 className="text-sm sm:text-xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>Herbarium</h3>
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255,255,255,0.8)' }}>Herbarium Collection</p>
               </div>
             </div>
 
             {/* Botanical Garden */}
             <div className="rounded-2xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
-              <div className="h-24 rounded-t-2xl"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2" style={{ color: '#ffffff' }}>Botanical Garden</h3>
-                <p className="text-sm" style={{ color: 'rgba(255,255,255,0.8)' }}>Botanical Garden</p>
+              <div className="h-16 sm:h-24 rounded-t-2xl"></div>
+              <div className="p-3 sm:p-6">
+                <h3 className="text-sm sm:text-xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>Botanical Garden</h3>
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255,255,255,0.8)' }}>Botanical Garden</p>
               </div>
             </div>
 
             {/* Digital Library */}
             <div className="rounded-2xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
-              <div className="h-24 rounded-t-2xl"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2" style={{ color: '#ffffff' }}>Digital Library</h3>
-                <p className="text-sm" style={{ color: 'rgba(255,255,255,0.8)' }}>Digital Library</p>
+              <div className="h-16 sm:h-24 rounded-t-2xl"></div>
+              <div className="p-3 sm:p-6">
+                <h3 className="text-sm sm:text-xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>Digital Library</h3>
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255,255,255,0.8)' }}>Digital Library</p>
               </div>
             </div>
 
             {/* Smart Classroom */}
             <div className="rounded-2xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#002309' }}>
-              <div className="h-24 rounded-t-2xl"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2" style={{ color: '#ffffff' }}>Smart Classroom</h3>
-                <p className="text-sm" style={{ color: 'rgba(255,255,255,0.8)' }}>Smart Learning Studios</p>
+              <div className="h-16 sm:h-24 rounded-t-2xl"></div>
+              <div className="p-3 sm:p-6">
+                <h3 className="text-sm sm:text-xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>Smart Classroom</h3>
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255,255,255,0.8)' }}>Smart Learning Studios</p>
               </div>
             </div>
 
             {/* Computer Lab */}
             <div className="rounded-2xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
-              <div className="h-24 rounded-t-2xl"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2" style={{ color: '#ffffff' }}>Computer Lab</h3>
-                <p className="text-sm" style={{ color: 'rgba(255,255,255,0.8)' }}>Computer Laboratory</p>
+              <div className="h-16 sm:h-24 rounded-t-2xl"></div>
+              <div className="p-3 sm:p-6">
+                <h3 className="text-sm sm:text-xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>Computer Lab</h3>
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255,255,255,0.8)' }}>Computer Laboratory</p>
               </div>
             </div>
 
             {/* Microscopy Room */}
             <div className="rounded-2xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
-              <div className="h-24 rounded-t-2xl"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2" style={{ color: '#ffffff' }}>Microscopy Room</h3>
-                <p className="text-sm" style={{ color: 'rgba(255,255,255,0.8)' }}>Microscopy Room</p>
+              <div className="h-16 sm:h-24 rounded-t-2xl"></div>
+              <div className="p-3 sm:p-6">
+                <h3 className="text-sm sm:text-xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>Microscopy Room</h3>
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255,255,255,0.8)' }}>Microscopy Room</p>
               </div>
             </div>
 
             {/* Seminar Hall */}
             <div className="rounded-2xl overflow-hidden transition-transform hover:scale-105" style={{ backgroundColor: '#7cb983' }}>
-              <div className="h-24 rounded-t-2xl"></div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2" style={{ color: '#ffffff' }}>Seminar Hall</h3>
-                <p className="text-sm" style={{ color: 'rgba(255,255,255,0.8)' }}>Seminar Hall</p>
+              <div className="h-16 sm:h-24 rounded-t-2xl"></div>
+              <div className="p-3 sm:p-6">
+                <h3 className="text-sm sm:text-xl font-bold mb-1 sm:mb-2 break-words" style={{ color: '#ffffff' }}>Seminar Hall</h3>
+                <p className="text-xs sm:text-sm break-words" style={{ color: 'rgba(255,255,255,0.8)' }}>Seminar Hall</p>
               </div>
             </div>
           </div>
@@ -950,7 +950,7 @@ export default function BotanyDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold italic mb-4" style={{ color: '#002309' }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               Admission Process
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
@@ -1080,7 +1080,7 @@ export default function BotanyDepartment() {
       <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#FBFBEE' }}>
         <div className="mx-auto max-w-4xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold italic mb-4" style={{ color: '#002309' }}>
+            <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309' }}>
               Frequently Asked Questions
             </h2>
             <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
@@ -1232,7 +1232,7 @@ export default function BotanyDepartment() {
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#7cb983' }}>
         <div className="mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold italic mb-6" style={{ color: '#ffffff' }}>
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6" style={{ color: '#ffffff' }}>
             Ready to Begin Your Journey as a Botany Educator?
           </h2>
           <p className="text-lg mb-10" style={{ color: 'rgba(255, 255, 255, 0.9)' }}>

@@ -67,7 +67,6 @@ const Header = () => {
       { name: 'BIOMATRIC LIST', href: '/others/biomatric-list' },
       { name: 'Balance Sheet', href: '/others/balance-sheet' },
       { name: 'Financial details', href: '/others/financial-details' },
-      { name: 'Digital Campus', href: '/others/digital-campus' },
       { name: 'Faculty Details', href: '/others/faculty-details' },
       { name: 'Careers', href: '/others/careers' },
       { name: 'Alumni', href: '/others/alumni' },

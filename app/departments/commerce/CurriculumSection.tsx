@@ -171,12 +171,12 @@ export default function CurriculumSection() {
   return (
     <section id="curriculum-structure" className="py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
       <div className="mx-auto max-w-7xl">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#006837' }}>
+        <div className="text-center mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#006837' }}>
             Curriculum Structure
           </h2>
-          <div className="h-1 w-20 mx-auto mb-8" style={{ backgroundColor: '#7cb983' }}></div>
-          <p className="text-lg" style={{ color: '#006837' }}>
+          <div className="h-1 w-20 mx-auto mb-6 sm:mb-8" style={{ backgroundColor: '#7cb983' }}></div>
+          <p className="text-sm sm:text-base lg:text-lg" style={{ color: '#006837' }}>
             Comprehensive syllabus aligned with NCTE norms and NEP 2020 guidelines
           </p>
         </div>
@@ -230,24 +230,24 @@ export default function CurriculumSection() {
           {semesterData[activeSemester as keyof typeof semesterData].map((course, index) => (
             <div
               key={index}
-              className="flex gap-6 p-8 rounded-xl transition-transform hover:scale-[1.02]"
+              className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-4 sm:p-6 lg:p-8 rounded-xl transition-transform hover:scale-[1.02]"
               style={{ backgroundColor: '#f8f9fa', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}
             >
-              <div className="flex-shrink-0 w-20 h-20 rounded-lg flex items-center justify-center text-white font-bold"
+              <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-lg flex items-center justify-center text-white font-bold"
                    style={{ backgroundColor: '#006837' }}>
                 <div className="text-center">
                   <div className="text-xs">{course.code}</div>
-                  <div className="text-xl">{course.number}</div>
+                  <div className="text-base sm:text-xl">{course.number}</div>
                 </div>
               </div>
-              <div className="flex-1">
-                <h3 className="text-2xl font-bold mb-2" style={{ color: '#006837' }}>
+              <div className="flex-1 min-w-0">
+                <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-2 break-words" style={{ color: '#006837' }}>
                   {course.title}
                 </h3>
-                <p className="mb-3 leading-relaxed" style={{ color: '#006837' }}>
+                <p className="mb-3 leading-relaxed text-sm sm:text-base break-words" style={{ color: '#006837' }}>
                   {course.description}
                 </p>
-                <div className="flex flex-wrap gap-4 text-sm" style={{ color: '#006837' }}>
+                <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm font-semibold" style={{ color: '#006837' }}>
                   <span>Credits: {course.credits}</span>
                   <span>{course.type}</span>
                 </div>
