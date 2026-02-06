@@ -441,7 +441,7 @@ export default function ComputerScienceDepartment() {
       </section>
 
       {/* Curriculum Structure Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section id="curriculum-structure" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-4xl font-bold mb-4" style={{ color: '#002309' }}>
@@ -1215,7 +1215,7 @@ export default function ComputerScienceDepartment() {
 
             {/* Step 1 - Left */}
             <div className="relative mb-12 lg:mb-20">
-              <div className="flex flex-col lg:flex-row items-center">
+              <div className="flex flex-col-reverse lg:flex-row items-center">
                 <div className="w-full lg:w-5/12 lg:pr-12 mb-6 lg:mb-0">
                   <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                     <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
@@ -1261,7 +1261,7 @@ export default function ComputerScienceDepartment() {
 
             {/* Step 3 - Left */}
             <div className="relative mb-12 lg:mb-20">
-              <div className="flex flex-col lg:flex-row items-center">
+              <div className="flex flex-col-reverse lg:flex-row items-center">
                 <div className="w-full lg:w-5/12 lg:pr-12 mb-6 lg:mb-0">
                   <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                     <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>
@@ -1307,7 +1307,7 @@ export default function ComputerScienceDepartment() {
 
             {/* Step 5 - Left */}
             <div className="relative mb-12 lg:mb-20">
-              <div className="flex flex-col lg:flex-row items-center">
+              <div className="flex flex-col-reverse lg:flex-row items-center">
                 <div className="w-full lg:w-5/12 lg:pr-12 mb-6 lg:mb-0">
                   <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                     <h3 className="text-2xl font-bold mb-3" style={{ color: '#002309' }}>

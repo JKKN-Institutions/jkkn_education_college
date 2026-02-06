@@ -145,6 +145,7 @@ function flattenMenuItems(
     const parentHref = REDIRECT_ROUTES[menu.href] || menu.href;
 
     if (menu.submenus.length === 0) {
+      // No submenus - include the parent item for direct navigation
       if (!seenHrefs.has(parentHref)) {
         seenHrefs.add(parentHref);
         items.push({
@@ -155,19 +156,7 @@ function flattenMenuItems(
         });
       }
     } else {
-      if (!PARENT_ONLY_ROUTES.has(menu.href) && !seenHrefs.has(parentHref)) {
-        const parentIsDifferent = !menu.submenus.some(sub => sub.href === parentHref);
-        if (parentIsDifferent) {
-          seenHrefs.add(parentHref);
-          items.push({
-            href: parentHref,
-            label: menu.label,
-            icon: menu.icon,
-            active: menu.active
-          });
-        }
-      }
-
+      // Has submenus - only include submenu items, not the parent
       menu.submenus.forEach((sub) => {
         const subHref = REDIRECT_ROUTES[sub.href] || sub.href;
         if (!seenHrefs.has(subHref)) {
@@ -336,6 +325,17 @@ export function BottomNavbar() {
   // Handle nav item click - simplified toggle logic with atomic state update
   const handleNavClick = useCallback(
     (groupId: string) => {
+      // Find the group
+      const group = allNavGroups.find((g) => g.id === groupId);
+
+      // If group has only 1 menu item, navigate directly
+      if (group && group.menus.length === 1) {
+        router.push(group.menus[0].href);
+        setExpanded(false);
+        setMoreMenuOpen(false);
+        return;
+      }
+
       // If submenu is open and showing THIS group's items, close it
       if (isExpanded && activeNavId === groupId) {
         setExpanded(false);
@@ -345,7 +345,7 @@ export function BottomNavbar() {
         switchToNav(groupId);
       }
     },
-    [activeNavId, isExpanded, switchToNav, setExpanded, setMoreMenuOpen]
+    [activeNavId, isExpanded, switchToNav, setExpanded, setMoreMenuOpen, allNavGroups, router]
   );
 
   // Handle submenu item click - navigate and close submenu

@@ -79,8 +79,13 @@ export default function PhysicsDepartment() {
                   Apply Now
                 </Link>
 
-                <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 transition-all hover:bg-white hover:text-[#002309]"
-                        style={{ borderColor: '#ffffff', color: '#ffffff' }}>
+                <button
+                  onClick={() => {
+                    const element = document.getElementById('curriculum-structure');
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 transition-all hover:bg-white hover:text-[#002309] text-white"
+                  style={{ borderColor: '#ffffff' }}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
@@ -547,7 +552,7 @@ export default function PhysicsDepartment() {
       </section>
 
       {/* Curriculum Structure Section */}
-      <section className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
+      <section id="curriculum-structure" className="py-10 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: '#ffffff' }}>
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12 lg:mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold mb-4" style={{ color: '#002309', fontStyle: 'italic' }}>
@@ -1513,7 +1518,7 @@ export default function PhysicsDepartment() {
             {/* Timeline */}
             <div className="relative">
               {/* Step 1 - Check Eligibility (Left) */}
-              <div className="flex flex-col lg:flex-row items-center mb-0">
+              <div className="flex flex-col-reverse lg:flex-row items-center mb-0">
                 <div className="w-full lg:w-5/12 lg:pr-8 mb-4 lg:mb-0 order-2 lg:order-1">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
@@ -1557,7 +1562,7 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Step 3 - Document Verification (Left) */}
-              <div className="flex flex-col lg:flex-row items-center mb-0">
+              <div className="flex flex-col-reverse lg:flex-row items-center mb-0">
                 <div className="w-full lg:w-5/12 lg:pr-8 mb-4 lg:mb-0 order-2 lg:order-1">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>
@@ -1601,7 +1606,7 @@ export default function PhysicsDepartment() {
               </div>
 
               {/* Step 5 - Fee Payment & Enrollment (Left) */}
-              <div className="flex flex-col lg:flex-row items-center mb-0">
+              <div className="flex flex-col-reverse lg:flex-row items-center mb-0">
                 <div className="w-full lg:w-5/12 lg:pr-8 mb-4 lg:mb-0 order-2 lg:order-1">
                   <div className="p-6 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
                     <h3 className="text-xl font-bold mb-3" style={{ color: '#002309' }}>

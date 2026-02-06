@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -75,8 +77,13 @@ export default function CommerceDepartment() {
                   Apply Now
                 </Link>
 
-                <button className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 transition-all hover:bg-white hover:text-[#002309]"
-                        style={{ borderColor: '#ffffff', color: '#ffffff' }}>
+                <button
+                  onClick={() => {
+                    const element = document.getElementById('curriculum-structure');
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-semibold border-2 transition-all hover:bg-white hover:text-[#002309] text-white"
+                  style={{ borderColor: '#ffffff' }}>
                   <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                   </svg>
@@ -928,7 +935,7 @@ export default function CommerceDepartment() {
 
             {/* Step 1 - Left */}
             <div className="relative mb-16 lg:mb-32">
-              <div className="flex flex-col lg:flex-row items-center">
+              <div className="flex flex-col-reverse lg:flex-row items-center">
                 <div className="w-full lg:w-5/12 lg:pr-12 mb-8 lg:mb-0">
                   <div className="p-8 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                     <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
@@ -970,7 +977,7 @@ export default function CommerceDepartment() {
 
             {/* Step 3 - Left */}
             <div className="relative mb-16 lg:mb-32">
-              <div className="flex flex-col lg:flex-row items-center">
+              <div className="flex flex-col-reverse lg:flex-row items-center">
                 <div className="w-full lg:w-5/12 lg:pr-12 mb-8 lg:mb-0">
                   <div className="p-8 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                     <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>
@@ -1012,7 +1019,7 @@ export default function CommerceDepartment() {
 
             {/* Step 5 - Left */}
             <div className="relative mb-16 lg:mb-32">
-              <div className="flex flex-col lg:flex-row items-center">
+              <div className="flex flex-col-reverse lg:flex-row items-center">
                 <div className="w-full lg:w-5/12 lg:pr-12 mb-8 lg:mb-0">
                   <div className="p-8 rounded-xl" style={{ backgroundColor: '#FBFBEE', boxShadow: '0 2px 8px rgba(0,0,0,0.1)' }}>
                     <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-4" style={{ color: '#002309' }}>

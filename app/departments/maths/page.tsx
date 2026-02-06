@@ -74,7 +74,12 @@ export default function MathematicsPage() {
                   <Users className="w-5 h-5" />
                   Apply Now
                 </Link>
-                <button className="flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold rounded-lg transition-colors">
+                <button
+                  onClick={() => {
+                    const element = document.getElementById('curriculum-structure');
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }}
+                  className="flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-4 border-2 border-white text-white hover:bg-white hover:text-[#006837] font-semibold rounded-lg transition-colors">
                   <BookOpen className="w-5 h-5" />
                   View Curriculum
                 </button>
@@ -332,7 +337,7 @@ export default function MathematicsPage() {
       </section>
 
       {/* Curriculum Structure Section */}
-      <section className="py-10 sm:py-12 lg:py-16 px-4 bg-white">
+      <section id="curriculum-structure" className="py-10 sm:py-12 lg:py-16 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8 lg:mb-12">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[#006837] mb-4">

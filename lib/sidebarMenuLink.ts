@@ -60,30 +60,6 @@ export function GetRoleBasedPages(
       ]
     },
     {
-      groupLabel: 'Gallery',
-      menus: [
-        {
-          href: '/gallery',
-          label: 'Gallery',
-          icon: Image,
-          active: pathname === '/gallery',
-          submenus: []
-        }
-      ]
-    },
-    {
-      groupLabel: 'Contact',
-      menus: [
-        {
-          href: '/contact',
-          label: 'Contact',
-          icon: Phone,
-          active: pathname === '/contact',
-          submenus: []
-        }
-      ]
-    },
-    {
       groupLabel: 'Departments',
       menus: [
         {
@@ -107,6 +83,30 @@ export function GetRoleBasedPages(
             { href: '/departments/social-science', label: 'B.Ed Social Science', active: pathname === '/departments/social-science' },
             { href: '/departments/microbiology', label: 'B.Ed Microbiology', active: pathname === '/departments/microbiology' }
           ]
+        }
+      ]
+    },
+    {
+      groupLabel: 'Contact',
+      menus: [
+        {
+          href: '/contact',
+          label: 'Contact',
+          icon: Phone,
+          active: pathname === '/contact',
+          submenus: []
+        }
+      ]
+    },
+    {
+      groupLabel: 'Gallery',
+      menus: [
+        {
+          href: '/gallery',
+          label: 'Gallery',
+          icon: Image,
+          active: pathname === '/gallery',
+          submenus: []
         }
       ]
     },

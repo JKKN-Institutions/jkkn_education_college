@@ -1,5 +1,6 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import HeroButtons from '@/components/HeroButtons';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -48,20 +49,7 @@ export default function Home() {
               </div>
 
               {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
-                <Link
-                  href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8"
-                  className="inline-block bg-[#7cb983] hover:bg-[#6ba872] text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 text-center text-sm sm:text-base"
-                >
-                  Apply Now for 2025-26
-                </Link>
-                <Link
-                  href="/programme"
-                  className="inline-block bg-transparent border-2 border-white hover:bg-white hover:text-[#006837] text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-all duration-200 text-center text-sm sm:text-base"
-                >
-                  Explore Programme
-                </Link>
-              </div>
+              <HeroButtons />
             </div>
 
             {/* Right Content - Video/Image Placeholder */}
@@ -177,7 +165,7 @@ export default function Home() {
       </section>
 
       {/* About Programme Section */}
-      <section className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      <section id="bed-programme" className="py-8 sm:py-12 lg:py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="mx-auto max-w-7xl">
           <div className="text-center mb-8 sm:mb-12">
             <span className="inline-block bg-[#7cb983] text-white px-4 sm:px-6 py-1.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm mb-3 sm:mb-4">
@@ -657,9 +645,9 @@ export default function Home() {
               <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-2">Ready to Begin Your Teaching Career?</h3>
               <p className="text-white/90 text-sm sm:text-base">Applications for the 2025-26 academic session are now open. Limited seats available—apply early to secure your admission.</p>
             </div>
-            <button className="bg-white hover:bg-gray-100 active:bg-gray-200 text-[#006837] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 whitespace-nowrap text-sm sm:text-base flex-shrink-0">
+            <Link href="https://admission.jkkn.ac.in/form/jkkn-institution-admission-yxs3w8" className="bg-white hover:bg-gray-100 active:bg-gray-200 text-[#006837] font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors duration-200 whitespace-nowrap text-sm sm:text-base flex-shrink-0">
               Start Application
-            </button>
+            </Link>
           </div>
         </div>
       </section>
